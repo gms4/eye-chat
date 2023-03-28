@@ -3,11 +3,11 @@
 //  eye-chat
 //
 //  Created by alexdamascena on 28/03/23.
+//  
 //
 
-import Foundation
-
+import SwiftUI
 
 struct Example {
-    let id = UUID()
+    
 }
