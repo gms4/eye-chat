@@ -27,6 +27,9 @@
 		0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00B29D32C4500E91563 /* EnumExample.swift */; };
 		0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00E29D32CD900E91563 /* Int+Su.swift */; };
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
+		0D71D01529D32D8700E91563 /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01429D32D8700E91563 /* ExampleComponent.swift */; };
+		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
+		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		0D71D00B29D32C4500E91563 /* EnumExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumExample.swift; sourceTree = "<group>"; };
 		0D71D00E29D32CD900E91563 /* Int+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Su.swift"; sourceTree = "<group>"; };
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
+		0D71D01429D32D8700E91563 /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
+		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
+		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 		0D71CFAD29D324C300E91563 /* eye-chat */ = {
 			isa = PBXGroup;
 			children = (
+				0D71D01629D32E4500E91563 /* Navigation */,
 				0D71CFF429D32A3900E91563 /* UI */,
 				0D71CFF029D329C700E91563 /* Manager */,
 				0D71CFE029D3276800E91563 /* Constants */,
@@ -130,6 +137,7 @@
 				0D71CFB729D324C400E91563 /* Persistence.swift */,
 				0D71CFB929D324C400E91563 /* eye_chat.xcdatamodeld */,
 				0D71CFB429D324C400E91563 /* Preview Content */,
+				0D71D01B29D335AB00E91563 /* FirstView.swift */,
 			);
 			path = "eye-chat";
 			sourceTree = "<group>";
@@ -188,19 +196,12 @@
 		0D71CFF429D32A3900E91563 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0D71D01329D32D5D00E91563 /* Components */,
 				0D71CFF829D32A8400E91563 /* Enum */,
 				0D71CFF729D32A7500E91563 /* Modules */,
 				0D71CFF629D32A5C00E91563 /* Extensions */,
-				0D71CFF529D32A4200E91563 /* Components */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		0D71CFF529D32A4200E91563 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		0D71CFF629D32A5C00E91563 /* Extensions */ = {
@@ -244,6 +245,22 @@
 				0D71D01029D32CF700E91563 /* Double+Su.swift */,
 			);
 			path = Dimension;
+			sourceTree = "<group>";
+		};
+		0D71D01329D32D5D00E91563 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0D71D01429D32D8700E91563 /* ExampleComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0D71D01629D32E4500E91563 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0D71D01729D3337500E91563 /* RouteScreen.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,15 +397,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D71D01529D32D8700E91563 /* ExampleComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
+				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
+				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00829D32BD400E91563 /* Example.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,

@@ -12,9 +12,22 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     var body: some View {
-        VStack {
-            Text("Hello World")
+        NavigationStack {
+            screen
         }
+    }
+    
+    private var screen: some View {
+        FirstView() // change this view
+            .navigationDestination(for: RouteScreen.self){ route in
+                switch route {
+                case .main:
+                    ContentView() // change this view
+                case .create:
+                    ContentView() // change this view
+                        .background(.black)
+                }
+            }
     }
 }
 
