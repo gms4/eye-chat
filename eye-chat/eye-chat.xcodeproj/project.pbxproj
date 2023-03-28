@@ -24,6 +24,9 @@
 		0D71D00729D32BD400E91563 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00429D32BD400E91563 /* ExampleViewModel.swift */; };
 		0D71D00829D32BD400E91563 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00529D32BD400E91563 /* Example.swift */; };
 		0D71D00A29D32C0700E91563 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00929D32C0700E91563 /* User.swift */; };
+		0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00B29D32C4500E91563 /* EnumExample.swift */; };
+		0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00E29D32CD900E91563 /* Int+Su.swift */; };
+		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		0D71D00429D32BD400E91563 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		0D71D00529D32BD400E91563 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		0D71D00929D32C0700E91563 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0D71D00B29D32C4500E91563 /* EnumExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumExample.swift; sourceTree = "<group>"; };
+		0D71D00E29D32CD900E91563 /* Int+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Su.swift"; sourceTree = "<group>"; };
+		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,7 @@
 		0D71CFF629D32A5C00E91563 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0D71D00D29D32C5600E91563 /* Dimension */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +222,7 @@
 		0D71CFF829D32A8400E91563 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				0D71D00B29D32C4500E91563 /* EnumExample.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -227,6 +235,15 @@
 				0D71D00529D32BD400E91563 /* Example.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		0D71D00D29D32C5600E91563 /* Dimension */ = {
+			isa = PBXGroup;
+			children = (
+				0D71D00E29D32CD900E91563 /* Int+Su.swift */,
+				0D71D01029D32CF700E91563 /* Double+Su.swift */,
+			);
+			path = Dimension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,11 +383,14 @@
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
+				0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
+				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
 				0D71D00829D32BD400E91563 /* Example.swift in Sources */,
+				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				0D71D00729D32BD400E91563 /* ExampleViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
