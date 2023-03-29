@@ -33,6 +33,7 @@
 		C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */; };
 		C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */; };
 		C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */; };
+		C09CDA8629D4C4C5006C60BB /* KeyboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeButtonComponent.swift; sourceTree = "<group>"; };
 		C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDisplayComponent.swift; sourceTree = "<group>"; };
 		C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsComponent.swift; sourceTree = "<group>"; };
+		C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 				C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */,
 				C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */,
 				C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */,
+				C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
+				C09CDA8629D4C4C5006C60BB /* KeyboardComponent.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */,
