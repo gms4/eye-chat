@@ -9,5 +9,5 @@ import Foundation
 
 
 struct ColorAsset {
-    static let orange = "orange"
+    
 }
