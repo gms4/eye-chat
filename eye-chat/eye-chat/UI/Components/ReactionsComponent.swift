@@ -12,7 +12,7 @@ enum EmojiStyle: String, CaseIterable, Hashable {
     case heartFaceEmoji = "😍"
     case laughEmoji = "😂"
     case cryingEmoji = "😭"
-    case judgindEmoji = "😒"
+    case judgingEmoji = "😒"
     case angryEmoji = "😡"
     case sadEmoji = "🥺"
     case omgEmoji = "😱"
