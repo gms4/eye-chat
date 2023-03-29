@@ -30,6 +30,9 @@
 		0D71D01529D32D8700E91563 /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01429D32D8700E91563 /* ExampleComponent.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
 		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
+		C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */; };
+		C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */; };
+		C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		0D71D01429D32D8700E91563 /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeButtonComponent.swift; sourceTree = "<group>"; };
+		C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDisplayComponent.swift; sourceTree = "<group>"; };
+		C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +257,9 @@
 			isa = PBXGroup;
 			children = (
 				0D71D01429D32D8700E91563 /* ExampleComponent.swift */,
+				C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */,
+				C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */,
+				C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -398,9 +407,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D71D01529D32D8700E91563 /* ExampleComponent.swift in Sources */,
+				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
+				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
@@ -411,6 +422,7 @@
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00829D32BD400E91563 /* Example.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
+				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				0D71D00729D32BD400E91563 /* ExampleViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,

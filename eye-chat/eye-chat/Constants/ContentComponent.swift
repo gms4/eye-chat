@@ -8,5 +8,8 @@
 import Foundation
 
 struct ContentComponent {
-    static let  TITLE_PRIMARY_BUTTON = "clica em mim"
+    static let TITLE_CREATE = "Criar Salas"
+    static let TITLE_SAVED = "Salas Salvas"
+    static let SUBTITLE_CREATE = "Crie uma sala com o nome dos seus\ncontatos e ligue quando quiser"
+    static let SUBTITLE_SAVED = "Acesse suas salas antigas e entre em\ncontato com seus amigos e familiares :)"
 }
