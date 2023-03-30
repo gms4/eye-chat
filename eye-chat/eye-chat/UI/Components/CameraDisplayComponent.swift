@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-enum CameraStyle {
-    case big
-    case small
-}
-
 struct CameraDisplayComponent: View {
     var body: some View {
             HStack {

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct KeyboardComponent: View {
+struct KeyboardReactionsComponent: View {
     var body: some View {
         Grid() {
             GridRow {
@@ -29,8 +29,8 @@ struct KeyboardComponent: View {
     }
 }
 
-struct KeyboardComponent_Previews: PreviewProvider {
+struct KeyboardReactionsComponent_Previews: PreviewProvider {
     static var previews: some View {
-        KeyboardComponent()
+        KeyboardReactionsComponent()
     }
 }
