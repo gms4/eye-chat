@@ -34,6 +34,9 @@
 		C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */; };
 		C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */; };
 		C09CDA8629D4C4C5006C60BB /* KeyboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */; };
+		C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8F29D5BA05006C60BB /* HomeView.swift */; };
+		C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9029D5BA05006C60BB /* HomeViewModel.swift */; };
+		C09CDA9429D5BA05006C60BB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9129D5BA05006C60BB /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDisplayComponent.swift; sourceTree = "<group>"; };
 		C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsComponent.swift; sourceTree = "<group>"; };
 		C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardComponent.swift; sourceTree = "<group>"; };
+		C09CDA8F29D5BA05006C60BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C09CDA9029D5BA05006C60BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C09CDA9129D5BA05006C60BB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +229,7 @@
 		0D71CFF729D32A7500E91563 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C09CDA8E29D5B9ED006C60BB /* New Group */,
 				0D71CFFB29D32B1D00E91563 /* Example */,
 			);
 			path = Modules;
@@ -273,6 +280,16 @@
 				0D71D01729D3337500E91563 /* RouteScreen.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C09CDA8E29D5B9ED006C60BB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C09CDA8F29D5BA05006C60BB /* HomeView.swift */,
+				C09CDA9029D5BA05006C60BB /* HomeViewModel.swift */,
+				C09CDA9129D5BA05006C60BB /* Home.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,8 +445,11 @@
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
+				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
 				0D71D00729D32BD400E91563 /* ExampleViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
+				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
+				C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */,
 				0D71D00629D32BD400E91563 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
