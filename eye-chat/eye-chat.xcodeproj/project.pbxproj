@@ -20,23 +20,31 @@
 		0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFEC29D3294E00E91563 /* ColorAsset.swift */; };
 		0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFEE29D3296D00E91563 /* ContentComponent.swift */; };
 		0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFF129D329EA00E91563 /* AuthManager.swift */; };
-		0D71D00629D32BD400E91563 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00329D32BD400E91563 /* ExampleView.swift */; };
-		0D71D00729D32BD400E91563 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00429D32BD400E91563 /* ExampleViewModel.swift */; };
-		0D71D00829D32BD400E91563 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00529D32BD400E91563 /* Example.swift */; };
 		0D71D00A29D32C0700E91563 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00929D32C0700E91563 /* User.swift */; };
-		0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00B29D32C4500E91563 /* EnumExample.swift */; };
+		0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00B29D32C4500E91563 /* EmojiStyle.swift */; };
 		0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00E29D32CD900E91563 /* Int+Su.swift */; };
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
-		0D71D01529D32D8700E91563 /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01429D32D8700E91563 /* ExampleComponent.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
 		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
+		C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47629D624030006B7D8 /* CameraStyle.swift */; };
+		C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47829D624870006B7D8 /* KeycapStyle.swift */; };
+		C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47A29D624AF0006B7D8 /* ChatStyle.swift */; };
+		C046A47D29D624E80006B7D8 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47C29D624E80006B7D8 /* ButtonStyle.swift */; };
 		C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */; };
 		C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */; };
 		C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */; };
-		C09CDA8629D4C4C5006C60BB /* KeyboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */; };
+		C09CDA8629D4C4C5006C60BB /* KeyboardReactionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8529D4C4C5006C60BB /* KeyboardReactionsComponent.swift */; };
 		C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8F29D5BA05006C60BB /* HomeView.swift */; };
 		C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9029D5BA05006C60BB /* HomeViewModel.swift */; };
 		C09CDA9429D5BA05006C60BB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9129D5BA05006C60BB /* Home.swift */; };
+		C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9529D5C7D2006C60BB /* FullKeyboardComponent.swift */; };
+		C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9729D5C828006C60BB /* KeycapsComponent.swift */; };
+		C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9929D5CECE006C60BB /* DeleteKeycapComponent.swift */; };
+		C09CDA9C29D5CEDC006C60BB /* SpaceKeycapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9B29D5CEDC006C60BB /* SpaceKeycapComponent.swift */; };
+		C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9D29D5CF11006C60BB /* CreateRoomComponent.swift */; };
+		C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */; };
+		C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDAA129D6064C006C60BB /* ArrowComponent.swift */; };
+		C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,23 +81,31 @@
 		0D71CFEC29D3294E00E91563 /* ColorAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAsset.swift; sourceTree = "<group>"; };
 		0D71CFEE29D3296D00E91563 /* ContentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentComponent.swift; sourceTree = "<group>"; };
 		0D71CFF129D329EA00E91563 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		0D71D00329D32BD400E91563 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
-		0D71D00429D32BD400E91563 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
-		0D71D00529D32BD400E91563 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		0D71D00929D32C0700E91563 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0D71D00B29D32C4500E91563 /* EnumExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumExample.swift; sourceTree = "<group>"; };
+		0D71D00B29D32C4500E91563 /* EmojiStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiStyle.swift; sourceTree = "<group>"; };
 		0D71D00E29D32CD900E91563 /* Int+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Su.swift"; sourceTree = "<group>"; };
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
-		0D71D01429D32D8700E91563 /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		C046A47629D624030006B7D8 /* CameraStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStyle.swift; sourceTree = "<group>"; };
+		C046A47829D624870006B7D8 /* KeycapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapStyle.swift; sourceTree = "<group>"; };
+		C046A47A29D624AF0006B7D8 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
+		C046A47C29D624E80006B7D8 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeButtonComponent.swift; sourceTree = "<group>"; };
 		C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDisplayComponent.swift; sourceTree = "<group>"; };
 		C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsComponent.swift; sourceTree = "<group>"; };
-		C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardComponent.swift; sourceTree = "<group>"; };
+		C09CDA8529D4C4C5006C60BB /* KeyboardReactionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReactionsComponent.swift; sourceTree = "<group>"; };
 		C09CDA8F29D5BA05006C60BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C09CDA9029D5BA05006C60BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C09CDA9129D5BA05006C60BB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C09CDA9529D5C7D2006C60BB /* FullKeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullKeyboardComponent.swift; sourceTree = "<group>"; };
+		C09CDA9729D5C828006C60BB /* KeycapsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapsComponent.swift; sourceTree = "<group>"; };
+		C09CDA9929D5CECE006C60BB /* DeleteKeycapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteKeycapComponent.swift; sourceTree = "<group>"; };
+		C09CDA9B29D5CEDC006C60BB /* SpaceKeycapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceKeycapComponent.swift; sourceTree = "<group>"; };
+		C09CDA9D29D5CF11006C60BB /* CreateRoomComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomComponent.swift; sourceTree = "<group>"; };
+		C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialKeyboard.swift; sourceTree = "<group>"; };
+		C09CDAA129D6064C006C60BB /* ArrowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowComponent.swift; sourceTree = "<group>"; };
+		C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintKeycapComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				C09CDA8E29D5B9ED006C60BB /* New Group */,
-				0D71CFFB29D32B1D00E91563 /* Example */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -238,19 +253,13 @@
 		0D71CFF829D32A8400E91563 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				0D71D00B29D32C4500E91563 /* EnumExample.swift */,
+				0D71D00B29D32C4500E91563 /* EmojiStyle.swift */,
+				C046A47629D624030006B7D8 /* CameraStyle.swift */,
+				C046A47829D624870006B7D8 /* KeycapStyle.swift */,
+				C046A47A29D624AF0006B7D8 /* ChatStyle.swift */,
+				C046A47C29D624E80006B7D8 /* ButtonStyle.swift */,
 			);
 			path = Enum;
-			sourceTree = "<group>";
-		};
-		0D71CFFB29D32B1D00E91563 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				0D71D00329D32BD400E91563 /* ExampleView.swift */,
-				0D71D00429D32BD400E91563 /* ExampleViewModel.swift */,
-				0D71D00529D32BD400E91563 /* Example.swift */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 		0D71D00D29D32C5600E91563 /* Dimension */ = {
@@ -265,11 +274,18 @@
 		0D71D01329D32D5D00E91563 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0D71D01429D32D8700E91563 /* ExampleComponent.swift */,
 				C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */,
 				C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */,
 				C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */,
-				C09CDA8529D4C4C5006C60BB /* KeyboardComponent.swift */,
+				C09CDA8529D4C4C5006C60BB /* KeyboardReactionsComponent.swift */,
+				C09CDA9529D5C7D2006C60BB /* FullKeyboardComponent.swift */,
+				C09CDA9729D5C828006C60BB /* KeycapsComponent.swift */,
+				C09CDA9929D5CECE006C60BB /* DeleteKeycapComponent.swift */,
+				C09CDA9B29D5CEDC006C60BB /* SpaceKeycapComponent.swift */,
+				C09CDA9D29D5CF11006C60BB /* CreateRoomComponent.swift */,
+				C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */,
+				C09CDAA129D6064C006C60BB /* ArrowComponent.swift */,
+				C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -426,31 +442,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D71D01529D32D8700E91563 /* ExampleComponent.swift in Sources */,
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
+				C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
-				C09CDA8629D4C4C5006C60BB /* KeyboardComponent.swift in Sources */,
+				C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */,
+				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
+				C09CDA8629D4C4C5006C60BB /* KeyboardReactionsComponent.swift in Sources */,
+				C09CDA9C29D5CEDC006C60BB /* SpaceKeycapComponent.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
+				C046A47D29D624E80006B7D8 /* ButtonStyle.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
-				0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */,
+				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
+				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
-				0D71D00829D32BD400E91563 /* Example.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
+				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
+				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
-				0D71D00729D32BD400E91563 /* ExampleViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
+				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
+				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
+				C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */,
+				C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */,
 				C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */,
-				0D71D00629D32BD400E91563 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,9 @@ import Foundation
 
 struct ColorAsset {
     
+    static let LIGHT_GRAY_DELETE_KEYCAP = "light-gray-delete-keycap"
+    static let LIGHT_GRAY_LETTERS_KEYCAP = "light-gray-letters-keycaps"
+    static let LIGHT_GRAY = "light-gray"
+    static let SPACE_GRAY = "space-gray"
+    static let BLUE_KEYCAP = "blue-keycap"
 }
