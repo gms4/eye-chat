@@ -30,7 +30,8 @@
 		0D71D01529D32D8700E91563 /* ExampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01429D32D8700E91563 /* ExampleComponent.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
 		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
-		6E01934729D6101600C16658 /* TopicCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01934629D6101600C16658 /* TopicCardComponent.swift */; };
+		6E01934729D6101600C16658 /* TopicsCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01934629D6101600C16658 /* TopicsCardComponent.swift */; };
+		6E01934929D61D6F00C16658 /* TopicsBoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01934829D61D6F00C16658 /* TopicsBoardComponent.swift */; };
 		C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */; };
 		C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */; };
 		C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */; };
@@ -84,7 +85,8 @@
 		0D71D01429D32D8700E91563 /* ExampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleComponent.swift; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		6E01934629D6101600C16658 /* TopicCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCardComponent.swift; sourceTree = "<group>"; };
+		6E01934629D6101600C16658 /* TopicsCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsCardComponent.swift; sourceTree = "<group>"; };
+		6E01934829D61D6F00C16658 /* TopicsBoardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsBoardComponent.swift; sourceTree = "<group>"; };
 		C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeButtonComponent.swift; sourceTree = "<group>"; };
 		C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDisplayComponent.swift; sourceTree = "<group>"; };
 		C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsComponent.swift; sourceTree = "<group>"; };
@@ -268,7 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				0D71D01429D32D8700E91563 /* ExampleComponent.swift */,
-				6E01934629D6101600C16658 /* TopicCardComponent.swift */,
+				6E01934629D6101600C16658 /* TopicsCardComponent.swift */,
+				6E01934829D61D6F00C16658 /* TopicsBoardComponent.swift */,
 				C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */,
 				C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */,
 				C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */,
@@ -439,8 +442,9 @@
 				0D71D00C29D32C4500E91563 /* EnumExample.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
+				6E01934929D61D6F00C16658 /* TopicsBoardComponent.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
-				6E01934729D6101600C16658 /* TopicCardComponent.swift in Sources */,
+				6E01934729D6101600C16658 /* TopicsCardComponent.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
