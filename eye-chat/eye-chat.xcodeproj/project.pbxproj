@@ -203,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				0D71CFF129D329EA00E91563 /* AuthManager.swift */,
+				0D71D00329D32BD400E91563 /* ExampleView.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -246,7 +247,6 @@
 		0D71CFFB29D32B1D00E91563 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				0D71D00329D32BD400E91563 /* ExampleView.swift */,
 				0D71D00429D32BD400E91563 /* ExampleViewModel.swift */,
 				0D71D00529D32BD400E91563 /* Example.swift */,
 			);

@@ -27,7 +27,7 @@ struct HomeView: View {
                     .fontWeight(.medium)
                 EyeButtonComponent(style: .savedRoom)
                 EyeButtonComponent(style: .createRoom)
-//                Image(style == .activate ? ImageAsset.DEACTIVATE_EYETRACKING : ImageAsset.ACTIVATE_EYETRACKING)
+//               Image(style == .activate ? ImageAsset.DEACTIVATE_EYETRACKING : ImageAsset.ACTIVATE_EYETRACKING)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

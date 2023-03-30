@@ -39,13 +39,19 @@ struct EyeButtonComponent: View {
             if style == .createRoom {
                 VStack(alignment: .trailing) {
                     Spacer()
-                    Image(ImageAsset.CREATE_BUTTON_ICON)
+                 Image(ImageAsset.LOGO_BLUE_BACKGROUD)
+                }
+                .frame(maxHeight: .infinity)
+            } else {
+                VStack(alignment: .trailing) {
+                    
+                  Image(ImageAsset.LOGO_ORANGE_BACKGROUD)
                 }
                 .frame(maxHeight: .infinity)
             }
  
         }
-        .frame(width: UIScreen.screenWidth-20.su, height: 55.5.su, alignment: .topLeading)
+        .frame(width: UIScreen.screenWidth-25.su, height: 55.5.su, alignment: .topLeading)
         .padding(EdgeInsets(top: 35, leading: 40, bottom: 35, trailing: 35))
         .background(
             Image(style == .createRoom ? ImageAsset.BLUE_BACKGROUND : ImageAsset.ORANGE_BACKGROUND)

@@ -16,4 +16,6 @@ struct ImageAsset {
     static let VIDEO_YOURS = "video-yours"
     static let DEACTIVATE_EYETRACKING = "deactivate-eyetracking"
     static let ACTIVATE_EYETRACKING = "activate-eyetracking"
+    static let LOGO_BLUE_BACKGROUD  = "logo-blue-backgroud"
+    static let LOGO_ORANGE_BACKGROUD = "logo-orange-backgroud"
 }

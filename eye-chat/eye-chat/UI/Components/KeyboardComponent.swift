@@ -10,15 +10,16 @@ import SwiftUI
 struct KeyboardComponent: View {
     var body: some View {
         Grid() {
-            GridRow {
-                ReactionsComponent(style: .smileEmoji)
-                ReactionsComponent(style: .heartFaceEmoji)
-                ReactionsComponent(style: .laughEmoji)
-            }
+           
             GridRow {
                 ReactionsComponent(style: .cryingEmoji)
                 ReactionsComponent(style: .judgingEmoji)
                 ReactionsComponent(style: .angryEmoji)
+                GridRow {
+                    ReactionsComponent(style: .smileEmoji)
+                    ReactionsComponent(style: .heartFaceEmoji)
+                    ReactionsComponent(style: .laughEmoji)
+                }
             }
             GridRow {
                 ReactionsComponent(style: .sadEmoji)
