@@ -130,3 +130,8 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,macos,xcode
+
+
+## SERVER
+
+./eye-chat-server/node_modules
