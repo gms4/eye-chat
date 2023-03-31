@@ -45,6 +45,9 @@
 		C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */; };
 		C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDAA129D6064C006C60BB /* ArrowComponent.swift */; };
 		C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */; };
+		C0B79AB929D74E4C002B3210 /* CreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */; };
+		C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */; };
+		C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB829D74E4C002B3210 /* CreateRoom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,9 @@
 		C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialKeyboard.swift; sourceTree = "<group>"; };
 		C09CDAA129D6064C006C60BB /* ArrowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowComponent.swift; sourceTree = "<group>"; };
 		C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintKeycapComponent.swift; sourceTree = "<group>"; };
+		C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
+		C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewModel.swift; sourceTree = "<group>"; };
+		C0B79AB829D74E4C002B3210 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,7 +251,8 @@
 		0D71CFF729D32A7500E91563 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C09CDA8E29D5B9ED006C60BB /* New Group */,
+				C0B79AB529D74E26002B3210 /* Create Room */,
+				C09CDA8E29D5B9ED006C60BB /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -298,14 +305,24 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		C09CDA8E29D5B9ED006C60BB /* New Group */ = {
+		C09CDA8E29D5B9ED006C60BB /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				C09CDA8F29D5BA05006C60BB /* HomeView.swift */,
 				C09CDA9029D5BA05006C60BB /* HomeViewModel.swift */,
 				C09CDA9129D5BA05006C60BB /* Home.swift */,
 			);
-			path = "New Group";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C0B79AB529D74E26002B3210 /* Create Room */ = {
+			isa = PBXGroup;
+			children = (
+				C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */,
+				C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */,
+				C0B79AB829D74E4C002B3210 /* CreateRoom.swift */,
+			);
+			path = "Create Room";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +466,7 @@
 				C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
 				C09CDA8629D4C4C5006C60BB /* KeyboardReactionsComponent.swift in Sources */,
+				C0B79AB929D74E4C002B3210 /* CreateRoomView.swift in Sources */,
 				C09CDA9C29D5CEDC006C60BB /* SpaceKeycapComponent.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
 				C046A47D29D624E80006B7D8 /* ButtonStyle.swift in Sources */,
@@ -465,6 +483,7 @@
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
+				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
@@ -472,6 +491,7 @@
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
+				C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */,
 				C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */,
 				C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */,
 				C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */,

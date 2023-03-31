@@ -13,7 +13,7 @@ struct PartialKeyboard: View {
     let chat: ChatStyle
     
     private let textProperties = (
-            font: Font.system(size: 48, weight: .medium),
+            font: Font.system(size: 120, weight: .medium),
             width: 44.14.su,
             height: 23.28.su
         )

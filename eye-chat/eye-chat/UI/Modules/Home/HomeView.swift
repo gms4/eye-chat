@@ -23,8 +23,7 @@ struct HomeView: View {
         VStack (alignment: .center) {
             VStack (alignment: .leading, spacing: 5.14.su) {
                 Text("Inicie uma conversa com EyeChat!")
-                    .font(.system(size: 40))
-                    .fontWeight(.medium)
+                    .font(.system(size: 40, weight:.medium))
                 EyeButtonComponent(style: .savedRoom)
                 EyeButtonComponent(style: .createRoom)
 //                Image(style == .activate ? ImageAsset.DEACTIVATE_EYETRACKING : ImageAsset.ACTIVATE_EYETRACKING)
