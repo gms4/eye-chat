@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 extension UIScreen {
     
     static let screenWidth = UIScreen.main.bounds.size.width
