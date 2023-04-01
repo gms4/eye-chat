@@ -11,7 +11,7 @@ struct CameraDisplayComponent: View {
     var body: some View {
             HStack {
                 Image(ImageAsset.VIDEO_FRIEND)
-                    .frame(maxWidth: .infinity, maxHeight: 63.4.su)
+                    .frame(maxWidth: .infinity)
                     .overlay(alignment: .bottomTrailing) {
                         Image(ImageAsset.VIDEO_YOURS)
                             .padding(3.85.su)

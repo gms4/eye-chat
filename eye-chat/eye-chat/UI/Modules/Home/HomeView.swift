@@ -36,7 +36,7 @@ struct HomeView: View {
         }
         .overlay(alignment: .bottomLeading) {
             Image(style == .activate ? ImageAsset.DEACTIVATE_EYETRACKING : ImageAsset.ACTIVATE_EYETRACKING)
-                .frame(maxWidth: 110, maxHeight: 130)
+                .frame(maxWidth: 15.71.su, maxHeight: 18.57.su)
             }
         }
     }

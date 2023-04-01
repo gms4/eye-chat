@@ -13,27 +13,31 @@ struct CreateRoomView: View {
     @ObservedObject private var viewModel = CreateRoomViewModel()
     let style: EyetrackingStyle
     @State var newContact: String = ""
+    //screenHeight = 1366, screenWidth = 1024
        
     var body: some View {
         VStack (alignment: .center) {
-            Spacer(minLength: 150)
+            Spacer(minLength: 21.42.su)
             VStack (alignment: .leading, spacing: 27) {
                     Text("Criar Sala")
                         .font(.system(size: 44, weight: .bold))
                     Text("Nome")
                         .font(.system(size: 40))
                 TextField(
-                "Digite o nome do seu novo contato",
+                " Digite o nome do seu novo contato!",
                 text: $newContact
                 )
+                .background(Color(ColorAsset.BLUE_TEXTFIELD))
+                .cornerRadius(10)
+                .foregroundColor(Color.black)
+                .font(.system(size: 50))
                 Spacer()
-                
             }
-            .frame(maxWidth: 950, maxHeight: 1400)
-//            .background(.green)
+            .frame(maxWidth: 135.7.su)
+            FullKeyboardComponent(chat: .outside)
+            Spacer(minLength: 20.su)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.red)
         .overlay(alignment: .topTrailing) {
             Image("logo-screens")
                 .frame(maxWidth: 20.su, maxHeight: 17.14.su)
