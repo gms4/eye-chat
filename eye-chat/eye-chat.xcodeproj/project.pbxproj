@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4A532B29D8791A00D775A9 /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A532A29D8791A00D775A9 /* VideoConfig.swift */; };
+		0D4A532F29DA228400D775A9 /* VideoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A532E29DA228400D775A9 /* VideoBuilder.swift */; };
+		0D4A533329DA260A00D775A9 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */; };
 		0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFAE29D324C300E91563 /* eye_chatApp.swift */; };
 		0D71CFB129D324C300E91563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB029D324C300E91563 /* ContentView.swift */; };
 		0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB229D324C400E91563 /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
 		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
+		4E5FF90A8C0E2C0BC2052DEB /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2FBDA44429D1DD91BF2A3 /* Pods_eye_chat_eye_chatUITests.framework */; };
+		6BC8ED1DE44329F8316CEDCC /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2DA7B60E0267ED611FFC78 /* Pods_eye_chatTests.framework */; };
+		9D30894AF08055F9E7D38489 /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8127DBDA3E8805D8B42DE0 /* Pods_eye_chat.framework */; };
 		C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47629D624030006B7D8 /* CameraStyle.swift */; };
 		C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47829D624870006B7D8 /* KeycapStyle.swift */; };
 		C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47A29D624AF0006B7D8 /* ChatStyle.swift */; };
@@ -68,6 +74,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D4A532A29D8791A00D775A9 /* VideoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
+		0D4A532E29DA228400D775A9 /* VideoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBuilder.swift; sourceTree = "<group>"; };
+		0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
 		0D71CFAB29D324C300E91563 /* eye-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eye-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D71CFAE29D324C300E91563 /* eye_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eye_chatApp.swift; sourceTree = "<group>"; };
 		0D71CFB029D324C300E91563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +99,13 @@
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		27B6DC8FAB959147B07A7925 /* Pods-eye-chatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3544CE239F2C43FDEC18E1BE /* Pods-eye-chat-eye-chatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.release.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D2DA7B60E0267ED611FFC78 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9AC7E690857240946DC227 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94E32DE30202F27B8E87FE05 /* Pods-eye-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.release.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.release.xcconfig"; sourceTree = "<group>"; };
+		99E7814AA1DF19A405EE8ECA /* Pods-eye-chatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.release.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E8127DBDA3E8805D8B42DE0 /* Pods_eye_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C046A47629D624030006B7D8 /* CameraStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStyle.swift; sourceTree = "<group>"; };
 		C046A47829D624870006B7D8 /* KeycapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapStyle.swift; sourceTree = "<group>"; };
 		C046A47A29D624AF0006B7D8 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
@@ -112,6 +128,8 @@
 		C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
 		C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewModel.swift; sourceTree = "<group>"; };
 		C0B79AB829D74E4C002B3210 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
+		C49DCB48E9DE354D97434BF7 /* Pods-eye-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.debug.xcconfig"; sourceTree = "<group>"; };
+		EBE2FBDA44429D1DD91BF2A3 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D30894AF08055F9E7D38489 /* Pods_eye_chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC8ED1DE44329F8316CEDCC /* Pods_eye_chatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +153,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5FF90A8C0E2C0BC2052DEB /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4A533129DA25F500D775A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0D71CFA229D324C300E91563 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +175,8 @@
 				0D71CFC329D324C400E91563 /* eye-chatTests */,
 				0D71CFCD29D324C400E91563 /* eye-chatUITests */,
 				0D71CFAC29D324C300E91563 /* Products */,
+				F60D705DEE12B1743FD02D54 /* Pods */,
+				E83225AF94E1FA791E5A8F60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +193,7 @@
 		0D71CFAD29D324C300E91563 /* eye-chat */ = {
 			isa = PBXGroup;
 			children = (
+				0D4A533129DA25F500D775A9 /* Services */,
 				0D71D01629D32E4500E91563 /* Navigation */,
 				0D71CFF429D32A3900E91563 /* UI */,
 				0D71CFF029D329C700E91563 /* Manager */,
@@ -174,6 +206,7 @@
 				0D71CFB929D324C400E91563 /* eye_chat.xcdatamodeld */,
 				0D71CFB429D324C400E91563 /* Preview Content */,
 				0D71D01B29D335AB00E91563 /* FirstView.swift */,
+				0D4A532E29DA228400D775A9 /* VideoBuilder.swift */,
 			);
 			path = "eye-chat";
 			sourceTree = "<group>";
@@ -207,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				0D71D00929D32C0700E91563 /* User.swift */,
+				0D4A532A29D8791A00D775A9 /* VideoConfig.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -325,6 +359,29 @@
 			path = "Create Room";
 			sourceTree = "<group>";
 		};
+		E83225AF94E1FA791E5A8F60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E8127DBDA3E8805D8B42DE0 /* Pods_eye_chat.framework */,
+				EBE2FBDA44429D1DD91BF2A3 /* Pods_eye_chat_eye_chatUITests.framework */,
+				5D2DA7B60E0267ED611FFC78 /* Pods_eye_chatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F60D705DEE12B1743FD02D54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C49DCB48E9DE354D97434BF7 /* Pods-eye-chat.debug.xcconfig */,
+				94E32DE30202F27B8E87FE05 /* Pods-eye-chat.release.xcconfig */,
+				6E9AC7E690857240946DC227 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */,
+				3544CE239F2C43FDEC18E1BE /* Pods-eye-chat-eye-chatUITests.release.xcconfig */,
+				27B6DC8FAB959147B07A7925 /* Pods-eye-chatTests.debug.xcconfig */,
+				99E7814AA1DF19A405EE8ECA /* Pods-eye-chatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,17 +389,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D71CFD429D324C400E91563 /* Build configuration list for PBXNativeTarget "eye-chat" */;
 			buildPhases = (
+				AF3DCAD850D5BFADD673F4D7 /* [CP] Check Pods Manifest.lock */,
 				0D71CFA729D324C300E91563 /* Sources */,
 				0D71CFA829D324C300E91563 /* Frameworks */,
 				0D71CFA929D324C300E91563 /* Resources */,
+				B1576E19A4D95A0FEA8E254F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "eye-chat";
-			packageProductDependencies = (
-			);
 			productName = "eye-chat";
 			productReference = 0D71CFAB29D324C300E91563 /* eye-chat.app */;
 			productType = "com.apple.product-type.application";
@@ -351,6 +408,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D71CFD729D324C400E91563 /* Build configuration list for PBXNativeTarget "eye-chatTests" */;
 			buildPhases = (
+				C0E7140F7073D115F7D9CC83 /* [CP] Check Pods Manifest.lock */,
 				0D71CFBC29D324C400E91563 /* Sources */,
 				0D71CFBD29D324C400E91563 /* Frameworks */,
 				0D71CFBE29D324C400E91563 /* Resources */,
@@ -369,9 +427,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D71CFDA29D324C400E91563 /* Build configuration list for PBXNativeTarget "eye-chatUITests" */;
 			buildPhases = (
+				AA671E65306C77FE2ACBBCA6 /* [CP] Check Pods Manifest.lock */,
 				0D71CFC629D324C400E91563 /* Sources */,
 				0D71CFC729D324C400E91563 /* Frameworks */,
 				0D71CFC829D324C400E91563 /* Resources */,
+				1048980B2925FDA862C5A255 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,8 +475,6 @@
 				Base,
 			);
 			mainGroup = 0D71CFA229D324C300E91563;
-			packageReferences = (
-			);
 			productRefGroup = 0D71CFAC29D324C300E91563 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -454,6 +512,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1048980B2925FDA862C5A255 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA671E65306C77FE2ACBBCA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eye-chat-eye-chatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3DCAD850D5BFADD673F4D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eye-chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1576E19A4D95A0FEA8E254F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat/Pods-eye-chat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat/Pods-eye-chat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eye-chat/Pods-eye-chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E7140F7073D115F7D9CC83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eye-chatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D71CFA729D324C300E91563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -462,6 +623,7 @@
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
 				C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */,
+				0D4A532B29D8791A00D775A9 /* VideoConfig.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
 				C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
@@ -484,11 +646,13 @@
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
+				0D4A533329DA260A00D775A9 /* WebSocketProvider.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
+				0D4A532F29DA228400D775A9 /* VideoBuilder.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
 				C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */,
@@ -647,6 +811,7 @@
 		};
 		0D71CFD529D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49DCB48E9DE354D97434BF7 /* Pods-eye-chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -676,6 +841,7 @@
 		};
 		0D71CFD629D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E32DE30202F27B8E87FE05 /* Pods-eye-chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -705,6 +871,7 @@
 		};
 		0D71CFD829D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27B6DC8FAB959147B07A7925 /* Pods-eye-chatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -725,6 +892,7 @@
 		};
 		0D71CFD929D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E7814AA1DF19A405EE8ECA /* Pods-eye-chatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -745,6 +913,7 @@
 		};
 		0D71CFDB29D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9AC7E690857240946DC227 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -763,6 +932,7 @@
 		};
 		0D71CFDC29D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3544CE239F2C43FDEC18E1BE /* Pods-eye-chat-eye-chatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

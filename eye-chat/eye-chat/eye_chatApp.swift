@@ -9,8 +9,9 @@ import SwiftUI
 
 @main
 struct eye_chatApp: App {
+    
     let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
