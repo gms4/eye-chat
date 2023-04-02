@@ -10,6 +10,12 @@
 		0D4A532B29D8791A00D775A9 /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A532A29D8791A00D775A9 /* VideoConfig.swift */; };
 		0D4A532F29DA228400D775A9 /* VideoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A532E29DA228400D775A9 /* VideoBuilder.swift */; };
 		0D4A533329DA260A00D775A9 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */; };
+		0D4A533529DA26A900D775A9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533429DA26A900D775A9 /* Message.swift */; };
+		0D4A533729DA270E00D775A9 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533629DA270E00D775A9 /* WebRTCClient.swift */; };
+		0D4A533929DA27B400D775A9 /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533829DA27B400D775A9 /* NativeWebSocket.swift */; };
+		0D4A533B29DA2C5B00D775A9 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533A29DA2C5B00D775A9 /* SessionDescription.swift */; };
+		0D4A533D29DA2D2400D775A9 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533C29DA2D2400D775A9 /* IceCandidate.swift */; };
+		0D4A533F29DA2DFB00D775A9 /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533E29DA2DFB00D775A9 /* RTCStates.swift */; };
 		0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFAE29D324C300E91563 /* eye_chatApp.swift */; };
 		0D71CFB129D324C300E91563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB029D324C300E91563 /* ContentView.swift */; };
 		0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB229D324C400E91563 /* Assets.xcassets */; };
@@ -77,6 +83,12 @@
 		0D4A532A29D8791A00D775A9 /* VideoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
 		0D4A532E29DA228400D775A9 /* VideoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBuilder.swift; sourceTree = "<group>"; };
 		0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		0D4A533429DA26A900D775A9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0D4A533629DA270E00D775A9 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		0D4A533829DA27B400D775A9 /* NativeWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
+		0D4A533A29DA2C5B00D775A9 /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		0D4A533C29DA2D2400D775A9 /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		0D4A533E29DA2DFB00D775A9 /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
 		0D71CFAB29D324C300E91563 /* eye-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eye-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D71CFAE29D324C300E91563 /* eye_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eye_chatApp.swift; sourceTree = "<group>"; };
 		0D71CFB029D324C300E91563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +176,12 @@
 			isa = PBXGroup;
 			children = (
 				0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */,
+				0D4A533429DA26A900D775A9 /* Message.swift */,
+				0D4A533629DA270E00D775A9 /* WebRTCClient.swift */,
+				0D4A533829DA27B400D775A9 /* NativeWebSocket.swift */,
+				0D4A533A29DA2C5B00D775A9 /* SessionDescription.swift */,
+				0D4A533C29DA2D2400D775A9 /* IceCandidate.swift */,
+				0D4A533E29DA2DFB00D775A9 /* RTCStates.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -622,6 +640,7 @@
 			files = (
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
+				0D4A533B29DA2C5B00D775A9 /* SessionDescription.swift in Sources */,
 				C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */,
 				0D4A532B29D8791A00D775A9 /* VideoConfig.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
@@ -633,6 +652,7 @@
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
 				C046A47D29D624E80006B7D8 /* ButtonStyle.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
+				0D4A533729DA270E00D775A9 /* WebRTCClient.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
@@ -649,14 +669,18 @@
 				0D4A533329DA260A00D775A9 /* WebSocketProvider.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
+				0D4A533D29DA2D2400D775A9 /* IceCandidate.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
 				0D4A532F29DA228400D775A9 /* VideoBuilder.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
+				0D4A533929DA27B400D775A9 /* NativeWebSocket.swift in Sources */,
 				C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */,
 				C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */,
+				0D4A533529DA26A900D775A9 /* Message.swift in Sources */,
+				0D4A533F29DA2DFB00D775A9 /* RTCStates.swift in Sources */,
 				C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */,
 				C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */,
 			);
