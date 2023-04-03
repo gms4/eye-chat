@@ -8,12 +8,6 @@
 
 import SwiftUI
 
-
-enum EyetrackingStyle {
-    
-    case activate
-    case deactivate
-}
 struct HomeView: View {
 
     @ObservedObject private var viewModel = HomeViewModel()
@@ -22,7 +16,7 @@ struct HomeView: View {
     var body: some View {
         VStack (alignment: .center) {
             VStack (alignment: .leading, spacing: 5.14.su) {
-                Text("Inicie uma conversa com EyeChat!")
+                Text(ContentComponent.INITIATE_CHAT)
                     .font(.system(size: 40, weight:.medium))
                 EyeButtonComponent(style: .savedRoom)
                 EyeButtonComponent(style: .createRoom)
@@ -31,11 +25,11 @@ struct HomeView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay(alignment: .topTrailing) {
-            Image("logo-screens")
+            Image(ImageAsset.LOGO_SCREENS)
                 .frame(maxWidth: 20.su, maxHeight: 17.14.su)
         }
         .overlay(alignment: .bottomLeading) {
-            Image(style == .activate ? ImageAsset.DEACTIVATE_EYETRACKING : ImageAsset.ACTIVATE_EYETRACKING)
+            EyetrackingComponent(style: .activate)
                 .frame(maxWidth: 15.71.su, maxHeight: 18.57.su)
             }
         }

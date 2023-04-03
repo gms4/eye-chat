@@ -26,6 +26,9 @@
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
 		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
+		C03920BF29D8673D00F34B48 /* EyetrackingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03920BE29D8673D00F34B48 /* EyetrackingComponent.swift */; };
+		C03920C129D867A000F34B48 /* EyetrackingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03920C029D867A000F34B48 /* EyetrackingStyle.swift */; };
+		C03920C329D86C1100F34B48 /* RoomCreatedPopupComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03920C229D86C1100F34B48 /* RoomCreatedPopupComponent.swift */; };
 		C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47629D624030006B7D8 /* CameraStyle.swift */; };
 		C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47829D624870006B7D8 /* KeycapStyle.swift */; };
 		C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47A29D624AF0006B7D8 /* ChatStyle.swift */; };
@@ -42,12 +45,13 @@
 		C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9929D5CECE006C60BB /* DeleteKeycapComponent.swift */; };
 		C09CDA9C29D5CEDC006C60BB /* SpaceKeycapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9B29D5CEDC006C60BB /* SpaceKeycapComponent.swift */; };
 		C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9D29D5CF11006C60BB /* CreateRoomComponent.swift */; };
-		C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */; };
+		C09CDAA029D5FD8A006C60BB /* PartialKeyboardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA9F29D5FD8A006C60BB /* PartialKeyboardComponent.swift */; };
 		C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDAA129D6064C006C60BB /* ArrowComponent.swift */; };
 		C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */; };
 		C0B79AB929D74E4C002B3210 /* CreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */; };
 		C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */; };
 		C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB829D74E4C002B3210 /* CreateRoom.swift */; };
+		C0F5532729DB2BFB00DB4F7B /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F5532629DB2BFB00DB4F7B /* RoundedCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,9 @@
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		C03920BE29D8673D00F34B48 /* EyetrackingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyetrackingComponent.swift; sourceTree = "<group>"; };
+		C03920C029D867A000F34B48 /* EyetrackingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyetrackingStyle.swift; sourceTree = "<group>"; };
+		C03920C229D86C1100F34B48 /* RoomCreatedPopupComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCreatedPopupComponent.swift; sourceTree = "<group>"; };
 		C046A47629D624030006B7D8 /* CameraStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStyle.swift; sourceTree = "<group>"; };
 		C046A47829D624870006B7D8 /* KeycapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapStyle.swift; sourceTree = "<group>"; };
 		C046A47A29D624AF0006B7D8 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
@@ -106,12 +113,13 @@
 		C09CDA9929D5CECE006C60BB /* DeleteKeycapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteKeycapComponent.swift; sourceTree = "<group>"; };
 		C09CDA9B29D5CEDC006C60BB /* SpaceKeycapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceKeycapComponent.swift; sourceTree = "<group>"; };
 		C09CDA9D29D5CF11006C60BB /* CreateRoomComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomComponent.swift; sourceTree = "<group>"; };
-		C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialKeyboard.swift; sourceTree = "<group>"; };
+		C09CDA9F29D5FD8A006C60BB /* PartialKeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialKeyboardComponent.swift; sourceTree = "<group>"; };
 		C09CDAA129D6064C006C60BB /* ArrowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowComponent.swift; sourceTree = "<group>"; };
 		C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintKeycapComponent.swift; sourceTree = "<group>"; };
 		C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
 		C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewModel.swift; sourceTree = "<group>"; };
 		C0B79AB829D74E4C002B3210 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
+		C0F5532629DB2BFB00DB4F7B /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +273,7 @@
 				C046A47829D624870006B7D8 /* KeycapStyle.swift */,
 				C046A47A29D624AF0006B7D8 /* ChatStyle.swift */,
 				C046A47C29D624E80006B7D8 /* ButtonStyle.swift */,
+				C03920C029D867A000F34B48 /* EyetrackingStyle.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 			children = (
 				0D71D00E29D32CD900E91563 /* Int+Su.swift */,
 				0D71D01029D32CF700E91563 /* Double+Su.swift */,
+				C0F5532629DB2BFB00DB4F7B /* RoundedCorners.swift */,
 			);
 			path = Dimension;
 			sourceTree = "<group>";
@@ -290,9 +300,11 @@
 				C09CDA9929D5CECE006C60BB /* DeleteKeycapComponent.swift */,
 				C09CDA9B29D5CEDC006C60BB /* SpaceKeycapComponent.swift */,
 				C09CDA9D29D5CF11006C60BB /* CreateRoomComponent.swift */,
-				C09CDA9F29D5FD8A006C60BB /* PartialKeyboard.swift */,
+				C09CDA9F29D5FD8A006C60BB /* PartialKeyboardComponent.swift */,
 				C09CDAA129D6064C006C60BB /* ArrowComponent.swift */,
 				C09CDAA529D608A0006C60BB /* PrintKeycapComponent.swift */,
+				C03920BE29D8673D00F34B48 /* EyetrackingComponent.swift */,
+				C03920C229D86C1100F34B48 /* RoomCreatedPopupComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -461,7 +473,7 @@
 			files = (
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
-				C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */,
+				C09CDAA029D5FD8A006C60BB /* PartialKeyboardComponent.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
 				C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
@@ -477,10 +489,14 @@
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
+				C03920C329D86C1100F34B48 /* RoomCreatedPopupComponent.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
+				C0F5532729DB2BFB00DB4F7B /* RoundedCorners.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
+				C03920C129D867A000F34B48 /* EyetrackingStyle.swift in Sources */,
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
+				C03920BF29D8673D00F34B48 /* EyetrackingComponent.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,

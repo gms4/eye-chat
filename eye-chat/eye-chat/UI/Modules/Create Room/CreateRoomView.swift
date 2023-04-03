@@ -19,12 +19,12 @@ struct CreateRoomView: View {
         VStack (alignment: .center) {
             Spacer(minLength: 21.42.su)
             VStack (alignment: .leading, spacing: 27) {
-                    Text("Criar Sala")
+                Text(ContentComponent.CREATE_ROOM)
                         .font(.system(size: 44, weight: .bold))
-                    Text("Nome")
+                Text(ContentComponent.USERNAME_TAG)
                         .font(.system(size: 40))
                 TextField(
-                " Digite o nome do seu novo contato!",
+                    ContentComponent.TEXTFIELD_PLACEHOLDER,
                 text: $newContact
                 )
                 .background(Color(ColorAsset.BLUE_TEXTFIELD))
@@ -39,11 +39,11 @@ struct CreateRoomView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay(alignment: .topTrailing) {
-            Image("logo-screens")
+            Image(ImageAsset.LOGO_SCREENS)
                 .frame(maxWidth: 20.su, maxHeight: 17.14.su)
         }
         .overlay(alignment: .bottomLeading) {
-            Image(style == .activate ? ImageAsset.DEACTIVATE_EYETRACKING : ImageAsset.ACTIVATE_EYETRACKING)
+            EyetrackingComponent(style: .activate)
                 .frame(maxWidth: 110, maxHeight: 130)
             }
     }
