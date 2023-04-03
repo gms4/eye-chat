@@ -1,0 +1,61 @@
+//
+//  EyeTrackingViewController.swift
+//  eye-chat
+//
+//  Created by alexdamascena on 03/04/23.
+//
+
+import UIKit
+import EyeTracking
+import SwiftUI
+
+
+class EyeTrackingViewModel: ObservableObject {
+    @Published var pointer: CGRect?
+    @Published var selected: Bool = false
+    @Published var update: Bool = false
+}
+
+class EyeTrackingViewController: UIViewController {
+    
+    var viewModel: EyeTrackingViewModel?
+    
+    let eyeTracking = EyeTracking(configuration: Configuration(appID: "ios-eye-tracking"))
+    var sessionID: String?
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        startNewSession()
+        eyeTracking.update = getPointer
+        eyeTracking.blinkedEyes = blinkEyes
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        eyeTracking.showPointer()
+    }
+    
+    func startNewSession() {
+       if eyeTracking.currentSession != nil {
+           // Only keep 1 current session data
+           let session = self.eyeTracking.currentSession
+           eyeTracking.endSession()
+           try? EyeTracking.delete(session!)
+       }
+
+       eyeTracking.startSession()
+       eyeTracking.loggingEnabled = false
+       sessionID = eyeTracking.currentSession?.id
+    }
+    
+    func getPointer(CGRect: CGRect){
+        viewModel?.pointer = CGRect
+    }
+    
+    func blinkEyes(){
+        viewModel?.selected.toggle()
+    }
+
+}
+

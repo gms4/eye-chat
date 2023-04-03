@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "grdb.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/groue/GRDB.swift",
+      "state" : {
+        "revision" : "5ee47c3c2765bdfde0f44c2ea9a263f6aa252d63",
+        "version" : "4.14.0"
+      }
+    },
+    {
+      "identity" : "ios-eye-tracking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apfdamascena/ios-eye-tracking",
+      "state" : {
+        "branch" : "master",
+        "revision" : "cf6e202b6dec9293ff32e519852c120b69e88389"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4A534C29DB7C2400D775A9 /* EyeTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A534B29DB7C2400D775A9 /* EyeTrackingViewController.swift */; };
+		0D4A534F29DB7C9B00D775A9 /* EyeTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 0D4A534E29DB7C9B00D775A9 /* EyeTracking */; };
+		0D4A535129DB7CE600D775A9 /* EyeTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535029DB7CE600D775A9 /* EyeTrackingView.swift */; };
+		0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */; };
+		0D4A535729DB7D9400D775A9 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */; };
+		0D4A535929DB7DDB00D775A9 /* PointerFinderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */; };
 		0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFAE29D324C300E91563 /* eye_chatApp.swift */; };
 		0D71CFB129D324C300E91563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB029D324C300E91563 /* ContentView.swift */; };
 		0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB229D324C400E91563 /* Assets.xcassets */; };
@@ -65,6 +71,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D4A534B29DB7C2400D775A9 /* EyeTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingViewController.swift; sourceTree = "<group>"; };
+		0D4A535029DB7CE600D775A9 /* EyeTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingView.swift; sourceTree = "<group>"; };
+		0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Size.swift"; sourceTree = "<group>"; };
+		0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerFinderValue.swift; sourceTree = "<group>"; };
 		0D71CFAB29D324C300E91563 /* eye-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eye-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D71CFAE29D324C300E91563 /* eye_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eye_chatApp.swift; sourceTree = "<group>"; };
 		0D71CFB029D324C300E91563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4A534F29DB7C9B00D775A9 /* EyeTracking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +145,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4A534A29DB7C0A00D775A9 /* EyeTracking */ = {
+			isa = PBXGroup;
+			children = (
+				0D4A534B29DB7C2400D775A9 /* EyeTrackingViewController.swift */,
+				0D4A535029DB7CE600D775A9 /* EyeTrackingView.swift */,
+				0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */,
+			);
+			path = EyeTracking;
+			sourceTree = "<group>";
+		};
+		0D4A535229DB7D2300D775A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0D4A535529DB7D8800D775A9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		0D71CFA229D324C300E91563 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +194,9 @@
 		0D71CFAD29D324C300E91563 /* eye-chat */ = {
 			isa = PBXGroup;
 			children = (
+				0D4A535529DB7D8800D775A9 /* Coordinator */,
+				0D4A535229DB7D2300D775A9 /* Extensions */,
+				0D4A534A29DB7C0A00D775A9 /* EyeTracking */,
 				0D71D01629D32E4500E91563 /* Navigation */,
 				0D71CFF429D32A3900E91563 /* UI */,
 				0D71CFF029D329C700E91563 /* Manager */,
@@ -325,6 +366,7 @@
 			);
 			name = "eye-chat";
 			packageProductDependencies = (
+				0D4A534E29DB7C9B00D775A9 /* EyeTracking */,
 			);
 			productName = "eye-chat";
 			productReference = 0D71CFAB29D324C300E91563 /* eye-chat.app */;
@@ -399,6 +441,7 @@
 			);
 			mainGroup = 0D71CFA229D324C300E91563;
 			packageReferences = (
+				0D4A534D29DB7C9B00D775A9 /* XCRemoteSwiftPackageReference "ios-eye-tracking" */,
 			);
 			productRefGroup = 0D71CFAC29D324C300E91563 /* Products */;
 			projectDirPath = "";
@@ -446,6 +489,7 @@
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
 				C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
+				0D4A535729DB7D9400D775A9 /* ViewCoordinator.swift in Sources */,
 				C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
 				C09CDA8629D4C4C5006C60BB /* KeyboardReactionsComponent.swift in Sources */,
@@ -458,6 +502,7 @@
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
+				0D4A535129DB7CE600D775A9 /* EyeTrackingView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
@@ -467,14 +512,17 @@
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
+				0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
+				0D4A534C29DB7C2400D775A9 /* EyeTrackingViewController.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
 				C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */,
 				C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */,
 				C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */,
+				0D4A535929DB7DDB00D775A9 /* PointerFinderValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +847,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D4A534D29DB7C9B00D775A9 /* XCRemoteSwiftPackageReference "ios-eye-tracking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apfdamascena/ios-eye-tracking";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D4A534E29DB7C9B00D775A9 /* EyeTracking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D4A534D29DB7C9B00D775A9 /* XCRemoteSwiftPackageReference "ios-eye-tracking" */;
+			productName = EyeTracking;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0D71CFB929D324C400E91563 /* eye_chat.xcdatamodeld */ = {
