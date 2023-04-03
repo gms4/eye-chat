@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PartialKeyboard: View {
+struct PartialKeyboardComponent: View {
 
     let style: KeycapStyle
     let chat: ChatStyle
@@ -149,9 +149,9 @@ struct PartialKeyboard: View {
     }
 }
 
-struct PartialKeyboard_Previews: PreviewProvider {
+struct PartialKeyboardComponent_Previews: PreviewProvider {
 static var previews: some View {
-    PartialKeyboard(style: .aeiou, chat: .inside)
+    PartialKeyboardComponent(style: .aeiou, chat: .inside)
     }
 }
 

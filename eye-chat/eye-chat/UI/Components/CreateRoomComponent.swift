@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CreateRoomComponent: View {
     var body: some View {
-        Text("criar")
+        Text(ContentComponent.CREATE)
             .font(.system(size: 40, weight: .bold))
             .foregroundColor(.white)
             .frame(maxWidth: 31.14.su, maxHeight: 23.28.su)
