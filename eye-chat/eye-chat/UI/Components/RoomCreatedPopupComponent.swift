@@ -10,9 +10,7 @@ import SwiftUI
 struct RoomCreatedPopupComponent: View {
     var body: some View {
         VStack {
-            Spacer()
-            Spacer()
-            Spacer()
+            Spacer(minLength: 83.su)
             Text("Sala Criada!")
                 .font(.system(size: 48, weight: .bold))
             Text("Ligando para Saulo...")
