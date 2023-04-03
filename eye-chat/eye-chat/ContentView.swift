@@ -18,7 +18,7 @@ struct ContentView: View {
     }
     
     private var screen: some View {
-        FirstView() // change this view
+        HomeV2View() // change this view
             .navigationDestination(for: RouteScreen.self){ route in
                 switch route {
                 case .main:

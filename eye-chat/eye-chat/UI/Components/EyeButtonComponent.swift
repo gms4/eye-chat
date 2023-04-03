@@ -10,6 +10,10 @@ import SwiftUI
 struct EyeButtonComponent: View {
     
     let style: ButtonStyle
+    
+    var anyView: AnyView {
+        return AnyView(self)
+    }
 
     var body: some View {
         HStack {
