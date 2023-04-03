@@ -13,6 +13,9 @@
 		0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */; };
 		0D4A535729DB7D9400D775A9 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */; };
 		0D4A535929DB7DDB00D775A9 /* PointerFinderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */; };
+		0D4A535B29DB7E4000D775A9 /* PointerFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535A29DB7E4000D775A9 /* PointerFinder.swift */; };
+		0D4A535D29DB7E8300D775A9 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535C29DB7E8300D775A9 /* Alias.swift */; };
+		0D4A535F29DB7EA800D775A9 /* PointerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535E29DB7EA800D775A9 /* PointerSelector.swift */; };
 		0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFAE29D324C300E91563 /* eye_chatApp.swift */; };
 		0D71CFB129D324C300E91563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB029D324C300E91563 /* ContentView.swift */; };
 		0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB229D324C400E91563 /* Assets.xcassets */; };
@@ -76,6 +79,9 @@
 		0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Size.swift"; sourceTree = "<group>"; };
 		0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerFinderValue.swift; sourceTree = "<group>"; };
+		0D4A535A29DB7E4000D775A9 /* PointerFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerFinder.swift; sourceTree = "<group>"; };
+		0D4A535C29DB7E8300D775A9 /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
+		0D4A535E29DB7EA800D775A9 /* PointerSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerSelector.swift; sourceTree = "<group>"; };
 		0D71CFAB29D324C300E91563 /* eye-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eye-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D71CFAE29D324C300E91563 /* eye_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eye_chatApp.swift; sourceTree = "<group>"; };
 		0D71CFB029D324C300E91563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +157,9 @@
 				0D4A534B29DB7C2400D775A9 /* EyeTrackingViewController.swift */,
 				0D4A535029DB7CE600D775A9 /* EyeTrackingView.swift */,
 				0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */,
+				0D4A535A29DB7E4000D775A9 /* PointerFinder.swift */,
+				0D4A535C29DB7E8300D775A9 /* Alias.swift */,
+				0D4A535E29DB7EA800D775A9 /* PointerSelector.swift */,
 			);
 			path = EyeTracking;
 			sourceTree = "<group>";
@@ -501,13 +510,16 @@
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
+				0D4A535F29DB7EA800D775A9 /* PointerSelector.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
+				0D4A535B29DB7E4000D775A9 /* PointerFinder.swift in Sources */,
 				0D4A535129DB7CE600D775A9 /* EyeTrackingView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
+				0D4A535D29DB7E8300D775A9 /* Alias.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
