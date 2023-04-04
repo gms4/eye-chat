@@ -6,7 +6,7 @@ target 'eye-chat' do
   use_frameworks!
 
   # Pods for eye-chat
-  pod "WebRTC"
+pod 'WebRTC-lib'
 
   target 'eye-chatTests' do
     inherit! :search_paths

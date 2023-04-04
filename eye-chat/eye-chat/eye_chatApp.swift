@@ -11,11 +11,15 @@ import SwiftUI
 struct eye_chatApp: App {
     
     let persistenceController = PersistenceController.shared
+    let signaling = SignalingClient()
+    let webRTCClient = WebRTCClient(iceServers: VideoConfig.EYE_CHAT_DEFAULT.servers)
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(signaling)
+                .environmentObject(webRTCClient)
         }
     }
 }

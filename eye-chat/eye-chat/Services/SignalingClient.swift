@@ -15,7 +15,7 @@ protocol SignalClientDelegate: AnyObject {
     func signalClient(_ signalClient: SignalingClient, didReceiveCandidate candidate: RTCIceCandidate)
 }
 
-final class SignalingClient {
+final class SignalingClient: ObservableObject {
     
     private let decoder = JSONDecoder()
     private let encoder = JSONEncoder()
@@ -23,8 +23,8 @@ final class SignalingClient {
     private let webSocket: WebSocketProvider
     weak var delegate: SignalClientDelegate?
     
-    init(webSocket: WebSocketProvider) {
-        self.webSocket = webSocket
+    init() {
+        self.webSocket = NativeWebSocket(url: VideoConfig.EYE_CHAT_DEFAULT.signaling)
     }
     
     func connect(){

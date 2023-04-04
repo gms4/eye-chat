@@ -7,7 +7,7 @@
 
 import Foundation
 
-fileprivate let signalingServer = URL(string: "ws://10.48.48.63:8080")!
+fileprivate let signalingServer = URL(string: "ws://192.168.0.171:8080")!
 
 
 fileprivate let defaultIceServers = ["stun:stun.l.google.com:19302",

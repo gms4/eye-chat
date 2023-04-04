@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D4A532B29D8791A00D775A9 /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A532A29D8791A00D775A9 /* VideoConfig.swift */; };
-		0D4A532F29DA228400D775A9 /* VideoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A532E29DA228400D775A9 /* VideoBuilder.swift */; };
 		0D4A533329DA260A00D775A9 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */; };
 		0D4A533529DA26A900D775A9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533429DA26A900D775A9 /* Message.swift */; };
 		0D4A533729DA270E00D775A9 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533629DA270E00D775A9 /* WebRTCClient.swift */; };
@@ -36,9 +35,9 @@
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
 		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
-		4E5FF90A8C0E2C0BC2052DEB /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2FBDA44429D1DD91BF2A3 /* Pods_eye_chat_eye_chatUITests.framework */; };
-		6BC8ED1DE44329F8316CEDCC /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2DA7B60E0267ED611FFC78 /* Pods_eye_chatTests.framework */; };
-		9D30894AF08055F9E7D38489 /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8127DBDA3E8805D8B42DE0 /* Pods_eye_chat.framework */; };
+		1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */; };
+		41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */; };
+		48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */; };
 		C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47629D624030006B7D8 /* CameraStyle.swift */; };
 		C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47829D624870006B7D8 /* KeycapStyle.swift */; };
 		C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47A29D624AF0006B7D8 /* ChatStyle.swift */; };
@@ -82,7 +81,6 @@
 
 /* Begin PBXFileReference section */
 		0D4A532A29D8791A00D775A9 /* VideoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
-		0D4A532E29DA228400D775A9 /* VideoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBuilder.swift; sourceTree = "<group>"; };
 		0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
 		0D4A533429DA26A900D775A9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0D4A533629DA270E00D775A9 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
@@ -113,13 +111,14 @@
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		27B6DC8FAB959147B07A7925 /* Pods-eye-chatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3544CE239F2C43FDEC18E1BE /* Pods-eye-chat-eye-chatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.release.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5D2DA7B60E0267ED611FFC78 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E9AC7E690857240946DC227 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		94E32DE30202F27B8E87FE05 /* Pods-eye-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.release.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.release.xcconfig"; sourceTree = "<group>"; };
-		99E7814AA1DF19A405EE8ECA /* Pods-eye-chatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.release.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.release.xcconfig"; sourceTree = "<group>"; };
-		9E8127DBDA3E8805D8B42DE0 /* Pods_eye_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8915FFB6CFCDAA623C836477 /* Pods-eye-chatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B218F479A25754C9098D3C4 /* Pods-eye-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.debug.xcconfig"; sourceTree = "<group>"; };
+		B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF5F7159C57C6736D96276A /* Pods-eye-chat-eye-chatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.release.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C041B746A3E40E788A5B4CD2 /* Pods-eye-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.release.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.release.xcconfig"; sourceTree = "<group>"; };
 		C046A47629D624030006B7D8 /* CameraStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStyle.swift; sourceTree = "<group>"; };
 		C046A47829D624870006B7D8 /* KeycapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapStyle.swift; sourceTree = "<group>"; };
 		C046A47A29D624AF0006B7D8 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
@@ -142,8 +141,7 @@
 		C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
 		C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewModel.swift; sourceTree = "<group>"; };
 		C0B79AB829D74E4C002B3210 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
-		C49DCB48E9DE354D97434BF7 /* Pods-eye-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.debug.xcconfig"; sourceTree = "<group>"; };
-		EBE2FBDA44429D1DD91BF2A3 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3899173862B27761B78881F /* Pods-eye-chatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.release.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D30894AF08055F9E7D38489 /* Pods_eye_chat.framework in Frameworks */,
+				48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC8ED1DE44329F8316CEDCC /* Pods_eye_chatTests.framework in Frameworks */,
+				1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5FF90A8C0E2C0BC2052DEB /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */,
+				41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +194,8 @@
 				0D71CFC329D324C400E91563 /* eye-chatTests */,
 				0D71CFCD29D324C400E91563 /* eye-chatUITests */,
 				0D71CFAC29D324C300E91563 /* Products */,
-				F60D705DEE12B1743FD02D54 /* Pods */,
-				E83225AF94E1FA791E5A8F60 /* Frameworks */,
+				9AE789C4A8ECEDBAAE1E63B0 /* Pods */,
+				ABAE080DE795A78D9DD693FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,7 +225,6 @@
 				0D71CFB929D324C400E91563 /* eye_chat.xcdatamodeld */,
 				0D71CFB429D324C400E91563 /* Preview Content */,
 				0D71D01B29D335AB00E91563 /* FirstView.swift */,
-				0D4A532E29DA228400D775A9 /* VideoBuilder.swift */,
 			);
 			path = "eye-chat";
 			sourceTree = "<group>";
@@ -360,6 +357,29 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		9AE789C4A8ECEDBAAE1E63B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B218F479A25754C9098D3C4 /* Pods-eye-chat.debug.xcconfig */,
+				C041B746A3E40E788A5B4CD2 /* Pods-eye-chat.release.xcconfig */,
+				7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */,
+				BBF5F7159C57C6736D96276A /* Pods-eye-chat-eye-chatUITests.release.xcconfig */,
+				8915FFB6CFCDAA623C836477 /* Pods-eye-chatTests.debug.xcconfig */,
+				D3899173862B27761B78881F /* Pods-eye-chatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ABAE080DE795A78D9DD693FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */,
+				3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */,
+				36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C09CDA8E29D5B9ED006C60BB /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,29 +398,6 @@
 				C0B79AB829D74E4C002B3210 /* CreateRoom.swift */,
 			);
 			path = "Create Room";
-			sourceTree = "<group>";
-		};
-		E83225AF94E1FA791E5A8F60 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9E8127DBDA3E8805D8B42DE0 /* Pods_eye_chat.framework */,
-				EBE2FBDA44429D1DD91BF2A3 /* Pods_eye_chat_eye_chatUITests.framework */,
-				5D2DA7B60E0267ED611FFC78 /* Pods_eye_chatTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F60D705DEE12B1743FD02D54 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C49DCB48E9DE354D97434BF7 /* Pods-eye-chat.debug.xcconfig */,
-				94E32DE30202F27B8E87FE05 /* Pods-eye-chat.release.xcconfig */,
-				6E9AC7E690857240946DC227 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */,
-				3544CE239F2C43FDEC18E1BE /* Pods-eye-chat-eye-chatUITests.release.xcconfig */,
-				27B6DC8FAB959147B07A7925 /* Pods-eye-chatTests.debug.xcconfig */,
-				99E7814AA1DF19A405EE8ECA /* Pods-eye-chatTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -676,7 +673,6 @@
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
-				0D4A532F29DA228400D775A9 /* VideoBuilder.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
 				0D4A534129DA2EE600D775A9 /* SignalingClient.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
@@ -839,7 +835,7 @@
 		};
 		0D71CFD529D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C49DCB48E9DE354D97434BF7 /* Pods-eye-chat.debug.xcconfig */;
+			baseConfigurationReference = 8B218F479A25754C9098D3C4 /* Pods-eye-chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -869,7 +865,7 @@
 		};
 		0D71CFD629D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94E32DE30202F27B8E87FE05 /* Pods-eye-chat.release.xcconfig */;
+			baseConfigurationReference = C041B746A3E40E788A5B4CD2 /* Pods-eye-chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -899,7 +895,7 @@
 		};
 		0D71CFD829D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27B6DC8FAB959147B07A7925 /* Pods-eye-chatTests.debug.xcconfig */;
+			baseConfigurationReference = 8915FFB6CFCDAA623C836477 /* Pods-eye-chatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -920,7 +916,7 @@
 		};
 		0D71CFD929D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99E7814AA1DF19A405EE8ECA /* Pods-eye-chatTests.release.xcconfig */;
+			baseConfigurationReference = D3899173862B27761B78881F /* Pods-eye-chatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -941,7 +937,7 @@
 		};
 		0D71CFDB29D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E9AC7E690857240946DC227 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */;
+			baseConfigurationReference = 7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -960,7 +956,7 @@
 		};
 		0D71CFDC29D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3544CE239F2C43FDEC18E1BE /* Pods-eye-chat-eye-chatUITests.release.xcconfig */;
+			baseConfigurationReference = BBF5F7159C57C6736D96276A /* Pods-eye-chat-eye-chatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
