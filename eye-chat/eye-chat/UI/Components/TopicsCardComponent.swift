@@ -7,18 +7,6 @@
 //
 import SwiftUI
 
-enum TopicsCardStyle: String, CaseIterable, Hashable {
-    case yes = "SIM"
-    case no = "NÃO"
-    case maybe = "TALVEZ"
-    case family = "Família"
-    case entertainment = "Entretenimento"
-    case health = "Saúde"
-    case story = "Me conta uma \n história?"
-    case day = "Como foi o \n seu dia?"
-    case sorry = "Você me desculpa?"
-}
-
 
 struct TopicsCardComponent: View {
     
