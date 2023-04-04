@@ -12,35 +12,23 @@ struct TopicsBoardComponent: View {
         Grid() {
             GridRow{
                 Grid{
-                    ZStack{
-                        Text("Respostas Rápidas")
-                            .padding()
-                            .foregroundColor(.white)
-                            .font(.headline)
-                            .cornerRadius(20)
-                    } .frame(maxWidth: 310.22, maxHeight: 35)
-                        .background(Color.blue)
-                        .cornerRadius(120)
-
+                    
+                    FirstTopicsCardComponent(style: .yes, columnName: "Respostas rápidas")
                     TopicsCardComponent(style: .no)
-                    TopicsCardComponent(style: .yes)
                     TopicsCardComponent(style: .maybe)
                 }
                 
                 Grid{
-                    Text("Tópicos")
-                        .font(.system(size: 18))
-
-                    TopicsCardComponent(style: .family)
+                   
+                    FirstTopicsCardComponent(style: .family, columnName: "Tópicos")
                     TopicsCardComponent(style: .entertainment)
                     TopicsCardComponent(style: .health)
                     
                 }
                 Grid{
-                    Text("Perguntas")
-
+                  
+                    FirstTopicsCardComponent(style: .day, columnName: "Perguntas")
                     TopicsCardComponent(style: .story)
-                    TopicsCardComponent(style: .day)
                     TopicsCardComponent(style: .sorry)
                 }
                 
