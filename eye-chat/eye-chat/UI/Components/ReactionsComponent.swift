@@ -7,18 +7,6 @@
 
 import SwiftUI
 
-enum EmojiStyle: String, CaseIterable, Hashable {
-    case smileEmoji = "😊"
-    case heartFaceEmoji = "😍"
-    case laughEmoji = "😂"
-    case cryingEmoji = "😭"
-    case judgingEmoji = "😒"
-    case angryEmoji = "😡"
-    case sadEmoji = "🥺"
-    case omgEmoji = "😱"
-    case thinkingEmoji = "🤔"
-}
-
 struct ReactionsComponent: View {
     
     let style: EmojiStyle
@@ -28,8 +16,8 @@ struct ReactionsComponent: View {
             if value == style {
                 Text(value.rawValue)
                     .font(.system(size: 110))
-                    .frame(maxWidth: 310.22, maxHeight: 163)
-                    .background(Color("light-gray"))
+                    .frame(maxWidth: 44.32.su, maxHeight: 23.28.su)
+                    .background(Color(ColorAsset.LIGHT_GRAY))
                     .cornerRadius(20)
             }
         }

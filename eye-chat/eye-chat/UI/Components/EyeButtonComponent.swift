@@ -6,17 +6,11 @@
 //
 
 import SwiftUI
-
 extension UIScreen {
     
     static let screenWidth = UIScreen.main.bounds.size.width
     static let screenHeight = UIScreen.main.bounds.size.height
     static let screenSize = UIScreen.main.bounds.size
-}
-
-enum ButtonStyle {
-    case createRoom
-    case savedRoom
 }
 
 struct EyeButtonComponent: View {
@@ -31,7 +25,7 @@ struct EyeButtonComponent: View {
                     .foregroundColor(.white)
                 Spacer()
                 Text(style == .createRoom ? ContentComponent.SUBTITLE_CREATE : ContentComponent.SUBTITLE_SAVED)
-                    .font(.system(size: 30))
+                    .font(.system(size: 30, weight: .medium))
                     .foregroundColor(.white)
                     .padding(.vertical, 13)
             }
@@ -39,7 +33,6 @@ struct EyeButtonComponent: View {
             if style == .createRoom {
                 VStack(alignment: .trailing) {
                     Spacer()
-                    Image(ImageAsset.CREATE_BUTTON_ICON)
                 }
                 .frame(maxHeight: .infinity)
             }
@@ -63,6 +56,6 @@ struct EyeButtonComponent: View {
 
 struct EyeButtonComponent_Previews: PreviewProvider {
     static var previews: some View {
-        EyeButtonComponent(style: .createRoom)
+        EyeButtonComponent(style: .savedRoom)
     }
 }
