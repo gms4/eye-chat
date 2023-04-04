@@ -54,18 +54,20 @@ struct FirstTopicsCardComponent: View {
                         .font(.system(size: 18, weight: .semibold))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 35)
-                        .background(.blue)
-
-                        //.background(Color("light-gray"))
-                        .cornerRadius(20)
+                        .background(
+                            RoundedCornersShape(corners: [.topLeft, .topRight], radius: 15)
+                                        .fill(Color("blue-keycap"))
+                                )
                         .foregroundColor(.white)
                     
                     Text(value.rawValue)
                         .font(.system(size: 32))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 128)
-                        .background(Color("light-gray"))
-                        .cornerRadius(20)
+                        .background(
+                            RoundedCornersShape(corners: [.bottomLeft, .bottomRight], radius: 15)
+                                        .fill(Color("light-gray"))
+                                )
                 }.frame(maxWidth: 310.22, maxHeight: 163)
             }
         }
