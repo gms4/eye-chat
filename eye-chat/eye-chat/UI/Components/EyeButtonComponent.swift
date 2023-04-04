@@ -15,7 +15,7 @@ extension UIScreen {
 
 struct EyeButtonComponent: View {
     
-    let style: ButtonStyle
+    let style: HomeButtonStyle
 
     var body: some View {
         HStack {
