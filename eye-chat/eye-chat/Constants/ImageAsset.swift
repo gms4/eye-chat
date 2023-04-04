@@ -17,6 +17,8 @@ struct ImageAsset {
     static let VIDEO_YOURS = "video-yours"
     static let DEACTIVATE_EYETRACKING = "deactivate-eyetracking"
     static let ACTIVATE_EYETRACKING = "activate-eyetracking"
+    static let DEACTIVATE_CAMERA = "deactivated-camera"
+    static let ACTIVATE_CAMERA = "activated-camera"
     static let GET_IN = "get-in"
     static let GET_OUT = "get-out"
     static let LOGO = "logo"
