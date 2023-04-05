@@ -9,9 +9,8 @@ import SwiftUI
 
 struct Title: View {
     var body: some View {
-        Text("Authenticator")
-            .bold()
-            .font(.title)
+        Text("Com **eyechat** você\nmesmo pode começar\na conversa")
+            .font(.system(size: 62))
             .foregroundColor(.white)
     }
 }
@@ -19,6 +18,5 @@ struct Title: View {
 struct Title_Previews: PreviewProvider {
     static var previews: some View {
         Title()
-            .background(LinearGradient(colors: [.blue,.purple], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }

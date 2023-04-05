@@ -59,6 +59,10 @@
 		C0A0182C29DC99D0001097E7 /* FaceIDAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0182929DC99D0001097E7 /* FaceIDAuthView.swift */; };
 		C0A0182D29DC99D0001097E7 /* FaceIDAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0182A29DC99D0001097E7 /* FaceIDAuthViewModel.swift */; };
 		C0A0182E29DC99D0001097E7 /* FaceIDAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0182B29DC99D0001097E7 /* FaceIDAuth.swift */; };
+		C0A804C229DCBB84008B019B /* ChatScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A804BF29DCBB84008B019B /* ChatScreenView.swift */; };
+		C0A804C329DCBB84008B019B /* ChatScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A804C029DCBB84008B019B /* ChatScreenViewModel.swift */; };
+		C0A804C429DCBB84008B019B /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A804C129DCBB84008B019B /* ChatScreen.swift */; };
+		C0A804C629DCBD50008B019B /* ReactionBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A804C529DCBD50008B019B /* ReactionBarComponent.swift */; };
 		C0B79AB929D74E4C002B3210 /* CreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */; };
 		C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */; };
 		C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB829D74E4C002B3210 /* CreateRoom.swift */; };
@@ -140,6 +144,10 @@
 		C0A0182929DC99D0001097E7 /* FaceIDAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAuthView.swift; sourceTree = "<group>"; };
 		C0A0182A29DC99D0001097E7 /* FaceIDAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAuthViewModel.swift; sourceTree = "<group>"; };
 		C0A0182B29DC99D0001097E7 /* FaceIDAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAuth.swift; sourceTree = "<group>"; };
+		C0A804BF29DCBB84008B019B /* ChatScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenView.swift; sourceTree = "<group>"; };
+		C0A804C029DCBB84008B019B /* ChatScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewModel.swift; sourceTree = "<group>"; };
+		C0A804C129DCBB84008B019B /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		C0A804C529DCBD50008B019B /* ReactionBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionBarComponent.swift; sourceTree = "<group>"; };
 		C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
 		C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewModel.swift; sourceTree = "<group>"; };
 		C0B79AB829D74E4C002B3210 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
@@ -287,6 +295,7 @@
 		0D71CFF729D32A7500E91563 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C0A804BE29DCBB53008B019B /* Chat Screen */,
 				C0A0182829DC99A5001097E7 /* FaceIDAuth */,
 				C0B79AB529D74E26002B3210 /* Create Room */,
 				C09CDA8E29D5B9ED006C60BB /* Home */,
@@ -341,6 +350,7 @@
 				C03920C229D86C1100F34B48 /* RoomCreatedPopupComponent.swift */,
 				C0F5532C29DB638800DB4F7B /* CameraComponent.swift */,
 				C0A0181F29DB66B2001097E7 /* ButtonComponent.swift */,
+				C0A804C529DCBD50008B019B /* ReactionBarComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -380,6 +390,16 @@
 				C0A0182B29DC99D0001097E7 /* FaceIDAuth.swift */,
 			);
 			path = FaceIDAuth;
+			sourceTree = "<group>";
+		};
+		C0A804BE29DCBB53008B019B /* Chat Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C0A804BF29DCBB84008B019B /* ChatScreenView.swift */,
+				C0A804C029DCBB84008B019B /* ChatScreenViewModel.swift */,
+				C0A804C129DCBB84008B019B /* ChatScreen.swift */,
+			);
+			path = "Chat Screen";
 			sourceTree = "<group>";
 		};
 		C0B79AB529D74E26002B3210 /* Create Room */ = {
@@ -532,6 +552,7 @@
 				C0F5532B29DB62C800DB4F7B /* ActionStyle.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
 				C046A47729D624030006B7D8 /* CameraSizeStyle.swift in Sources */,
+				C0A804C329DCBB84008B019B /* ChatScreenViewModel.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
 				C09CDA8629D4C4C5006C60BB /* KeyboardReactionsComponent.swift in Sources */,
 				C0A0182C29DC99D0001097E7 /* FaceIDAuthView.swift in Sources */,
@@ -547,11 +568,13 @@
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
 				C0A0182029DB66B2001097E7 /* ButtonComponent.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
+				C0A804C629DCBD50008B019B /* ReactionBarComponent.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
 				C0A0182529DC949C001097E7 /* PrimaryButton.swift in Sources */,
 				6E01934929D61D6F00C16658 /* TopicsBoardComponent.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				6E35CB0E29DCB2800076FD04 /* TopicsStyle.swift in Sources */,
+				C0A804C229DCBB84008B019B /* ChatScreenView.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
 				6E01934729D6101600C16658 /* TopicsCardComponent.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
@@ -567,6 +590,7 @@
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
+				C0A804C429DCBB84008B019B /* ChatScreen.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				C0A0182729DC98E2001097E7 /* LoginView.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,

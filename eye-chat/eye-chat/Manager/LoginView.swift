@@ -10,19 +10,19 @@ import SwiftUI
 struct LoginView: View {
     @EnvironmentObject var authManager: AuthManager
     var body: some View {
-        VStack (spacing: 40) {
+        VStack (alignment: .leading, spacing: 830) {
             Title()
             
             switch authManager.biometryType {
             case .faceID:
-                PrimaryButton(image: "faceid", text: "Login with FaceID")
+                PrimaryButton(image: "faceid")
                     .onTapGesture {
                         Task.init {
                             await authManager.authenticateWithBiometrics()
                         }
                     }
             default:
-                PrimaryButton(image: "person.fill", text: "Login with your credentials")
+                PrimaryButton(image: "person.fill")
                     .onTapGesture {
                         Task.init {
                             await authManager.authenticateWithBiometrics()
@@ -30,8 +30,10 @@ struct LoginView: View {
                     }
             }
         }
+        .padding(EdgeInsets(top: 0, leading: 76, bottom: 0, trailing: 363))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing))
+        .background(Image(ImageAsset.SIGN_UP_SCREEN))
+        .ignoresSafeArea()
     }
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct DeleteKeycapComponent: View {
     var body: some View {
         Image(systemName: ContentComponent.DELETE)
-            .font(.system(size: 60))
+            .font(.system(size: 40))
             .frame(maxWidth: 31.14.su, maxHeight: 23.28.su)
             .background(Color(ColorAsset.LIGHT_GRAY_DELETE_KEYCAP))
             .cornerRadius(20)

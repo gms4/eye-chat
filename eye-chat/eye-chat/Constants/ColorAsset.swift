@@ -16,4 +16,5 @@ struct ColorAsset {
     static let SPACE_GRAY = "space-gray"
     static let BLUE_KEYCAP = "blue-keycap"
     static let BLUE_TEXTFIELD = "blue-textfield"
+    static let REACTION_BAR_COLOR = "reaction-bar-color"
 }
