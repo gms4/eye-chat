@@ -48,18 +48,17 @@ struct HomeV2View: View {
             Text("Inicie uma conversa com EyeChat!")
                 .font(.system(size: 40))
                 .fontWeight(.medium)
-            ContentView(
+            EyeTrackingTemplate(
                 upTrigger: rightFirstSection,
                 downTrigger: leftFirstSection,
-                goBack: goBack,
                 elements: [EyeButtonComponent(style: .createRoom).anyView, EyeButtonComponent(style: .savedRoom).anyView]
             )
         }
     }
 }
 
-struct HomeV2_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeV2View()
-    }
-}
+//struct HomeV2_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeV2View()
+//    }
+//}
