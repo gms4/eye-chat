@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CameraDisplayComponent: View {
+    let style: CameraSizeStyle
     var body: some View {
             HStack {
                 Image(ImageAsset.VIDEO_FRIEND)
@@ -17,13 +18,13 @@ struct CameraDisplayComponent: View {
                             .padding(3.85.su)
                     }
             }
-            .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: style == .small ? 444 : 856)
         }
     }
 
 struct CameraDisplayComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CameraDisplayComponent()
+        CameraDisplayComponent(style: .big)
             .ignoresSafeArea()
     }
 }

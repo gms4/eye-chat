@@ -1,0 +1,43 @@
+//
+//  ChatScreenView.swift
+//  eye-chat
+//
+//  Created by Guilherme Souza on 04/04/23.
+//  
+//
+
+import SwiftUI
+
+struct ChatScreenView: View {
+    
+    let cameraSizeStyle: CameraSizeStyle
+    let keycapStyle: KeycapStyle
+    var body: some View {
+        VStack {
+            CameraDisplayComponent(style: .small)
+            ReactionBarComponent(style: .small)
+            Spacer()
+//            PartialKeyboardComponent(style: .aeiou, chat: .inside)
+//            FullKeyboardComponent(chat: .inside)
+            TopicsBoardComponent()
+            Spacer()
+            HStack {
+                EyetrackingComponent(style: .activate)
+                Spacer()
+                CameraComponent(style: .off)
+                ButtonComponent(style: .out)
+            }
+            .padding(EdgeInsets(top: 0, leading: 40, bottom: 70, trailing: 40))
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+//        .background(Color(ColorAsset.REACTION_BAR_COLOR))
+    }
+
+}
+
+struct ChatScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        ChatScreenView(cameraSizeStyle: .small, keycapStyle: .aeiou)
+            .ignoresSafeArea()
+    }
+}
