@@ -13,9 +13,6 @@ struct HomeV2View: View {
     @ObservedObject private var viewModel = HomeV2ViewModel()
        
     @EnvironmentObject var coordinator: ViewCordinator
-    
-    @State var cordinateFirstSection: [Bool] = [false, false, false]
-    @State var cordinateSecondSection: [Bool] = [false, false, false]
         
     public func leftFirstSection(){
         coordinator.push(view: .create)
@@ -51,10 +48,11 @@ struct HomeV2View: View {
             Text("Inicie uma conversa com EyeChat!")
                 .font(.system(size: 40))
                 .fontWeight(.medium)
-            EyeTrackingTemplate(
+            ContentView(
                 upTrigger: rightFirstSection,
                 downTrigger: leftFirstSection,
-                goBack: goBack, elements: [ EyeButtonComponent(style: .createRoom).anyView, EyeButtonComponent(style: .savedRoom).anyView]
+                goBack: goBack,
+                elements: [EyeButtonComponent(style: .createRoom).anyView, EyeButtonComponent(style: .savedRoom).anyView]
             )
         }
     }

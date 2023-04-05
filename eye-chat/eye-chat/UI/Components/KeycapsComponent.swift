@@ -11,6 +11,10 @@ struct KeycapsComponent: View {
     
     let style: KeycapStyle
     
+    var anyView: AnyView {
+        return AnyView(self)
+    }
+    
     var body: some View {
         ForEach(KeycapStyle.allCases, id:\.self){ value in
             if value == style {

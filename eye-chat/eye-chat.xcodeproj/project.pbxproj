@@ -7,22 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D4A534C29DB7C2400D775A9 /* EyeTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A534B29DB7C2400D775A9 /* EyeTrackingViewController.swift */; };
 		0D4A534F29DB7C9B00D775A9 /* EyeTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 0D4A534E29DB7C9B00D775A9 /* EyeTracking */; };
-		0D4A535129DB7CE600D775A9 /* EyeTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535029DB7CE600D775A9 /* EyeTrackingView.swift */; };
 		0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */; };
 		0D4A535729DB7D9400D775A9 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */; };
-		0D4A535929DB7DDB00D775A9 /* PointerFinderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */; };
-		0D4A535B29DB7E4000D775A9 /* PointerFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535A29DB7E4000D775A9 /* PointerFinder.swift */; };
-		0D4A535D29DB7E8300D775A9 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535C29DB7E8300D775A9 /* Alias.swift */; };
-		0D4A535F29DB7EA800D775A9 /* PointerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535E29DB7EA800D775A9 /* PointerSelector.swift */; };
-		0D4A536129DB7EFD00D775A9 /* AttributesTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A536029DB7EFD00D775A9 /* AttributesTrigger.swift */; };
-		0D4A536329DB82F200D775A9 /* EyeTrackingTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A536229DB82F200D775A9 /* EyeTrackingTemplate.swift */; };
 		0D4A536829DB841200D775A9 /* HomeV2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A536529DB841200D775A9 /* HomeV2View.swift */; };
 		0D4A536929DB841200D775A9 /* HomeV2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A536629DB841200D775A9 /* HomeV2ViewModel.swift */; };
 		0D4A536A29DB841200D775A9 /* HomeV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A536729DB841200D775A9 /* HomeV2.swift */; };
 		0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFAE29D324C300E91563 /* eye_chatApp.swift */; };
-		0D71CFB129D324C300E91563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB029D324C300E91563 /* ContentView.swift */; };
 		0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB229D324C400E91563 /* Assets.xcassets */; };
 		0D71CFB629D324C400E91563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB529D324C400E91563 /* Preview Assets.xcassets */; };
 		0D71CFB829D324C400E91563 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB729D324C400E91563 /* Persistence.swift */; };
@@ -39,6 +30,9 @@
 		0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00E29D32CD900E91563 /* Int+Su.swift */; };
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
+		0DCB1B2029DE0F0B005444B7 /* EyeTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B1F29DE0F0B005444B7 /* EyeTrackingViewController.swift */; };
+		0DCB1B2229DE0F68005444B7 /* EyeTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B2129DE0F68005444B7 /* EyeTrackingView.swift */; };
+		0DCB1B2429DE0F7D005444B7 /* Teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B2329DE0F7D005444B7 /* Teste.swift */; };
 		C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47629D624030006B7D8 /* CameraStyle.swift */; };
 		C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47829D624870006B7D8 /* KeycapStyle.swift */; };
 		C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47A29D624AF0006B7D8 /* ChatStyle.swift */; };
@@ -78,22 +72,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D4A534B29DB7C2400D775A9 /* EyeTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingViewController.swift; sourceTree = "<group>"; };
-		0D4A535029DB7CE600D775A9 /* EyeTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingView.swift; sourceTree = "<group>"; };
 		0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Size.swift"; sourceTree = "<group>"; };
 		0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
-		0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerFinderValue.swift; sourceTree = "<group>"; };
-		0D4A535A29DB7E4000D775A9 /* PointerFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerFinder.swift; sourceTree = "<group>"; };
-		0D4A535C29DB7E8300D775A9 /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
-		0D4A535E29DB7EA800D775A9 /* PointerSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerSelector.swift; sourceTree = "<group>"; };
-		0D4A536029DB7EFD00D775A9 /* AttributesTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesTrigger.swift; sourceTree = "<group>"; };
-		0D4A536229DB82F200D775A9 /* EyeTrackingTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingTemplate.swift; sourceTree = "<group>"; };
 		0D4A536529DB841200D775A9 /* HomeV2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeV2View.swift; sourceTree = "<group>"; };
 		0D4A536629DB841200D775A9 /* HomeV2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeV2ViewModel.swift; sourceTree = "<group>"; };
 		0D4A536729DB841200D775A9 /* HomeV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeV2.swift; sourceTree = "<group>"; };
 		0D71CFAB29D324C300E91563 /* eye-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eye-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D71CFAE29D324C300E91563 /* eye_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eye_chatApp.swift; sourceTree = "<group>"; };
-		0D71CFB029D324C300E91563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D71CFB229D324C400E91563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D71CFB529D324C400E91563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D71CFB729D324C400E91563 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -112,6 +97,9 @@
 		0D71D00E29D32CD900E91563 /* Int+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Su.swift"; sourceTree = "<group>"; };
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
+		0DCB1B1F29DE0F0B005444B7 /* EyeTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingViewController.swift; sourceTree = "<group>"; };
+		0DCB1B2129DE0F68005444B7 /* EyeTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingView.swift; sourceTree = "<group>"; };
+		0DCB1B2329DE0F7D005444B7 /* Teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste.swift; sourceTree = "<group>"; };
 		C046A47629D624030006B7D8 /* CameraStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStyle.swift; sourceTree = "<group>"; };
 		C046A47829D624870006B7D8 /* KeycapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapStyle.swift; sourceTree = "<group>"; };
 		C046A47A29D624AF0006B7D8 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
@@ -162,14 +150,9 @@
 		0D4A534A29DB7C0A00D775A9 /* EyeTracking */ = {
 			isa = PBXGroup;
 			children = (
-				0D4A534B29DB7C2400D775A9 /* EyeTrackingViewController.swift */,
-				0D4A535029DB7CE600D775A9 /* EyeTrackingView.swift */,
-				0D4A535829DB7DDB00D775A9 /* PointerFinderValue.swift */,
-				0D4A535A29DB7E4000D775A9 /* PointerFinder.swift */,
-				0D4A535C29DB7E8300D775A9 /* Alias.swift */,
-				0D4A535E29DB7EA800D775A9 /* PointerSelector.swift */,
-				0D4A536029DB7EFD00D775A9 /* AttributesTrigger.swift */,
-				0D4A536229DB82F200D775A9 /* EyeTrackingTemplate.swift */,
+				0DCB1B1F29DE0F0B005444B7 /* EyeTrackingViewController.swift */,
+				0DCB1B2129DE0F68005444B7 /* EyeTrackingView.swift */,
+				0DCB1B2329DE0F7D005444B7 /* Teste.swift */,
 			);
 			path = EyeTracking;
 			sourceTree = "<group>";
@@ -232,7 +215,6 @@
 				0D71CFE029D3276800E91563 /* Constants */,
 				0D71CFDD29D3273900E91563 /* Entities */,
 				0D71CFAE29D324C300E91563 /* eye_chatApp.swift */,
-				0D71CFB029D324C300E91563 /* ContentView.swift */,
 				0D71CFB229D324C400E91563 /* Assets.xcassets */,
 				0D71CFB729D324C400E91563 /* Persistence.swift */,
 				0D71CFB929D324C400E91563 /* eye_chat.xcdatamodeld */,
@@ -528,37 +510,31 @@
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
-				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
-				0D4A535F29DB7EA800D775A9 /* PointerSelector.swift in Sources */,
 				0D4A536929DB841200D775A9 /* HomeV2ViewModel.swift in Sources */,
-				0D4A535B29DB7E4000D775A9 /* PointerFinder.swift in Sources */,
-				0D4A535129DB7CE600D775A9 /* EyeTrackingView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0D4A536A29DB841200D775A9 /* HomeV2.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
-				0D4A535D29DB7E8300D775A9 /* Alias.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
+				0DCB1B2029DE0F0B005444B7 /* EyeTrackingViewController.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
-				0D4A536329DB82F200D775A9 /* EyeTrackingTemplate.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				0D4A536829DB841200D775A9 /* HomeV2View.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
+				0DCB1B2429DE0F7D005444B7 /* Teste.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
-				0D4A534C29DB7C2400D775A9 /* EyeTrackingViewController.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
-				0D4A536129DB7EFD00D775A9 /* AttributesTrigger.swift in Sources */,
 				C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */,
+				0DCB1B2229DE0F68005444B7 /* EyeTrackingView.swift in Sources */,
 				C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */,
 				C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */,
-				0D4A535929DB7DDB00D775A9 /* PointerFinderValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

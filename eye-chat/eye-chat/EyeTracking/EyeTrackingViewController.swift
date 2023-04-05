@@ -2,13 +2,14 @@
 //  EyeTrackingViewController.swift
 //  eye-chat
 //
-//  Created by alexdamascena on 03/04/23.
+//  Created by alexdamascena on 05/04/23.
 //
+
+import Foundation
 
 import UIKit
 import EyeTracking
 import SwiftUI
-
 
 class EyeTrackingViewModel: ObservableObject {
     @Published var pointer: CGRect?
@@ -36,6 +37,12 @@ class EyeTrackingViewController: UIViewController {
         eyeTracking.showPointer()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        eyeTracking.hidePointer()
+    }
+
+    
     func startNewSession() {
        if eyeTracking.currentSession != nil {
            // Only keep 1 current session data
@@ -58,4 +65,3 @@ class EyeTrackingViewController: UIViewController {
     }
 
 }
-
