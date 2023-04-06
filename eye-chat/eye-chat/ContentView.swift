@@ -18,7 +18,9 @@ struct ContentView: View {
     }
     
     private var screen: some View {
-        HomeView(style: .activate) // change this view
+//  ChatScreenView(cameraSizeStyle: .small, keycapStyle: .aeiou)
+//            .ignoresSafeArea()
+    FaceIDAuthView()
             .navigationDestination(for: RouteScreen.self){ route in
                 switch route {
                 case .main:

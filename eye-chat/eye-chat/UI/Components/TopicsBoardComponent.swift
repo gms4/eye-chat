@@ -10,37 +10,30 @@ import SwiftUI
 struct TopicsBoardComponent: View {
     var body: some View {
         Grid() {
-            GridRow{
-                Grid{
-                    
+            GridRow {
+                Grid {
                     FirstTopicsCardComponent(style: .yes, columnName: "Respostas rápidas")
                     TopicsCardComponent(style: .no)
                     TopicsCardComponent(style: .maybe)
                 }
-                
-                Grid{
-                   
+                Grid {
                     FirstTopicsCardComponent(style: .family, columnName: "Tópicos")
                     TopicsCardComponent(style: .entertainment)
                     TopicsCardComponent(style: .health)
-                    
                 }
-                Grid{
-                  
+                Grid {
                     FirstTopicsCardComponent(style: .day, columnName: "Perguntas")
                     TopicsCardComponent(style: .story)
                     TopicsCardComponent(style: .sorry)
                 }
-                
-               
-                    }
-                }
             }
         }
+    }
+}
         
-        struct TopicsBoardComponent_Previews: PreviewProvider {
-            static var previews: some View {
-                TopicsBoardComponent()
-            }
-        }
+struct TopicsBoardComponent_Previews: PreviewProvider {
+    static var previews: some View {
+        TopicsBoardComponent()
+    }
+}
  

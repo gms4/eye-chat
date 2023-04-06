@@ -17,7 +17,7 @@ struct HomeView: View {
         VStack (alignment: .center) {
             VStack (alignment: .leading, spacing: 5.14.su) {
                 Text(ContentComponent.INITIATE_CHAT)
-                    .font(.system(size: 40, weight:.medium))
+                    .font(.custom(ContentComponent.M, size: 44))
                 EyeButtonComponent(style: .savedRoom)
                 EyeButtonComponent(style: .createRoom)
             }

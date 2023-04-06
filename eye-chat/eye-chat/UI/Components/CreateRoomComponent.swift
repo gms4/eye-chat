@@ -10,7 +10,7 @@ import SwiftUI
 struct CreateRoomComponent: View {
     var body: some View {
         Text(ContentComponent.CREATE)
-            .font(.system(size: 40, weight: .bold))
+            .font(.custom(ContentComponent.B, size: 40))
             .foregroundColor(.white)
             .frame(maxWidth: 31.14.su, maxHeight: 23.28.su)
             .background(Color(ColorAsset.BLUE_KEYCAP))

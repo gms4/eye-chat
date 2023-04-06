@@ -36,6 +36,13 @@
 		C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47829D624870006B7D8 /* KeycapStyle.swift */; };
 		C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47A29D624AF0006B7D8 /* ChatStyle.swift */; };
 		C046A47D29D624E80006B7D8 /* HomeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046A47C29D624E80006B7D8 /* HomeButtonStyle.swift */; };
+		C04EE1FF29DE192C0017DC30 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04C012829DE0EB40068ED90 /* Dosis-Bold.ttf */; };
+		C04EE20029DE19300017DC30 /* Dosis-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04C012D29DE0EB50068ED90 /* Dosis-ExtraBold.ttf */; };
+		C04EE20129DE19360017DC30 /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04C012A29DE0EB40068ED90 /* Dosis-ExtraLight.ttf */; };
+		C04EE20229DE193A0017DC30 /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04C012C29DE0EB40068ED90 /* Dosis-Light.ttf */; };
+		C04EE20329DE193D0017DC30 /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04C012B29DE0EB40068ED90 /* Dosis-Medium.ttf */; };
+		C04EE20429DE19400017DC30 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04C012929DE0EB40068ED90 /* Dosis-Regular.ttf */; };
+		C04EE20529DE19440017DC30 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04C012729DE0EB30068ED90 /* Dosis-SemiBold.ttf */; };
 		C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */; };
 		C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */; };
 		C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */; };
@@ -121,6 +128,14 @@
 		C046A47829D624870006B7D8 /* KeycapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapStyle.swift; sourceTree = "<group>"; };
 		C046A47A29D624AF0006B7D8 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
 		C046A47C29D624E80006B7D8 /* HomeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonStyle.swift; sourceTree = "<group>"; };
+		C04C012729DE0EB30068ED90 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
+		C04C012829DE0EB40068ED90 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
+		C04C012929DE0EB40068ED90 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
+		C04C012A29DE0EB40068ED90 /* Dosis-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C04C012B29DE0EB40068ED90 /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Medium.ttf"; sourceTree = "<group>"; };
+		C04C012C29DE0EB40068ED90 /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.ttf"; sourceTree = "<group>"; };
+		C04C012D29DE0EB50068ED90 /* Dosis-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C04C012E29DE0ECB0068ED90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C09CDA7D29D36BFB006C60BB /* EyeButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeButtonComponent.swift; sourceTree = "<group>"; };
 		C09CDA7F29D476AD006C60BB /* CameraDisplayComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDisplayComponent.swift; sourceTree = "<group>"; };
 		C09CDA8129D4AE00006C60BB /* ReactionsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionsComponent.swift; sourceTree = "<group>"; };
@@ -204,6 +219,7 @@
 		0D71CFAD29D324C300E91563 /* eye-chat */ = {
 			isa = PBXGroup;
 			children = (
+				C04C012E29DE0ECB0068ED90 /* Info.plist */,
 				0D71D01629D32E4500E91563 /* Navigation */,
 				0D71CFF429D32A3900E91563 /* UI */,
 				0D71CFF029D329C700E91563 /* Manager */,
@@ -276,6 +292,7 @@
 		0D71CFF429D32A3900E91563 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C04C012629DE0E9D0068ED90 /* Fonts */,
 				0D71D01329D32D5D00E91563 /* Components */,
 				0D71CFF829D32A8400E91563 /* Enum */,
 				0D71CFF729D32A7500E91563 /* Modules */,
@@ -361,6 +378,20 @@
 				0D71D01729D3337500E91563 /* RouteScreen.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C04C012629DE0E9D0068ED90 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C04C012829DE0EB40068ED90 /* Dosis-Bold.ttf */,
+				C04C012D29DE0EB50068ED90 /* Dosis-ExtraBold.ttf */,
+				C04C012A29DE0EB40068ED90 /* Dosis-ExtraLight.ttf */,
+				C04C012C29DE0EB40068ED90 /* Dosis-Light.ttf */,
+				C04C012B29DE0EB40068ED90 /* Dosis-Medium.ttf */,
+				C04C012929DE0EB40068ED90 /* Dosis-Regular.ttf */,
+				C04C012729DE0EB30068ED90 /* Dosis-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C09CDA8E29D5B9ED006C60BB /* Home */ = {
@@ -520,8 +551,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04EE20329DE193D0017DC30 /* Dosis-Medium.ttf in Resources */,
+				C04EE20129DE19360017DC30 /* Dosis-ExtraLight.ttf in Resources */,
+				C04EE1FF29DE192C0017DC30 /* Dosis-Bold.ttf in Resources */,
 				0D71CFB629D324C400E91563 /* Preview Assets.xcassets in Resources */,
 				0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */,
+				C04EE20529DE19440017DC30 /* Dosis-SemiBold.ttf in Resources */,
+				C04EE20229DE193A0017DC30 /* Dosis-Light.ttf in Resources */,
+				C04EE20429DE19400017DC30 /* Dosis-Regular.ttf in Resources */,
+				C04EE20029DE19300017DC30 /* Dosis-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,12 +801,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"eye-chat/Preview Content\"";
-				DEVELOPMENT_TEAM = 4UVYB4V5UN;
+				DEVELOPMENT_TEAM = Y587ZJ8Z8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "eye-chat/Info.plist";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -793,12 +831,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"eye-chat/Preview Content\"";
-				DEVELOPMENT_TEAM = 4UVYB4V5UN;
+				DEVELOPMENT_TEAM = Y587ZJ8Z8V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "eye-chat/Info.plist";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

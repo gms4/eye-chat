@@ -35,11 +35,9 @@ struct FirstTopicsCardComponent: View {
     var body: some View {
         ForEach(TopicsCardStyle.allCases, id:\.self){ value in
             if value == style {
-                VStack (spacing: 0){
-                    
-                    
+                VStack (spacing: 0) {
                     Text(columnName)
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.custom(ContentComponent.SB, size: 20))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 35)
                         .background(
@@ -49,7 +47,7 @@ struct FirstTopicsCardComponent: View {
                         .foregroundColor(.white)
                     
                     Text(value.rawValue)
-                        .font(.system(size: 32))
+                        .font(.custom(ContentComponent.R, size: 32))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 128)
                         .background(
@@ -63,7 +61,7 @@ struct FirstTopicsCardComponent: View {
     
     struct TopicCardComponent_Previews: PreviewProvider {
         static var previews: some View {
-            FirstTopicsCardComponent(style: .yes, columnName: "Respostas rápidas")
+            FirstTopicsCardComponent(style: .story, columnName: "Respostas rápidas")
         }
     }
 }

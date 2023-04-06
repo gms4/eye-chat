@@ -26,6 +26,7 @@ struct KeyboardReactionsComponent: View {
                 ReactionsComponent(style: .thinkingEmoji)
             }
         }
+        .frame(minHeight: UIScreen.screenHeight - 171.86.su)
     }
 }
 

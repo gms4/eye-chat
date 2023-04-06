@@ -20,9 +20,9 @@ struct CreateRoomView: View {
             Spacer(minLength: 21.42.su)
             VStack (alignment: .leading, spacing: 27) {
                 Text(ContentComponent.CREATE_ROOM)
-                        .font(.system(size: 44, weight: .bold))
+                    .font(.custom(ContentComponent.B, size: 48))
                 Text(ContentComponent.USERNAME_TAG)
-                        .font(.system(size: 40))
+                        .font(.custom(ContentComponent.M, size: 44))
                 TextField(
                     ContentComponent.TEXTFIELD_PLACEHOLDER,
                 text: $newContact
@@ -30,7 +30,7 @@ struct CreateRoomView: View {
                 .background(Color(ColorAsset.BLUE_TEXTFIELD))
                 .cornerRadius(10)
                 .foregroundColor(Color.black)
-                .font(.system(size: 50))
+                .font(.custom(ContentComponent.M, size: 48))
                 Spacer()
             }
             .frame(maxWidth: 135.7.su)
