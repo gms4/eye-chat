@@ -21,11 +21,11 @@ struct EyeButtonComponent: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(style == .createRoom ? ContentComponent.TITLE_CREATE : ContentComponent.TITLE_SAVED)
-                    .font(.system(size: 40, weight: .bold))
+                    .font(.custom(ContentComponent.B, size: 44))
                     .foregroundColor(.white)
                 Spacer()
                 Text(style == .createRoom ? ContentComponent.SUBTITLE_CREATE : ContentComponent.SUBTITLE_SAVED)
-                    .font(.system(size: 30, weight: .medium))
+                    .font(.custom(ContentComponent.M, size: 34))
                     .foregroundColor(.white)
                     .padding(.vertical, 13)
             }

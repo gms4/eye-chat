@@ -19,7 +19,8 @@ struct ChatScreenView: View {
             Spacer()
 //            PartialKeyboardComponent(style: .aeiou, chat: .inside)
 //            FullKeyboardComponent(chat: .inside)
-            TopicsBoardComponent()
+//            TopicsBoardComponent()
+            KeyboardReactionsComponent()
             Spacer()
             HStack {
                 EyetrackingComponent(style: .activate)
@@ -30,7 +31,6 @@ struct ChatScreenView: View {
             .padding(EdgeInsets(top: 0, leading: 40, bottom: 70, trailing: 40))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-//        .background(Color(ColorAsset.REACTION_BAR_COLOR))
     }
 
 }

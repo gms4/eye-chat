@@ -11,10 +11,10 @@ struct RoomCreatedPopupComponent: View {
     var body: some View {
         VStack {
             Spacer(minLength: 83.su)
-            Text("Sala Criada!")
-                .font(.system(size: 48, weight: .bold))
-            Text("Ligando para Saulo...")
-                .font(.system(size: 40))
+            Text(ContentComponent.ROOM_CREATED)
+                .font(.custom(ContentComponent.B, size: 54))
+            Text("Ligando para SAULO...")
+                .font(.custom(ContentComponent.R, size: 44))
             Image(ImageAsset.GET_IN)
                 .padding()
             //vai ser um botão

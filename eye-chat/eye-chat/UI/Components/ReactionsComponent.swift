@@ -17,7 +17,7 @@ struct ReactionsComponent: View {
                 Text(value.rawValue)
                     .font(.system(size: 110))
                     .frame(maxWidth: 44.32.su, maxHeight: 23.28.su)
-                    .background(Color(ColorAsset.LIGHT_GRAY))
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
                     .cornerRadius(20)
             }
         }
