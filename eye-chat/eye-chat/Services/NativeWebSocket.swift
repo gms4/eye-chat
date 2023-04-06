@@ -11,47 +11,43 @@ import Foundation
 class NativeWebSocket: NSObject, WebSocketProvider {
     
     var delegate: WebSocketProviderDelegate?
-    private var socket: URLSessionWebSocketTask?
     private let url: URL
-    private lazy var session = URLSession(configuration: .default,
-                                          delegate: self,
-                                          delegateQueue: nil)
-    
-    init(url: URL){
+    private var socket: URLSessionWebSocketTask?
+    private lazy var urlSession: URLSession = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
+
+    init(url: URL) {
         self.url = url
         super.init()
     }
-    
+
     func connect() {
-        let socket = session.webSocketTask(with: url)
+        let socket = urlSession.webSocketTask(with: url)
         socket.resume()
         self.socket = socket
-        readMessage()
+        self.readMessage()
+    }
+
+    func send(data: Data) {
+        self.socket?.send(.data(data)) { _ in }
     }
     
-    private func readMessage(){
-        self.socket?.receive{ [weak self] message in
-            
+    private func readMessage() {
+        self.socket?.receive { [weak self] message in
             guard let self = self else { return }
             
             switch message {
-                
             case .success(.data(let data)):
                 self.delegate?.webSocket(self, didReceiveData: data)
                 self.readMessage()
                 
             case .success:
-                debugPrint("Expected to receive data format but received a string")
+                debugPrint("Warning: Expected to receive data format but received a string. Check the websocket server config.")
                 self.readMessage()
-                
+
             case .failure:
                 self.disconnect()
             }
         }
-    }
-    
-    func send(data: Data) {
-        self.socket?.send(.data(data)){ _ in} 
     }
     
     private func disconnect() {
@@ -71,3 +67,4 @@ extension NativeWebSocket: URLSessionWebSocketDelegate, URLSessionDelegate  {
         self.disconnect()
     }
 }
+

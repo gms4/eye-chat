@@ -3,7 +3,6 @@ import Foundation
 import WebRTC
 
 enum SdpType: String, Codable {
-    
     case offer, prAnswer, answer, rollback
     
     var rtcSdpType: RTCSdpType {

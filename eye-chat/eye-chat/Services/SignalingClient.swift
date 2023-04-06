@@ -15,38 +15,48 @@ protocol SignalClientDelegate: AnyObject {
     func signalClient(_ signalClient: SignalingClient, didReceiveCandidate candidate: RTCIceCandidate)
 }
 
-final class SignalingClient: ObservableObject {
+final class SignalingClient {
     
     private let decoder = JSONDecoder()
     private let encoder = JSONEncoder()
-    
     private let webSocket: WebSocketProvider
     weak var delegate: SignalClientDelegate?
     
-    init() {
-        self.webSocket = NativeWebSocket(url: VideoConfig.EYE_CHAT_DEFAULT.signaling)
+    init(webSocket: WebSocketProvider) {
+        self.webSocket = webSocket
     }
     
-    func connect(){
-        webSocket.delegate = self
-        webSocket.connect()
+    func connect() {
+        self.webSocket.delegate = self
+        self.webSocket.connect()
     }
     
-    func send(sdp rtcSdp: RTCSessionDescription){
+    func send(sdp rtcSdp: RTCSessionDescription) {
         let message = Message.sdp(SessionDescription(from: rtcSdp))
         do {
-            let dataMessage = try encoder.encode(message)
-            webSocket.send(data: dataMessage)
-        } catch {
-            print("deu ruim")
+            let dataMessage = try self.encoder.encode(message)
+            
+            self.webSocket.send(data: dataMessage)
+        }
+        catch {
+            debugPrint("Warning: Could not encode sdp: \(error)")
+        }
+    }
+    
+    func send(candidate rtcIceCandidate: RTCIceCandidate) {
+        let message = Message.candidate(IceCandidate(from: rtcIceCandidate))
+        do {
+            let dataMessage = try self.encoder.encode(message)
+            self.webSocket.send(data: dataMessage)
+        }
+        catch {
+            debugPrint("Warning: Could not encode candidate: \(error)")
         }
     }
 }
 
 
 extension SignalingClient: WebSocketProviderDelegate {
-    
-    
     func webSocketDidConnect(_ webSocket: WebSocketProvider) {
         self.delegate?.signalClientDidConnect(self)
     }
@@ -54,17 +64,20 @@ extension SignalingClient: WebSocketProviderDelegate {
     func webSocketDidDisconnect(_ webSocket: WebSocketProvider) {
         self.delegate?.signalClientDidDisconnect(self)
         
-        DispatchQueue.global().asyncAfter(deadline: .now() + 1.5){
-            webSocket.connect()
+        // try to reconnect every two seconds
+        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+            debugPrint("Trying to reconnect to signaling server...")
+            self.webSocket.connect()
         }
     }
     
     func webSocket(_ webSocket: WebSocketProvider, didReceiveData data: Data) {
         let message: Message
         do {
-            message = try decoder.decode(Message.self, from: data)
-        } catch {
-            print("deu ruim")
+            message = try self.decoder.decode(Message.self, from: data)
+        }
+        catch {
+            debugPrint("Warning: Could not decode incoming message: \(error)")
             return
         }
         
@@ -74,6 +87,6 @@ extension SignalingClient: WebSocketProviderDelegate {
         case .sdp(let sessionDescription):
             self.delegate?.signalClient(self, didReceiveRemoteSdp: sessionDescription.rtcSessionDescription)
         }
+
     }
-    
 }

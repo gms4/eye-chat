@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D4A532B29D8791A00D775A9 /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A532A29D8791A00D775A9 /* VideoConfig.swift */; };
-		0D4A533329DA260A00D775A9 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */; };
-		0D4A533529DA26A900D775A9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533429DA26A900D775A9 /* Message.swift */; };
-		0D4A533729DA270E00D775A9 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533629DA270E00D775A9 /* WebRTCClient.swift */; };
-		0D4A533929DA27B400D775A9 /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533829DA27B400D775A9 /* NativeWebSocket.swift */; };
-		0D4A533B29DA2C5B00D775A9 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533A29DA2C5B00D775A9 /* SessionDescription.swift */; };
-		0D4A533D29DA2D2400D775A9 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533C29DA2D2400D775A9 /* IceCandidate.swift */; };
-		0D4A533F29DA2DFB00D775A9 /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A533E29DA2DFB00D775A9 /* RTCStates.swift */; };
-		0D4A534129DA2EE600D775A9 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A534029DA2EE600D775A9 /* SignalingClient.swift */; };
 		0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFAE29D324C300E91563 /* eye_chatApp.swift */; };
 		0D71CFB129D324C300E91563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB029D324C300E91563 /* ContentView.swift */; };
 		0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB229D324C400E91563 /* Assets.xcassets */; };
@@ -35,6 +26,19 @@
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
 		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
+		0DCB1B7029DE60E7005444B7 /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6729DE60E6005444B7 /* RTCStates.swift */; };
+		0DCB1B7129DE60E7005444B7 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */; };
+		0DCB1B7229DE60E7005444B7 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */; };
+		0DCB1B7329DE60E7005444B7 /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */; };
+		0DCB1B7429DE60E7005444B7 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */; };
+		0DCB1B7529DE60E7005444B7 /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */; };
+		0DCB1B7629DE60E7005444B7 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */; };
+		0DCB1B7729DE60E7005444B7 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */; };
+		0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6F29DE60E7005444B7 /* Message.swift */; };
+		0DCB1B7A29DE61C4005444B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7929DE61C4005444B7 /* ViewController.swift */; };
+		0DCB1B7C29DE61FA005444B7 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7B29DE61FA005444B7 /* VideoController.swift */; };
+		0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */; };
+		0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */; };
 		1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */; };
 		41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */; };
 		48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */; };
@@ -80,15 +84,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D4A532A29D8791A00D775A9 /* VideoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
-		0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
-		0D4A533429DA26A900D775A9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		0D4A533629DA270E00D775A9 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
-		0D4A533829DA27B400D775A9 /* NativeWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
-		0D4A533A29DA2C5B00D775A9 /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
-		0D4A533C29DA2D2400D775A9 /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
-		0D4A533E29DA2DFB00D775A9 /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
-		0D4A534029DA2EE600D775A9 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
 		0D71CFAB29D324C300E91563 /* eye-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eye-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D71CFAE29D324C300E91563 /* eye_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eye_chatApp.swift; sourceTree = "<group>"; };
 		0D71CFB029D324C300E91563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +106,19 @@
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		0DCB1B6729DE60E6005444B7 /* RTCStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
+		0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+		0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
+		0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
+		0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		0DCB1B6F29DE60E7005444B7 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0DCB1B7929DE61C4005444B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DCB1B7B29DE61FA005444B7 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamViewController.swift; sourceTree = "<group>"; };
+		0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStream.swift; sourceTree = "<group>"; };
 		3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,14 +183,14 @@
 		0D4A533129DA25F500D775A9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0D4A533229DA260A00D775A9 /* WebSocketProvider.swift */,
-				0D4A533429DA26A900D775A9 /* Message.swift */,
-				0D4A533629DA270E00D775A9 /* WebRTCClient.swift */,
-				0D4A533829DA27B400D775A9 /* NativeWebSocket.swift */,
-				0D4A533A29DA2C5B00D775A9 /* SessionDescription.swift */,
-				0D4A533C29DA2D2400D775A9 /* IceCandidate.swift */,
-				0D4A533E29DA2DFB00D775A9 /* RTCStates.swift */,
-				0D4A534029DA2EE600D775A9 /* SignalingClient.swift */,
+				0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */,
+				0DCB1B6F29DE60E7005444B7 /* Message.swift */,
+				0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */,
+				0DCB1B6729DE60E6005444B7 /* RTCStates.swift */,
+				0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */,
+				0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */,
+				0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */,
+				0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -257,8 +265,8 @@
 		0D71CFDD29D3273900E91563 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */,
 				0D71D00929D32C0700E91563 /* User.swift */,
-				0D4A532A29D8791A00D775A9 /* VideoConfig.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -284,10 +292,14 @@
 		0D71CFF429D32A3900E91563 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B7929DE61C4005444B7 /* ViewController.swift */,
 				0D71D01329D32D5D00E91563 /* Components */,
 				0D71CFF829D32A8400E91563 /* Enum */,
 				0D71CFF729D32A7500E91563 /* Modules */,
 				0D71CFF629D32A5C00E91563 /* Extensions */,
+				0DCB1B7B29DE61FA005444B7 /* VideoController.swift */,
+				0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */,
+				0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -640,47 +652,51 @@
 			files = (
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
-				0D4A533B29DA2C5B00D775A9 /* SessionDescription.swift in Sources */,
 				C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */,
-				0D4A532B29D8791A00D775A9 /* VideoConfig.swift in Sources */,
+				0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
 				C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
+				0DCB1B7529DE60E7005444B7 /* VideoConfig.swift in Sources */,
 				C09CDA8629D4C4C5006C60BB /* KeyboardReactionsComponent.swift in Sources */,
 				C0B79AB929D74E4C002B3210 /* CreateRoomView.swift in Sources */,
 				C09CDA9C29D5CEDC006C60BB /* SpaceKeycapComponent.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
+				0DCB1B7629DE60E7005444B7 /* WebSocketProvider.swift in Sources */,
 				C046A47D29D624E80006B7D8 /* ButtonStyle.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
-				0D4A533729DA270E00D775A9 /* WebRTCClient.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
+				0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
+				0DCB1B7129DE60E7005444B7 /* SessionDescription.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
+				0DCB1B7C29DE61FA005444B7 /* VideoController.swift in Sources */,
+				0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
-				0D4A533329DA260A00D775A9 /* WebSocketProvider.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
+				0DCB1B7A29DE61C4005444B7 /* ViewController.swift in Sources */,
+				0DCB1B7329DE60E7005444B7 /* NativeWebSocket.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
-				0D4A533D29DA2D2400D775A9 /* IceCandidate.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
+				0DCB1B7029DE60E7005444B7 /* RTCStates.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
-				0D4A534129DA2EE600D775A9 /* SignalingClient.swift in Sources */,
+				0DCB1B7429DE60E7005444B7 /* IceCandidate.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
-				0D4A533929DA27B400D775A9 /* NativeWebSocket.swift in Sources */,
+				0DCB1B7229DE60E7005444B7 /* SignalingClient.swift in Sources */,
 				C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */,
+				0DCB1B7729DE60E7005444B7 /* WebRTCClient.swift in Sources */,
 				C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */,
-				0D4A533529DA26A900D775A9 /* Message.swift in Sources */,
-				0D4A533F29DA2DFB00D775A9 /* RTCStates.swift in Sources */,
 				C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */,
 				C09CDA9229D5BA05006C60BB /* HomeView.swift in Sources */,
 			);
@@ -845,6 +861,9 @@
 				DEVELOPMENT_TEAM = 4UVYB4V5UN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Libera ai patrao";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "libera ai dnv patrao";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "libera eu te escutar ai";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -875,6 +894,9 @@
 				DEVELOPMENT_TEAM = 4UVYB4V5UN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Libera ai patrao";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "libera ai dnv patrao";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "libera eu te escutar ai";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
