@@ -12,6 +12,7 @@ struct AttributesTrigger {
     
     var axisXFirstSectionTrigger: [Function]?
     var axisXSecondSectionTrigger: [Function]?
+    var axisXThirdSectionTrigger: [Function]?
     var upTrigger: Function?
     var downTrigger: Function?
     var goBack: Function?

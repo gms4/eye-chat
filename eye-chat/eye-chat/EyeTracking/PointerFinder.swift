@@ -29,6 +29,20 @@ struct PointerFinder {
         return false
     }
     
+    public func didUseMoveAxisYGrid(pointer: CGRect?) -> [Bool]{
+        guard let pointer = pointer else { return [false, true, false] }
+        
+        if pointer.minY < center.minY - center.height/2 {
+            return [true, false, false]
+        }
+        
+        if pointer.minY > center.minY + center.height/2 {
+            return [false, false, true]
+        }
+        
+        return [false, true, false]
+    }
+    
     public func didUserMoveAxisX(pointer: CGRect?) -> [Bool] {
         guard let pointer = pointer else { return PointerFinderValue.mid.rawValue }
         

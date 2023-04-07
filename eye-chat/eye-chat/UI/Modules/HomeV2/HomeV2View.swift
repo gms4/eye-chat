@@ -51,7 +51,8 @@ struct HomeV2View: View {
             EyeTrackingTemplate(
                 upTrigger: rightFirstSection,
                 downTrigger: leftFirstSection,
-                elements: [EyeButtonComponent(style: .createRoom).anyView, EyeButtonComponent(style: .savedRoom).anyView]
+                elements: [ EyeButtonComponent(style: .createRoom).anyView,
+                            EyeButtonComponent(style: .savedRoom).anyView]
             )
         }
     }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct KeyboardReactionsComponent: View {
     var body: some View {
-        Grid() {
+        Grid {
             GridRow {
                 ReactionsComponent(style: .smileEmoji)
                 ReactionsComponent(style: .heartFaceEmoji)

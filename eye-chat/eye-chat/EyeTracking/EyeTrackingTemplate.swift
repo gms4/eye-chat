@@ -14,7 +14,6 @@ struct EyeTrackingTemplate: View {
     @ObservedObject var selector = PointerSelector()
     
     @State private var viewID: Int = 0
-    
     @State var endEyeTracking = 0
     
     private let content: Content
@@ -25,6 +24,7 @@ struct EyeTrackingTemplate: View {
     
     @inlinable public init(axisXFirstSectionTrigger: [Function]? = nil,
                            axisXSecondSectionTrigger: [Function]? = nil,
+                           axisXThirdSectionTrigger: [Function]? = nil,
                            upTrigger: Function? = nil,
                            downTrigger: Function? = nil,
                            goBack: Function? = nil,
@@ -32,11 +32,12 @@ struct EyeTrackingTemplate: View {
     ){
         self.attributes = AttributesTrigger(axisXFirstSectionTrigger: axisXFirstSectionTrigger,
                                             axisXSecondSectionTrigger: axisXSecondSectionTrigger,
+                                            axisXThirdSectionTrigger: axisXThirdSectionTrigger,
                                             upTrigger: upTrigger,
                                             downTrigger: downTrigger,
                                             goBack: goBack)
         self.elements = elements
-        self.content = elements.count == 6 ? .sectionsAndGrid : .onlySections
+        self.content = elements.count == 9 ? .sectionsAndGrid : .onlySections
     }
     
     
@@ -58,8 +59,8 @@ struct EyeTrackingTemplate: View {
                 }
         }
         .onAppear{
-            self.selector.setAttributes(self.attributes)
             self.selector.content = content
+            self.selector.setAttributes(self.attributes)
         }
         .overlay {
             VStack(alignment: .center){
@@ -73,7 +74,7 @@ struct EyeTrackingTemplate: View {
                         elements[2]
                             .border(selector.axisXFirstSection[2] ?  .green : .black,  width: 4)
                     }
-                    .border(!selector.upOrDown && selector.showSection ? .red : .white, width: 4)
+                    .border(selector.axisYSection?[0] ?? false && selector.showSection ? .red : .white, width: 4)
                     
                     HStack {
                         elements[3]
@@ -83,7 +84,18 @@ struct EyeTrackingTemplate: View {
                         elements[5]
                             .border(selector.axisXSecondSection[2] ? .green : .black, width: 4)
                     }
-                    .border(selector.upOrDown && selector.showSection ? .red : .white, width: 4)
+                    .border(selector.axisYSection?[1] ?? false && selector.showSection ? .red : .white, width: 4)
+                    
+                    
+                    HStack {
+                        elements[6]
+                            .border(selector.axisXThirdSection[0] ? .green : .black, width: 4)
+                        elements[7]
+                            .border(selector.axisXThirdSection[1] ? .green : .black, width: 4)
+                        elements[8]
+                            .border(selector.axisXThirdSection[2] ? .green : .black, width: 4)
+                        
+                    }.border(selector.axisYSection?[2] ?? false && selector.showSection ? .red : .white, width: 4)
                 } else {
                     
                     HStack {
@@ -96,7 +108,7 @@ struct EyeTrackingTemplate: View {
                     }
                     .border(selector.upOrDown && selector.showSection ? .red : .white, width: 4)
                 }
-            }.frame(height: 500)
+            }
         }
     }
 }
@@ -126,21 +138,58 @@ struct ThirdView: View {
         coordinator.pop()
     }
     
-    public func teste(){
-        print("testinho")
+    public func teste1(){
+        print("testinho 1 ")
     }
+    
+    public func teste2(){
+        print("testinho 2 ")
+    }
+    
+    public func teste3(){
+        print("testinho 3")
+    }
+    
+    public func teste4(){
+        print("testinho 4")
+    }
+    
+    public func teste5(){
+        print("testinho 5")
+    }
+    
+    public func teste6(){
+        print("testinho 6")
+    }
+    
+    public func teste7(){
+        print("testinho 7")
+    }
+    
+    public func teste8(){
+        print("testinho 8")
+    }
+    
+    public func teste9(){
+        print("testinho 9")
+    }
+    
     
     var body: some View {
         EyeTrackingTemplate(
-            axisXFirstSectionTrigger: [teste, teste, teste],
-            axisXSecondSectionTrigger: [teste, teste, teste],
+            axisXFirstSectionTrigger: [teste1, teste2, teste3],
+            axisXSecondSectionTrigger: [teste4, teste5, teste6],
+            axisXThirdSectionTrigger: [teste7, teste8, teste9],
             goBack: goBack,
-            elements: [ KeycapsComponent(style: .aeiou).anyView,
-                        KeycapsComponent(style: .aeiou).anyView,
-                        KeycapsComponent(style: .aeiou).anyView,
-                        KeycapsComponent(style: .aeiou).anyView,
-                        KeycapsComponent(style: .aeiou).anyView,
-                        KeycapsComponent(style: .aeiou).anyView
+            elements: [ Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
                       ]
         )
     }
