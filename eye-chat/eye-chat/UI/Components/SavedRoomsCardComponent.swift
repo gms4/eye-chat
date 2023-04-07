@@ -14,7 +14,7 @@ struct SavedRoomsCardComponent: View {
     
     var body: some View {
                 Text(cardTitle)
-                    .font(.system(size: 36, weight: .bold))
+                    .font(.custom(ContentComponent.B, size: 36))
                     .multilineTextAlignment(.center)
                     .frame(width: 310.22, height: 163)
                     .background(Color(cardColor))

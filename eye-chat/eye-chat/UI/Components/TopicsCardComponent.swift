@@ -16,7 +16,7 @@ struct TopicsCardComponent: View {
         ForEach(TopicsCardStyle.allCases, id:\.self){ value in
             if value == style {
                 Text(value.rawValue)
-                    .font(.system(size: 32))
+                    .font(.custom(ContentComponent.SB, size: 32))
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: 310.22, maxHeight: 163)
                     .background(Color("light-gray"))
@@ -37,7 +37,7 @@ struct FirstTopicsCardComponent: View {
             if value == style {
                 VStack (spacing: 0) {
                     Text(columnName)
-                        .font(.custom(ContentComponent.SB, size: 20))
+                        .font(.custom(ContentComponent.R, size: 20))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 35)
                         .background(
@@ -47,7 +47,7 @@ struct FirstTopicsCardComponent: View {
                         .foregroundColor(.white)
                     
                     Text(value.rawValue)
-                        .font(.custom(ContentComponent.R, size: 32))
+                        .font(.custom(ContentComponent.SB, size: 32))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 128)
                         .background(

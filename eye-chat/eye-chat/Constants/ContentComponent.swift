@@ -9,6 +9,7 @@ import Foundation
 
 struct ContentComponent {
     static let TITLE_CREATE = "Criar Salas"
+    static let SAVED_ROOMS = "Salas Salvas"
     static let CREATE_ROOM = "Criar Sala"
     static let ROOM_CREATED = "Sala Criada!"
     static let TITLE_SAVED = "Contatos"
