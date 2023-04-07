@@ -252,7 +252,7 @@ extension WebRTCClient {
         setTrackEnabled(RTCVideoTrack.self, isEnabled: isEnabled)
     }
 }
-// MARK:- Audio control
+
 extension WebRTCClient {
     func muteAudio() {
         self.setAudioEnabled(false)
@@ -262,7 +262,6 @@ extension WebRTCClient {
         self.setAudioEnabled(true)
     }
     
-    // Fallback to the default playing device: headphones/bluetooth/ear speaker
     func speakerOff() {
         self.audioQueue.async { [weak self] in
             guard let self = self else {
@@ -280,7 +279,6 @@ extension WebRTCClient {
         }
     }
     
-    // Force speaker
     func speakerOn() {
         self.audioQueue.async { [weak self] in
             guard let self = self else {
