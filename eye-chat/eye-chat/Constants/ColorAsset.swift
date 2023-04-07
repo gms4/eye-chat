@@ -17,4 +17,6 @@ struct ColorAsset {
     static let BLUE_KEYCAP = "blue-keycap"
     static let BLUE_TEXTFIELD = "blue-textfield"
     static let REACTION_BAR_COLOR = "reaction-bar-color"
+    static let LIGHT_ORANGE_CARD = "light-orange-card"
+    static let LIGHT_YELLO_CARD = "light-yellow-card"
 }
