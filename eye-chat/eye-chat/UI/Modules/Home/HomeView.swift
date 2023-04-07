@@ -8,12 +8,15 @@
 
 import SwiftUI
 
-
 struct HomeView: View {
-
+    
     @ObservedObject private var viewModel = HomeViewModel()
+//    @EnvironmentObject var coordinator: ViewCoordinator
+    
     let style: EyetrackingStyle
-       
+        
+    @State var web = ConnectionSingleton.shared
+    
     var body: some View {
         VStack (alignment: .center) {
             VStack (alignment: .leading, spacing: 5.14.su) {
@@ -33,7 +36,7 @@ struct HomeView: View {
                 .frame(maxWidth: 15.71.su, maxHeight: 18.57.su)
             }
         }
-    }
+}
 
 
 struct Home_Previews: PreviewProvider {

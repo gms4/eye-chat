@@ -40,7 +40,33 @@
 		0DCB1B2E29DE2BBA005444B7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B2D29DE2BBA005444B7 /* AppState.swift */; };
 		0DCB1B3029DE2BD5005444B7 /* AttributesTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B2F29DE2BD5005444B7 /* AttributesTrigger.swift */; };
 		0DCB1B3229DE2BFE005444B7 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B3129DE2BFE005444B7 /* Content.swift */; };
+		0DCB1B7029DE60E7005444B7 /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6729DE60E6005444B7 /* RTCStates.swift */; };
+		0DCB1B7129DE60E7005444B7 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */; };
+		0DCB1B7229DE60E7005444B7 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */; };
+		0DCB1B7329DE60E7005444B7 /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */; };
+		0DCB1B7429DE60E7005444B7 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */; };
+		0DCB1B7529DE60E7005444B7 /* VideoConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */; };
+		0DCB1B7629DE60E7005444B7 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */; };
+		0DCB1B7729DE60E7005444B7 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */; };
+		0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6F29DE60E7005444B7 /* Message.swift */; };
+		0DCB1B7A29DE61C4005444B7 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */; };
+		0DCB1B7C29DE61FA005444B7 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7B29DE61FA005444B7 /* Connection.swift */; };
+		0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */; };
+		0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */; };
 		0DCB1B8229DFF8D2005444B7 /* EyeTrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8129DFF8D2005444B7 /* EyeTrackingViewModel.swift */; };
+		0DCB1B8429E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */; };
+		0DCB1B8629E05EDC005444B7 /* WebRTCClient+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8529E05EDC005444B7 /* WebRTCClient+Video.swift */; };
+		0DCB1B8829E0669A005444B7 /* WebRTCClient+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8729E0669A005444B7 /* WebRTCClient+Audio.swift */; };
+		0DCB1B8A29E066DA005444B7 /* WebRTCClient+TrackEnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8929E066DA005444B7 /* WebRTCClient+TrackEnable.swift */; };
+		0DCB1B8D29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */; };
+		0DCB1B8F29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8E29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift */; };
+		0DCB1B9129E067E5005444B7 /* WebRTCClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */; };
+		0DCB1B9829E0BB4C005444B7 /* ConnectionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9729E0BB4C005444B7 /* ConnectionSingleton.swift */; };
+		0DCB1B9D29E0BC48005444B7 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9A29E0BC48005444B7 /* VideoView.swift */; };
+		0DCB1B9E29E0BC48005444B7 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9B29E0BC48005444B7 /* VideoViewModel.swift */; };
+		1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */; };
+		41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */; };
+		48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */; };
 		6E01934729D6101600C16658 /* TopicsCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01934629D6101600C16658 /* TopicsCardComponent.swift */; };
 		6E01934929D61D6F00C16658 /* TopicsBoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01934829D61D6F00C16658 /* TopicsBoardComponent.swift */; };
 		6E35CB0E29DCB2800076FD04 /* TopicsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E35CB0D29DCB2800076FD04 /* TopicsStyle.swift */; };
@@ -150,7 +176,32 @@
 		0DCB1B2D29DE2BBA005444B7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		0DCB1B2F29DE2BD5005444B7 /* AttributesTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesTrigger.swift; sourceTree = "<group>"; };
 		0DCB1B3129DE2BFE005444B7 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		0DCB1B6729DE60E6005444B7 /* RTCStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
+		0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+		0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
+		0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoConfig.swift; sourceTree = "<group>"; };
+		0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		0DCB1B6F29DE60E7005444B7 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
+		0DCB1B7B29DE61FA005444B7 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamViewController.swift; sourceTree = "<group>"; };
+		0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStream.swift; sourceTree = "<group>"; };
 		0DCB1B8129DFF8D2005444B7 /* EyeTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeTrackingViewModel.swift; sourceTree = "<group>"; };
+		0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalingClient+WebSocketProviderDelegate.swift"; sourceTree = "<group>"; };
+		0DCB1B8529E05EDC005444B7 /* WebRTCClient+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+Video.swift"; sourceTree = "<group>"; };
+		0DCB1B8729E0669A005444B7 /* WebRTCClient+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+Audio.swift"; sourceTree = "<group>"; };
+		0DCB1B8929E066DA005444B7 /* WebRTCClient+TrackEnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+TrackEnable.swift"; sourceTree = "<group>"; };
+		0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+RTCPeerConnectionDelegate.swift"; sourceTree = "<group>"; };
+		0DCB1B8E29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+RTCDataChannelDelegate.swift"; sourceTree = "<group>"; };
+		0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClientDelegate.swift; sourceTree = "<group>"; };
+		0DCB1B9729E0BB4C005444B7 /* ConnectionSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSingleton.swift; sourceTree = "<group>"; };
+		0DCB1B9A29E0BC48005444B7 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		0DCB1B9B29E0BC48005444B7 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E01934629D6101600C16658 /* TopicsCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsCardComponent.swift; sourceTree = "<group>"; };
 		6E01934829D61D6F00C16658 /* TopicsBoardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsBoardComponent.swift; sourceTree = "<group>"; };
 		6E35CB0D29DCB2800076FD04 /* TopicsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsStyle.swift; sourceTree = "<group>"; };
@@ -158,9 +209,15 @@
 		6E551D2129DFBBBD002033A5 /* SavedRoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoomsView.swift; sourceTree = "<group>"; };
 		6E551D2329DFBBC7002033A5 /* SavedRoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoomsViewModel.swift; sourceTree = "<group>"; };
 		6E551D2529DFBC27002033A5 /* SavedRoomsCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoomsCardComponent.swift; sourceTree = "<group>"; };
+		7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8915FFB6CFCDAA623C836477 /* Pods-eye-chatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B218F479A25754C9098D3C4 /* Pods-eye-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.debug.xcconfig"; sourceTree = "<group>"; };
+		B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF5F7159C57C6736D96276A /* Pods-eye-chat-eye-chatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.release.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C03920BE29D8673D00F34B48 /* EyetrackingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyetrackingComponent.swift; sourceTree = "<group>"; };
 		C03920C029D867A000F34B48 /* EyetrackingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyetrackingStyle.swift; sourceTree = "<group>"; };
 		C03920C229D86C1100F34B48 /* RoomCreatedPopupComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCreatedPopupComponent.swift; sourceTree = "<group>"; };
+		C041B746A3E40E788A5B4CD2 /* Pods-eye-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat.release.xcconfig"; path = "Target Support Files/Pods-eye-chat/Pods-eye-chat.release.xcconfig"; sourceTree = "<group>"; };
 		C046A47629D624030006B7D8 /* CameraSizeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSizeStyle.swift; sourceTree = "<group>"; };
 		C046A47829D624870006B7D8 /* KeycapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycapStyle.swift; sourceTree = "<group>"; };
 		C046A47A29D624AF0006B7D8 /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
@@ -206,6 +263,7 @@
 		C0F5532629DB2BFB00DB4F7B /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		C0F5532A29DB62C800DB4F7B /* ActionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStyle.swift; sourceTree = "<group>"; };
 		C0F5532C29DB638800DB4F7B /* CameraComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraComponent.swift; sourceTree = "<group>"; };
+		D3899173862B27761B78881F /* Pods-eye-chatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.release.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +271,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */,
 				0D4A534F29DB7C9B00D775A9 /* EyeTracking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +280,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,12 +288,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4A533129DA25F500D775A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B9729E0BB4C005444B7 /* ConnectionSingleton.swift */,
+				0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */,
+				0DCB1B9329E0685D005444B7 /* Extensions */,
+				0DCB1B9229E0683C005444B7 /* SignalingClient */,
+				0DCB1B9429E06879005444B7 /* Socket */,
+				0DCB1B8B29E06703005444B7 /* WebRTCClient */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0D4A534A29DB7C0A00D775A9 /* EyeTracking */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,7 +359,8 @@
 				0D71CFC329D324C400E91563 /* eye-chatTests */,
 				0D71CFCD29D324C400E91563 /* eye-chatUITests */,
 				0D71CFAC29D324C300E91563 /* Products */,
-				0DCB1BA029E0C0DD005444B7 /* Recovered References */,
+				9AE789C4A8ECEDBAAE1E63B0 /* Pods */,
+				ABAE080DE795A78D9DD693FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -302,20 +377,21 @@
 		0D71CFAD29D324C300E91563 /* eye-chat */ = {
 			isa = PBXGroup;
 			children = (
-				0D4A535529DB7D8800D775A9 /* Coordinator */,
-				0D4A535229DB7D2300D775A9 /* Extensions */,
-				0D4A534A29DB7C0A00D775A9 /* EyeTracking */,
 				C04C012E29DE0ECB0068ED90 /* Info.plist */,
-				0D71D01629D32E4500E91563 /* Navigation */,
-				0D71CFF429D32A3900E91563 /* UI */,
-				0D71CFF029D329C700E91563 /* Manager */,
-				0D71CFE029D3276800E91563 /* Constants */,
-				0D71CFDD29D3273900E91563 /* Entities */,
 				0D71CFAE29D324C300E91563 /* eye_chatApp.swift */,
-				0D71CFB229D324C400E91563 /* Assets.xcassets */,
 				0D71CFB729D324C400E91563 /* Persistence.swift */,
+				0D71CFB229D324C400E91563 /* Assets.xcassets */,
+				0D71CFE029D3276800E91563 /* Constants */,
+				0D4A535529DB7D8800D775A9 /* Coordinator */,
+				0D71CFDD29D3273900E91563 /* Entities */,
+				0D4A535229DB7D2300D775A9 /* Extensions */,
 				0D71CFB929D324C400E91563 /* eye_chat.xcdatamodeld */,
+				0D4A534A29DB7C0A00D775A9 /* EyeTracking */,
+				0D71CFF029D329C700E91563 /* Manager */,
+				0D71D01629D32E4500E91563 /* Navigation */,
 				0D71CFB429D324C400E91563 /* Preview Content */,
+				0D4A533129DA25F500D775A9 /* Services */,
+				0D71CFF429D32A3900E91563 /* UI */,
 			);
 			path = "eye-chat";
 			sourceTree = "<group>";
@@ -376,11 +452,15 @@
 		0D71CFF429D32A3900E91563 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B7B29DE61FA005444B7 /* Connection.swift */,
+				0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */,
+				0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */,
+				0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */,
 				C04C012629DE0E9D0068ED90 /* Fonts */,
 				0D71D01329D32D5D00E91563 /* Components */,
 				0D71CFF829D32A8400E91563 /* Enum */,
-				0D71CFF729D32A7500E91563 /* Modules */,
 				0D71CFF629D32A5C00E91563 /* Extensions */,
+				0D71CFF729D32A7500E91563 /* Modules */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -396,6 +476,7 @@
 		0D71CFF729D32A7500E91563 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B9929E0BC1E005444B7 /* Video */,
 				0D4A536429DB83FD00D775A9 /* HomeV2 */,
 				C0A804BE29DCBB53008B019B /* Chat Screen */,
 				C0A0182829DC99A5001097E7 /* FaceIDAuth */,
@@ -469,6 +550,81 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		0DCB1B8B29E06703005444B7 /* WebRTCClient */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */,
+				0DCB1B8529E05EDC005444B7 /* WebRTCClient+Video.swift */,
+				0DCB1B8729E0669A005444B7 /* WebRTCClient+Audio.swift */,
+				0DCB1B8929E066DA005444B7 /* WebRTCClient+TrackEnable.swift */,
+				0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */,
+				0DCB1B8E29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift */,
+				0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */,
+			);
+			path = WebRTCClient;
+			sourceTree = "<group>";
+		};
+		0DCB1B9229E0683C005444B7 /* SignalingClient */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */,
+				0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */,
+			);
+			path = SignalingClient;
+			sourceTree = "<group>";
+		};
+		0DCB1B9329E0685D005444B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */,
+				0DCB1B6729DE60E6005444B7 /* RTCStates.swift */,
+				0DCB1B6F29DE60E7005444B7 /* Message.swift */,
+				0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DCB1B9429E06879005444B7 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */,
+				0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		0DCB1B9929E0BC1E005444B7 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B9A29E0BC48005444B7 /* VideoView.swift */,
+				0DCB1B9B29E0BC48005444B7 /* VideoViewModel.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		9AE789C4A8ECEDBAAE1E63B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B218F479A25754C9098D3C4 /* Pods-eye-chat.debug.xcconfig */,
+				C041B746A3E40E788A5B4CD2 /* Pods-eye-chat.release.xcconfig */,
+				7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */,
+				BBF5F7159C57C6736D96276A /* Pods-eye-chat-eye-chatUITests.release.xcconfig */,
+				8915FFB6CFCDAA623C836477 /* Pods-eye-chatTests.debug.xcconfig */,
+				D3899173862B27761B78881F /* Pods-eye-chatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ABAE080DE795A78D9DD693FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */,
+				3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */,
+				36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C04C012629DE0E9D0068ED90 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,9 +695,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D71CFD429D324C400E91563 /* Build configuration list for PBXNativeTarget "eye-chat" */;
 			buildPhases = (
+				AF3DCAD850D5BFADD673F4D7 /* [CP] Check Pods Manifest.lock */,
 				0D71CFA729D324C300E91563 /* Sources */,
 				0D71CFA829D324C300E91563 /* Frameworks */,
 				0D71CFA929D324C300E91563 /* Resources */,
+				B1576E19A4D95A0FEA8E254F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -559,6 +717,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D71CFD729D324C400E91563 /* Build configuration list for PBXNativeTarget "eye-chatTests" */;
 			buildPhases = (
+				C0E7140F7073D115F7D9CC83 /* [CP] Check Pods Manifest.lock */,
 				0D71CFBC29D324C400E91563 /* Sources */,
 				0D71CFBD29D324C400E91563 /* Frameworks */,
 				0D71CFBE29D324C400E91563 /* Resources */,
@@ -577,9 +736,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D71CFDA29D324C400E91563 /* Build configuration list for PBXNativeTarget "eye-chatUITests" */;
 			buildPhases = (
+				AA671E65306C77FE2ACBBCA6 /* [CP] Check Pods Manifest.lock */,
 				0D71CFC629D324C400E91563 /* Sources */,
 				0D71CFC729D324C400E91563 /* Frameworks */,
 				0D71CFC829D324C400E91563 /* Resources */,
+				1048980B2925FDA862C5A255 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -670,13 +831,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1048980B2925FDA862C5A255 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA671E65306C77FE2ACBBCA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eye-chat-eye-chatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3DCAD850D5BFADD673F4D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eye-chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1576E19A4D95A0FEA8E254F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat/Pods-eye-chat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eye-chat/Pods-eye-chat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eye-chat/Pods-eye-chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E7140F7073D115F7D9CC83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eye-chatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D71CFA729D324C300E91563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCB1B8629E05EDC005444B7 /* WebRTCClient+Video.swift in Sources */,
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
+				0DCB1B8F29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift in Sources */,
+				C09CDAA029D5FD8A006C60BB /* PartialKeyboardComponent.swift in Sources */,
+				0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */,
+				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
+				0DCB1B9829E0BB4C005444B7 /* ConnectionSingleton.swift in Sources */,
+				C046A47729D624030006B7D8 /* CameraSizeStyle.swift in Sources */,
+				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
+				0DCB1B8429E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift in Sources */,
+				0DCB1B7529DE60E7005444B7 /* VideoConfig.swift in Sources */,
 				C09CDAA029D5FD8A006C60BB /* PartialKeyboardComponent.swift in Sources */,
 				C0F5532B29DB62C800DB4F7B /* ActionStyle.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
@@ -694,6 +968,20 @@
 				C0A0182D29DC99D0001097E7 /* FaceIDAuthViewModel.swift in Sources */,
 				C0A0182329DC948E001097E7 /* Title.swift in Sources */,
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
+				0DCB1B7629DE60E7005444B7 /* WebSocketProvider.swift in Sources */,
+				C046A47D29D624E80006B7D8 /* HomeButtonStyle.swift in Sources */,
+				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
+				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
+				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
+				0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */,
+				0DCB1B9129E067E5005444B7 /* WebRTCClientDelegate.swift in Sources */,
+				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
+				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
+				0DCB1B7129DE60E7005444B7 /* SessionDescription.swift in Sources */,
+				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
+				0DCB1B8829E0669A005444B7 /* WebRTCClient+Audio.swift in Sources */,
+				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
+				0DCB1B9D29E0BC48005444B7 /* VideoView.swift in Sources */,
 				C046A47D29D624E80006B7D8 /* HomeButtonStyle.swift in Sources */,
 				6E551D2629DFBC27002033A5 /* SavedRoomsCardComponent.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
@@ -727,21 +1015,33 @@
 				6E551D2429DFBBC7002033A5 /* SavedRoomsViewModel.swift in Sources */,
 				C0F5532D29DB638800DB4F7B /* CameraComponent.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
+				0DCB1B8A29E066DA005444B7 /* WebRTCClient+TrackEnable.swift in Sources */,
+				0DCB1B7C29DE61FA005444B7 /* Connection.swift in Sources */,
+				0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */,
 				0DCB1B2029DE0F0B005444B7 /* EyeTrackingViewController.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
 				C0A804C429DCBB84008B019B /* ChatScreen.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
+				0DCB1B7A29DE61C4005444B7 /* ConnectionController.swift in Sources */,
+				0DCB1B7329DE60E7005444B7 /* NativeWebSocket.swift in Sources */,
+				0DCB1B9E29E0BC48005444B7 /* VideoViewModel.swift in Sources */,
 				C0A0182729DC98E2001097E7 /* LoginView.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				0DCB1B2C29DE2B75005444B7 /* PointerSelector.swift in Sources */,
 				0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */,
 				0DCB1B8229DFF8D2005444B7 /* EyeTrackingViewModel.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
+				0DCB1B7029DE60E7005444B7 /* RTCStates.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				0D4A536829DB841200D775A9 /* HomeV2View.swift in Sources */,
 				C0A0182E29DC99D0001097E7 /* FaceIDAuth.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
+				0DCB1B8D29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift in Sources */,
+				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
+				0DCB1B7429DE60E7005444B7 /* IceCandidate.swift in Sources */,
+				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
+				0DCB1B7229DE60E7005444B7 /* SignalingClient.swift in Sources */,
 				0DCB1B2A29DE2B4F005444B7 /* Alias.swift in Sources */,
 				0DCB1B2429DE0F7D005444B7 /* EyeTrackingTemplate.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
@@ -750,6 +1050,7 @@
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
 				0DCB1B2E29DE2BBA005444B7 /* AppState.swift in Sources */,
 				C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */,
+				0DCB1B7729DE60E7005444B7 /* WebRTCClient.swift in Sources */,
 				C09CDA9829D5C828006C60BB /* KeycapsComponent.swift in Sources */,
 				0DCB1B2229DE0F68005444B7 /* EyeTrackingView.swift in Sources */,
 				C09CDA9A29D5CECE006C60BB /* DeleteKeycapComponent.swift in Sources */,
@@ -906,6 +1207,7 @@
 		};
 		0D71CFD529D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B218F479A25754C9098D3C4 /* Pods-eye-chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -918,6 +1220,8 @@
 				INFOPLIST_FILE = "eye-chat/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Liberas a camera?";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "libera ai dnv patrao";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "libera eu te escutar ai";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -937,6 +1241,7 @@
 		};
 		0D71CFD629D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C041B746A3E40E788A5B4CD2 /* Pods-eye-chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -949,6 +1254,8 @@
 				INFOPLIST_FILE = "eye-chat/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Liberas a camera?";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow FaceID to log into the app";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "libera ai dnv patrao";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "libera eu te escutar ai";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -968,6 +1275,7 @@
 		};
 		0D71CFD829D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8915FFB6CFCDAA623C836477 /* Pods-eye-chatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -988,6 +1296,7 @@
 		};
 		0D71CFD929D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3899173862B27761B78881F /* Pods-eye-chatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1008,6 +1317,7 @@
 		};
 		0D71CFDB29D324C400E91563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1026,6 +1336,7 @@
 		};
 		0D71CFDC29D324C400E91563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF5F7159C57C6736D96276A /* Pods-eye-chat-eye-chatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

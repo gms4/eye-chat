@@ -11,14 +11,14 @@ import SwiftUI
 struct eye_chatApp: App {
     
     let persistenceController = PersistenceController.shared
-    @ObservedObject var coordinator = ViewCordinator()
+//    @ObservedObject var coordinator = ViewCordinator()
     
     @StateObject var appState = AppState.shared
 
     var body: some Scene {
         WindowGroup {
             if #available(iOS 16.0, *){
-                NavigationStack(path: $coordinator.path){
+                NavigationStack(){
                     FaceIDAuthView()
                     .id(appState.gameID)
                     .navigationDestination(for: RouteScreen.self){ destination in
@@ -31,7 +31,7 @@ struct eye_chatApp: App {
                     }
                 }
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                .environmentObject(coordinator)
+//                .environmentObject(coordinator)
             }
         }
     }

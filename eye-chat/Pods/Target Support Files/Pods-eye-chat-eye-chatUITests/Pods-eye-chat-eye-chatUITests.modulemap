@@ -1,0 +1,6 @@
+framework module Pods_eye_chat_eye_chatUITests {
+  umbrella header "Pods-eye-chat-eye-chatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

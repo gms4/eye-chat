@@ -132,10 +132,10 @@ struct Teste: View {
 
 struct ThirdView: View {
     
-    @EnvironmentObject var coordinator: ViewCordinator
+//    @EnvironmentObject var coordinator: ViewCordinator
     
     public func goBack(){
-        coordinator.pop()
+//        coordinator.pop()
     }
     
     public func teste1(){

@@ -1,0 +1,6 @@
+framework module Pods_eye_chat {
+  umbrella header "Pods-eye-chat-umbrella.h"
+
+  export *
+  module * { export * }
+}
