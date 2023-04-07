@@ -64,9 +64,8 @@ extension SignalingClient: WebSocketProviderDelegate {
     func webSocketDidDisconnect(_ webSocket: WebSocketProvider) {
         self.delegate?.signalClientDidDisconnect(self)
         
-        // try to reconnect every two seconds
         DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
-            debugPrint("Trying to reconnect to signaling server...")
+            debugPrint("Trying to reconnect")
             self.webSocket.connect()
         }
     }

@@ -16,8 +16,6 @@ protocol WebRTCClientDelegate: AnyObject {
 
 final class WebRTCClient: NSObject {
     
-    // The `RTCPeerConnectionFactory` is in charge of creating new RTCPeerConnection instances.
-    // A new RTCPeerConnection should be created every new call, but the factory is shared.
     private static let factory: RTCPeerConnectionFactory = {
         RTCInitializeSSL()
         let videoEncoderFactory = RTCDefaultVideoEncoderFactory()
@@ -46,13 +44,10 @@ final class WebRTCClient: NSObject {
         let config = RTCConfiguration()
         config.iceServers = [RTCIceServer(urlStrings: iceServers)]
         
-        // Unified plan is more superior than planB
         config.sdpSemantics = .unifiedPlan
         
-        // gatherContinually will let WebRTC to listen to any network changes and send any new candidates to the other client
         config.continualGatheringPolicy = .gatherContinually
         
-        // Define media constraints. DtlsSrtpKeyAgreement is required to be true to be able to connect with web browsers.
         let constraints = RTCMediaConstraints(mandatoryConstraints: nil,
                                               optionalConstraints: ["DtlsSrtpKeyAgreement":kRTCMediaConstraintsValueTrue])
         
@@ -68,7 +63,6 @@ final class WebRTCClient: NSObject {
         self.peerConnection.delegate = self
     }
     
-    // MARK: Signaling
     func offer(completion: @escaping (_ sdp: RTCSessionDescription) -> Void) {
         let constrains = RTCMediaConstraints(mandatoryConstraints: self.mediaConstrains,
                                              optionalConstraints: nil)
@@ -105,7 +99,6 @@ final class WebRTCClient: NSObject {
         self.peerConnection.add(remoteCandidate, completionHandler: completion)
     }
     
-    // MARK: Media
     func startCaptureLocalVideo(renderer: RTCVideoRenderer) {
         guard let capturer = self.videoCapturer as? RTCCameraVideoCapturer else {
             return
@@ -114,14 +107,12 @@ final class WebRTCClient: NSObject {
         guard
             let frontCamera = (RTCCameraVideoCapturer.captureDevices().first { $0.position == .front }),
         
-            // choose highest res
             let format = (RTCCameraVideoCapturer.supportedFormats(for: frontCamera).sorted { (f1, f2) -> Bool in
                 let width1 = CMVideoFormatDescriptionGetDimensions(f1.formatDescription).width
                 let width2 = CMVideoFormatDescriptionGetDimensions(f2.formatDescription).width
                 return width1 < width2
             }).last,
         
-            // choose highest fps
             let fps = (format.videoSupportedFrameRateRanges.sorted { return $0.maxFrameRate < $1.maxFrameRate }.last) else {
             return
         }
@@ -161,7 +152,6 @@ final class WebRTCClient: NSObject {
         self.peerConnection.add(videoTrack, streamIds: [streamId])
         self.remoteVideoTrack = self.peerConnection.transceivers.first { $0.mediaType == .video }?.receiver.track as? RTCVideoTrack
         
-        // Data
         if let dataChannel = createDataChannel() {
             dataChannel.delegate = self
             self.localDataChannel = dataChannel
@@ -188,7 +178,6 @@ final class WebRTCClient: NSObject {
         return videoTrack
     }
     
-    // MARK: Data Channels
     private func createDataChannel() -> RTCDataChannel? {
         let config = RTCDataChannelConfiguration()
         guard let dataChannel = self.peerConnection.dataChannel(forLabel: "WebRTCData", configuration: config) else {
@@ -252,7 +241,6 @@ extension WebRTCClient {
     }
 }
 
-// MARK: - Video control
 extension WebRTCClient {
     func hideVideo() {
         self.setVideoEnabled(false)
