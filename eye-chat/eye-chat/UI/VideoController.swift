@@ -63,17 +63,17 @@ struct VideoController: UIViewControllerRepresentable {
     let signalingClient = SignalingClient(webSocket: NativeWebSocket(url: VideoConfig.EYE_CHAT_DEFAULT.signaling))
     let webRTCClient = WebRTCClient(iceServers: VideoConfig.EYE_CHAT_DEFAULT.servers)
         
-    func makeUIViewController(context: Context) -> ViewController {
+    func makeUIViewController(context: Context) -> ConnectionController {
         signalingClient.delegate = context.coordinator
         webRTCClient.delegate = context.coordinator
    
-        let view = ViewController(signalClient: signalingClient, webRTCClient: webRTCClient)
+        let view = ConnectionController(signalClient: signalingClient, webRTCClient: webRTCClient)
         view.signalClient.connect()
         
         return view
     }
     
-    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: ConnectionController, context: Context) {
         
     }
     

@@ -35,7 +35,7 @@
 		0DCB1B7629DE60E7005444B7 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */; };
 		0DCB1B7729DE60E7005444B7 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */; };
 		0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6F29DE60E7005444B7 /* Message.swift */; };
-		0DCB1B7A29DE61C4005444B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7929DE61C4005444B7 /* ViewController.swift */; };
+		0DCB1B7A29DE61C4005444B7 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */; };
 		0DCB1B7C29DE61FA005444B7 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7B29DE61FA005444B7 /* VideoController.swift */; };
 		0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */; };
 		0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */; };
@@ -122,7 +122,7 @@
 		0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
 		0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		0DCB1B6F29DE60E7005444B7 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		0DCB1B7929DE61C4005444B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
 		0DCB1B7B29DE61FA005444B7 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamViewController.swift; sourceTree = "<group>"; };
 		0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStream.swift; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 		0D71CFF429D32A3900E91563 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0DCB1B7929DE61C4005444B7 /* ViewController.swift */,
+				0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */,
 				0D71D01329D32D5D00E91563 /* Components */,
 				0D71CFF829D32A8400E91563 /* Enum */,
 				0D71CFF729D32A7500E91563 /* Modules */,
@@ -742,7 +742,7 @@
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
-				0DCB1B7A29DE61C4005444B7 /* ViewController.swift in Sources */,
+				0DCB1B7A29DE61C4005444B7 /* ConnectionController.swift in Sources */,
 				0DCB1B7329DE60E7005444B7 /* NativeWebSocket.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
