@@ -32,6 +32,7 @@ struct FullKeyboardComponent: View {
                     CreateRoomComponent()
                 }
             }
+            .frame(minHeight: UIScreen.screenHeight - 171.86.su)
         }
     }
 }

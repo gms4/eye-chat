@@ -9,6 +9,7 @@ import Foundation
 
 
 struct ImageAsset {
+    
     static let CREATE_BUTTON_ICON = "create-button"
     static let BLUE_BACKGROUND = "blue-background"
     static let ORANGE_BACKGROUND = "orange-background"
@@ -16,9 +17,14 @@ struct ImageAsset {
     static let VIDEO_YOURS = "video-yours"
     static let DEACTIVATE_EYETRACKING = "deactivate-eyetracking"
     static let ACTIVATE_EYETRACKING = "activate-eyetracking"
+    static let DEACTIVATE_CAMERA = "deactivated-camera"
+    static let ACTIVATE_CAMERA = "activated-camera"
     static let GET_IN = "get-in"
     static let GET_OUT = "get-out"
     static let LOGO = "logo"
     static let LOGO_SCREENS = "logo-screens"
+    static let CALLING_POPUP = "calling-popup"
+    static let SIGN_UP_SCREEN = "sign-up-screen"
+    static let LOG_IN_WITH_FACEID = "login-with-faceid"
     
 }

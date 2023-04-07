@@ -195,47 +195,47 @@ struct ThirdView: View {
     }
 }
 
-struct HomeView: View {
-    
-    @EnvironmentObject var coordinator: ViewCordinator
-    
-    public func leftFirstSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func midFirstSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func rightFirstSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func leftSecondSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func midSecondSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func rightSecondSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func goBack(){
-        coordinator.pop()
-    }
-    
-    var body: some View {
-    
-        EyeTrackingTemplate(
-            upTrigger: rightFirstSection,
-            downTrigger: leftFirstSection,
-            elements: [EyeButtonComponent(style: .createRoom).anyView,
-                       EyeButtonComponent(style: .savedRoom).anyView
-                      ]
-        )
-    }
-}
+//struct HomeView: View {
+//    
+//    @EnvironmentObject var coordinator: ViewCordinator
+//    
+//    public func leftFirstSection(){
+//        coordinator.push(view: .create)
+//    }
+//    
+//    public func midFirstSection(){
+//        coordinator.push(view: .create)
+//    }
+//    
+//    public func rightFirstSection(){
+//        coordinator.push(view: .create)
+//    }
+//    
+//    public func leftSecondSection(){
+//        coordinator.push(view: .create)
+//    }
+//    
+//    public func midSecondSection(){
+//        coordinator.push(view: .create)
+//    }
+//    
+//    public func rightSecondSection(){
+//        coordinator.push(view: .create)
+//    }
+//    
+//    public func goBack(){
+//        coordinator.pop()
+//    }
+//    
+//    var body: some View {
+//    
+//        EyeTrackingTemplate(
+//            upTrigger: rightFirstSection,
+//            downTrigger: leftFirstSection,
+//            elements: [EyeButtonComponent(style: .createRoom).anyView,
+//                       EyeButtonComponent(style: .savedRoom).anyView
+//                      ]
+//        )
+//    }
+//}
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ButtonStyle {
+enum HomeButtonStyle {
     case createRoom
     case savedRoom
 }
