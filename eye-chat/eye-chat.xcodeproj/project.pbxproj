@@ -201,10 +201,6 @@
 				0DCB1B9329E0685D005444B7 /* Extensions */,
 				0DCB1B9229E0683C005444B7 /* SignalingClient */,
 				0DCB1B8B29E06703005444B7 /* WebRTCClient */,
-				0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */,
-				0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */,
-				0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */,
-				0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -400,6 +396,8 @@
 		0DCB1B9229E0683C005444B7 /* SignalingClient */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */,
+				0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */,
 			);
 			path = SignalingClient;
 			sourceTree = "<group>";
@@ -418,6 +416,8 @@
 		0DCB1B9429E06879005444B7 /* Socket */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */,
+				0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
