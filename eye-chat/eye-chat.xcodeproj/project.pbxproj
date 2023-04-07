@@ -197,12 +197,11 @@
 		0D4A533129DA25F500D775A9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B9429E06879005444B7 /* Socket */,
+				0DCB1B9329E0685D005444B7 /* Extensions */,
+				0DCB1B9229E0683C005444B7 /* SignalingClient */,
 				0DCB1B8B29E06703005444B7 /* WebRTCClient */,
-				0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */,
-				0DCB1B6F29DE60E7005444B7 /* Message.swift */,
 				0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */,
-				0DCB1B6729DE60E6005444B7 /* RTCStates.swift */,
-				0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */,
 				0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */,
 				0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */,
 				0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */,
@@ -396,6 +395,31 @@
 				0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */,
 			);
 			path = WebRTCClient;
+			sourceTree = "<group>";
+		};
+		0DCB1B9229E0683C005444B7 /* SignalingClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignalingClient;
+			sourceTree = "<group>";
+		};
+		0DCB1B9329E0685D005444B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */,
+				0DCB1B6729DE60E6005444B7 /* RTCStates.swift */,
+				0DCB1B6F29DE60E7005444B7 /* Message.swift */,
+				0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DCB1B9429E06879005444B7 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 		9AE789C4A8ECEDBAAE1E63B0 /* Pods */ = {
