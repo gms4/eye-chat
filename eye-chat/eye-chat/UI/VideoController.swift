@@ -9,13 +9,13 @@ import Foundation
 import SwiftUI
 import WebRTC
 
-struct VideoController: UIViewControllerRepresentable {
+struct Connection: UIViewControllerRepresentable {
 
     class Coordinator: NSObject, SignalClientDelegate, WebRTCClientDelegate {
         
-        var parent: VideoController?
+        var parent: Connection?
         
-        init(_ parent: VideoController){
+        init(_ parent: Connection){
             self.parent = parent
         }
         

@@ -21,12 +21,12 @@ struct HomeView: View {
 //    @EnvironmentObject var signaling: SignalingClient
     //    let style: EyetrackingStyle
     
-    let video: VideoController
+    let video: Connection
     
     @State var isVideoOn = false
     
     init(){
-        self.video = VideoController()
+        self.video = Connection()
     }
     
     var body: some View {
