@@ -29,7 +29,7 @@ struct PointerFinder {
         return false
     }
     
-    public func didUseMoveAxisYGrid(pointer: CGRect?) -> [Bool]{
+    public func didUseMoveAxisYGrid(pointer: CGRect?) -> [Bool] {
         guard let pointer = pointer else { return [false, true, false] }
         
         if pointer.minY < center.minY - center.height/2 {
