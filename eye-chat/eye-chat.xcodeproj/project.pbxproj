@@ -45,6 +45,9 @@
 		0DCB1B8F29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8E29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift */; };
 		0DCB1B9129E067E5005444B7 /* WebRTCClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */; };
 		0DCB1B9629E07F00005444B7 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9529E07F00005444B7 /* ViewCoordinator.swift */; };
+		0DCB1B9829E0BB4C005444B7 /* ConnectionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9729E0BB4C005444B7 /* ConnectionSingleton.swift */; };
+		0DCB1B9D29E0BC48005444B7 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9A29E0BC48005444B7 /* VideoView.swift */; };
+		0DCB1B9E29E0BC48005444B7 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9B29E0BC48005444B7 /* VideoViewModel.swift */; };
 		1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */; };
 		41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */; };
 		48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */; };
@@ -131,6 +134,9 @@
 		0DCB1B8E29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+RTCDataChannelDelegate.swift"; sourceTree = "<group>"; };
 		0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClientDelegate.swift; sourceTree = "<group>"; };
 		0DCB1B9529E07F00005444B7 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		0DCB1B9729E0BB4C005444B7 /* ConnectionSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSingleton.swift; sourceTree = "<group>"; };
+		0DCB1B9A29E0BC48005444B7 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		0DCB1B9B29E0BC48005444B7 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,10 +201,11 @@
 		0D4A533129DA25F500D775A9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B9729E0BB4C005444B7 /* ConnectionSingleton.swift */,
 				0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */,
-				0DCB1B9429E06879005444B7 /* Socket */,
 				0DCB1B9329E0685D005444B7 /* Extensions */,
 				0DCB1B9229E0683C005444B7 /* SignalingClient */,
+				0DCB1B9429E06879005444B7 /* Socket */,
 				0DCB1B8B29E06703005444B7 /* WebRTCClient */,
 			);
 			path = Services;
@@ -321,6 +328,7 @@
 		0D71CFF729D32A7500E91563 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B9929E0BC1E005444B7 /* Video */,
 				C0B79AB529D74E26002B3210 /* Create Room */,
 				C09CDA8E29D5B9ED006C60BB /* Home */,
 			);
@@ -417,6 +425,15 @@
 				0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */,
 			);
 			path = Socket;
+			sourceTree = "<group>";
+		};
+		0DCB1B9929E0BC1E005444B7 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B9A29E0BC48005444B7 /* VideoView.swift */,
+				0DCB1B9B29E0BC48005444B7 /* VideoViewModel.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		9AE789C4A8ECEDBAAE1E63B0 /* Pods */ = {
@@ -707,6 +724,7 @@
 				C09CDAA029D5FD8A006C60BB /* PartialKeyboard.swift in Sources */,
 				0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
+				0DCB1B9829E0BB4C005444B7 /* ConnectionSingleton.swift in Sources */,
 				C046A47729D624030006B7D8 /* CameraStyle.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
 				0DCB1B8429E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift in Sources */,
@@ -729,6 +747,7 @@
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
 				0DCB1B8829E0669A005444B7 /* WebRTCClient+Audio.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
+				0DCB1B9D29E0BC48005444B7 /* VideoView.swift in Sources */,
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
@@ -740,6 +759,7 @@
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0DCB1B7A29DE61C4005444B7 /* ConnectionController.swift in Sources */,
 				0DCB1B7329DE60E7005444B7 /* NativeWebSocket.swift in Sources */,
+				0DCB1B9E29E0BC48005444B7 /* VideoViewModel.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
 				0DCB1B7029DE60E7005444B7 /* RTCStates.swift in Sources */,

@@ -18,7 +18,7 @@ struct eye_chatApp: App {
         WindowGroup {
             if #available(iOS 16.0, *){
                 NavigationStack(path: $coordinator.path){
-                    HomeView()
+                    HomeView(style: .activate)
                         .navigationDestination(for: RouteScreen.self){ destination in
                             switch destination {
                             case .main:
