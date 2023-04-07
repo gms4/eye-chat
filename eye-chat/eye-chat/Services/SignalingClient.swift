@@ -17,9 +17,9 @@ protocol SignalClientDelegate: AnyObject {
 
 final class SignalingClient {
     
-    private let decoder = JSONDecoder()
-    private let encoder = JSONEncoder()
-    private let webSocket: WebSocketProvider
+    let decoder = JSONDecoder()
+    let encoder = JSONEncoder()
+    let webSocket: WebSocketProvider
     weak var delegate: SignalClientDelegate?
     
     init(webSocket: WebSocketProvider) {
@@ -54,3 +54,4 @@ final class SignalingClient {
         }
     }
 }
+

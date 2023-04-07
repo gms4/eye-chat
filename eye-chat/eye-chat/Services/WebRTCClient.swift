@@ -24,16 +24,16 @@ final class WebRTCClient: NSObject {
     }()
     
     weak var delegate: WebRTCClientDelegate?
-    private let peerConnection: RTCPeerConnection
-    private let rtcAudioSession =  RTCAudioSession.sharedInstance()
-    private let audioQueue = DispatchQueue(label: "audio")
-    private let mediaConstrains = [kRTCMediaConstraintsOfferToReceiveAudio: kRTCMediaConstraintsValueTrue,
+    let peerConnection: RTCPeerConnection
+    let rtcAudioSession =  RTCAudioSession.sharedInstance()
+    let audioQueue = DispatchQueue(label: "audio")
+    let mediaConstrains = [kRTCMediaConstraintsOfferToReceiveAudio: kRTCMediaConstraintsValueTrue,
                                    kRTCMediaConstraintsOfferToReceiveVideo: kRTCMediaConstraintsValueTrue]
-    private var videoCapturer: RTCVideoCapturer?
-    private var localVideoTrack: RTCVideoTrack?
-    private var remoteVideoTrack: RTCVideoTrack?
-    private var localDataChannel: RTCDataChannel?
-    private var remoteDataChannel: RTCDataChannel?
+    var videoCapturer: RTCVideoCapturer?
+    var localVideoTrack: RTCVideoTrack?
+    var remoteVideoTrack: RTCVideoTrack?
+    var localDataChannel: RTCDataChannel?
+    var remoteDataChannel: RTCDataChannel?
 
     @available(*, unavailable)
     override init() {
@@ -142,11 +142,9 @@ final class WebRTCClient: NSObject {
     private func createMediaSenders() {
         let streamId = "stream"
         
-        // Audio
         let audioTrack = self.createAudioTrack()
         self.peerConnection.add(audioTrack, streamIds: [streamId])
         
-        // Video
         let videoTrack = self.createVideoTrack()
         self.localVideoTrack = videoTrack
         self.peerConnection.add(videoTrack, streamIds: [streamId])
@@ -234,22 +232,10 @@ extension WebRTCClient: RTCPeerConnectionDelegate {
     }
 }
 extension WebRTCClient {
-    private func setTrackEnabled<T: RTCMediaStreamTrack>(_ type: T.Type, isEnabled: Bool) {
+    func setTrackEnabled<T: RTCMediaStreamTrack>(_ type: T.Type, isEnabled: Bool) {
         peerConnection.transceivers
             .compactMap { return $0.sender.track as? T }
             .forEach { $0.isEnabled = isEnabled }
-    }
-}
-
-extension WebRTCClient {
-    func hideVideo() {
-        self.setVideoEnabled(false)
-    }
-    func showVideo() {
-        self.setVideoEnabled(true)
-    }
-    private func setVideoEnabled(_ isEnabled: Bool) {
-        setTrackEnabled(RTCVideoTrack.self, isEnabled: isEnabled)
     }
 }
 

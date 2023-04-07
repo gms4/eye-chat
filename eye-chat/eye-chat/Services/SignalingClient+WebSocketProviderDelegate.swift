@@ -5,7 +5,8 @@
 //  Created by alexdamascena on 07/04/23.
 //
 
-import Foundation
+import SwiftUI
+import WebRTC
 
 
 extension SignalingClient: WebSocketProviderDelegate {
