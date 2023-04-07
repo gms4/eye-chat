@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct FaceIDAuthView: View {
+    
     @StateObject var authManager = AuthManager()
     
     var body: some View {
