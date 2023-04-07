@@ -62,18 +62,6 @@ class PointerSelector: ObservableObject {
             goBack?()
             shouldUpdate = -1
         }
-
-
-//        if !showSection && isFirstSection {
-//            axisXFirstSection = newAxisX
-//            axisXSecondSection = axisXFirstSection.map { _ in false }
-//
-//        }
-//
-//        if !showSection && !isFirstSection {
-//            axisXSecondSection = newAxisX
-//            axisXFirstSection = axisXSecondSection.map { _ in false }
-//        }
         
         if let showAxisY = axisYSection {
             
@@ -149,21 +137,13 @@ class PointerSelector: ObservableObject {
             } else {
                 
                 showSection = false
-//                needMove = false
-                
-//                if content == .sectionsAndGrid {
-//                    return
-//                }
-                
+    
                 guard let upTrigger = upSectionTrigger,
                       let downTrigger = downSectionTrigger else { return }
 
                 if isFirstSection { upTrigger() } else { downTrigger() }
             }
-            
         }
-        
-        
     }
     
     private func userSelect(_ option: [Bool]) -> Int {
