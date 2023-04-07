@@ -190,15 +190,3 @@ final class WebRTCClient: NSObject {
         self.remoteDataChannel?.sendData(buffer)
     }
 }
-
-
-
-extension WebRTCClient: RTCDataChannelDelegate {
-    func dataChannelDidChangeState(_ dataChannel: RTCDataChannel) {
-        debugPrint("dataChannel did change state: \(dataChannel.readyState)")
-    }
-    
-    func dataChannel(_ dataChannel: RTCDataChannel, didReceiveMessageWith buffer: RTCDataBuffer) {
-        self.delegate?.webRTCClient(self, didReceiveData: buffer.data)
-    }
-}
