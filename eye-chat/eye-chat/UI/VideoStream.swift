@@ -18,6 +18,5 @@ struct VideoStream: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: VideoStreamViewController, context: Context) {
-    
     }
 }

@@ -13,8 +13,8 @@ class VideoStreamViewController: UIViewController {
     private var localVideoView: UIView = {
         let width = UIScreen.screenWidth * 0.33
         let height = UIScreen.screenHeight * 0.25
-        let frame = CGRect(x: 0,
-                           y: 0,
+        let frame = CGRect(x: UIScreen.screenWidth * 0.67 - 32,
+                           y: height * 2.4 - 32,
                            width: width,
                            height: height)
         let view = UIView(frame: frame)
@@ -37,10 +37,11 @@ class VideoStreamViewController: UIViewController {
    override func viewDidLoad() {
        super.viewDidLoad()
        
-       view.backgroundColor = .orange
        
        let localRenderer = RTCMTLVideoView(frame: self.localVideoView.frame)
        let remoteRenderer = RTCMTLVideoView(frame: self.view.frame)
+       remoteRenderer.backgroundColor = .black
+       
        localRenderer.videoContentMode = .scaleAspectFill
        remoteRenderer.videoContentMode = .scaleAspectFill
        
@@ -51,12 +52,14 @@ class VideoStreamViewController: UIViewController {
        
        self.embedView(localRenderer, into: self.localVideoView)
        remoteRenderer.addSubview(localVideoView)
-
+       
        self.embedView(remoteRenderer, into: self.view)
 
    }
+    
+    
        
-   private func embedView(_ view: UIView, into containerView: UIView) {
+    private func embedView(_ view: UIView, into containerView: UIView) {
        containerView.addSubview(view)
        view.translatesAutoresizingMaskIntoConstraints = false
        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",
@@ -69,6 +72,6 @@ class VideoStreamViewController: UIViewController {
                                                                    metrics: nil,
                                                                    views: ["view":view]))
        containerView.layoutIfNeeded()
-   }
+    }
 }
 

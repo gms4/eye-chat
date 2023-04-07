@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFAE29D324C300E91563 /* eye_chatApp.swift */; };
-		0D71CFB129D324C300E91563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB029D324C300E91563 /* ContentView.swift */; };
 		0D71CFB329D324C400E91563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB229D324C400E91563 /* Assets.xcassets */; };
 		0D71CFB629D324C400E91563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D71CFB529D324C400E91563 /* Preview Assets.xcassets */; };
 		0D71CFB829D324C400E91563 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71CFB729D324C400E91563 /* Persistence.swift */; };
@@ -25,7 +24,6 @@
 		0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D00E29D32CD900E91563 /* Int+Su.swift */; };
 		0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01029D32CF700E91563 /* Double+Su.swift */; };
 		0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01729D3337500E91563 /* RouteScreen.swift */; };
-		0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D71D01B29D335AB00E91563 /* FirstView.swift */; };
 		0DCB1B7029DE60E7005444B7 /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6729DE60E6005444B7 /* RTCStates.swift */; };
 		0DCB1B7129DE60E7005444B7 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */; };
 		0DCB1B7229DE60E7005444B7 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */; };
@@ -94,7 +92,6 @@
 /* Begin PBXFileReference section */
 		0D71CFAB29D324C300E91563 /* eye-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eye-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D71CFAE29D324C300E91563 /* eye_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eye_chatApp.swift; sourceTree = "<group>"; };
-		0D71CFB029D324C300E91563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D71CFB229D324C400E91563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D71CFB529D324C400E91563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D71CFB729D324C400E91563 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -113,7 +110,6 @@
 		0D71D00E29D32CD900E91563 /* Int+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Su.swift"; sourceTree = "<group>"; };
 		0D71D01029D32CF700E91563 /* Double+Su.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Su.swift"; sourceTree = "<group>"; };
 		0D71D01729D3337500E91563 /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
-		0D71D01B29D335AB00E91563 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		0DCB1B6729DE60E6005444B7 /* RTCStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
 		0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
 		0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
@@ -240,12 +236,10 @@
 				0D71CFE029D3276800E91563 /* Constants */,
 				0D71CFDD29D3273900E91563 /* Entities */,
 				0D71CFAE29D324C300E91563 /* eye_chatApp.swift */,
-				0D71CFB029D324C300E91563 /* ContentView.swift */,
 				0D71CFB229D324C400E91563 /* Assets.xcassets */,
 				0D71CFB729D324C400E91563 /* Persistence.swift */,
 				0D71CFB929D324C400E91563 /* eye_chat.xcdatamodeld */,
 				0D71CFB429D324C400E91563 /* Preview Content */,
-				0D71D01B29D335AB00E91563 /* FirstView.swift */,
 			);
 			path = "eye-chat";
 			sourceTree = "<group>";
@@ -728,10 +722,8 @@
 				0DCB1B9629E07F00005444B7 /* ViewCoordinator.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */,
-				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
 				0DCB1B9129E067E5005444B7 /* WebRTCClientDelegate.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
-				0D71D01C29D335AB00E91563 /* FirstView.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0DCB1B7129DE60E7005444B7 /* SessionDescription.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,

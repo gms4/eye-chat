@@ -74,11 +74,5 @@ struct Connection: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: ConnectionController, context: Context) {
-        
     }
-    
-
-
-    
-    
 }

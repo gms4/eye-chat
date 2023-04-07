@@ -27,7 +27,6 @@ struct eye_chatApp: App {
                                 VideoStream(webRTCClient: web.connection.webRTCClient)
                             case .video:
                                 VideoStream(webRTCClient: web.connection.webRTCClient)
-                                
                             }
                         }
                 }

@@ -72,7 +72,7 @@ struct HomeView: View {
                 }
                 
                 Button("Send Message"){
-                    guard let dataToSend = "rola que tal".data(using: .utf8) else { return }
+                    guard let dataToSend = "ta funcionando".data(using: .utf8) else { return }
 //                    self.video.webRTCClient.sendData(dataToSend)
                     web.connection.webRTCClient.sendData(dataToSend)
                 }
