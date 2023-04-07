@@ -41,6 +41,9 @@
 		0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */; };
 		0DCB1B8429E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */; };
 		0DCB1B8629E05EDC005444B7 /* WebRTCClient+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8529E05EDC005444B7 /* WebRTCClient+Video.swift */; };
+		0DCB1B8829E0669A005444B7 /* WebRTCClient+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8729E0669A005444B7 /* WebRTCClient+Audio.swift */; };
+		0DCB1B8A29E066DA005444B7 /* WebRTCClient+TrackEnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8929E066DA005444B7 /* WebRTCClient+TrackEnable.swift */; };
+		0DCB1B8D29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */; };
 		1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */; };
 		41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */; };
 		48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */; };
@@ -123,6 +126,9 @@
 		0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStream.swift; sourceTree = "<group>"; };
 		0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalingClient+WebSocketProviderDelegate.swift"; sourceTree = "<group>"; };
 		0DCB1B8529E05EDC005444B7 /* WebRTCClient+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+Video.swift"; sourceTree = "<group>"; };
+		0DCB1B8729E0669A005444B7 /* WebRTCClient+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+Audio.swift"; sourceTree = "<group>"; };
+		0DCB1B8929E066DA005444B7 /* WebRTCClient+TrackEnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+TrackEnable.swift"; sourceTree = "<group>"; };
+		0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+RTCPeerConnectionDelegate.swift"; sourceTree = "<group>"; };
 		3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,16 +193,15 @@
 		0D4A533129DA25F500D775A9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B8B29E06703005444B7 /* WebRTCClient */,
 				0DCB1B6B29DE60E7005444B7 /* IceCandidate.swift */,
 				0DCB1B6F29DE60E7005444B7 /* Message.swift */,
 				0DCB1B6A29DE60E7005444B7 /* NativeWebSocket.swift */,
 				0DCB1B6729DE60E6005444B7 /* RTCStates.swift */,
 				0DCB1B6829DE60E6005444B7 /* SessionDescription.swift */,
 				0DCB1B6929DE60E6005444B7 /* SignalingClient.swift */,
-				0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */,
 				0DCB1B6D29DE60E7005444B7 /* WebSocketProvider.swift */,
 				0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */,
-				0DCB1B8529E05EDC005444B7 /* WebRTCClient+Video.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -373,6 +378,18 @@
 				0D71D01729D3337500E91563 /* RouteScreen.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0DCB1B8B29E06703005444B7 /* WebRTCClient */ = {
+			isa = PBXGroup;
+			children = (
+				0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */,
+				0DCB1B8529E05EDC005444B7 /* WebRTCClient+Video.swift */,
+				0DCB1B8729E0669A005444B7 /* WebRTCClient+Audio.swift */,
+				0DCB1B8929E066DA005444B7 /* WebRTCClient+TrackEnable.swift */,
+				0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */,
+			);
+			path = WebRTCClient;
 			sourceTree = "<group>";
 		};
 		9AE789C4A8ECEDBAAE1E63B0 /* Pods */ = {
@@ -682,10 +699,12 @@
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0DCB1B7129DE60E7005444B7 /* SessionDescription.swift in Sources */,
 				0D71CFAF29D324C300E91563 /* eye_chatApp.swift in Sources */,
+				0DCB1B8829E0669A005444B7 /* WebRTCClient+Audio.swift in Sources */,
 				0D71CFBB29D324C400E91563 /* eye_chat.xcdatamodeld in Sources */,
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
+				0DCB1B8A29E066DA005444B7 /* WebRTCClient+TrackEnable.swift in Sources */,
 				0DCB1B7C29DE61FA005444B7 /* VideoController.swift in Sources */,
 				0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
@@ -698,6 +717,7 @@
 				0DCB1B7029DE60E7005444B7 /* RTCStates.swift in Sources */,
 				0D71CFEF29D3296D00E91563 /* ContentComponent.swift in Sources */,
 				C09CDA9429D5BA05006C60BB /* Home.swift in Sources */,
+				0DCB1B8D29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift in Sources */,
 				C046A47B29D624AF0006B7D8 /* ChatStyle.swift in Sources */,
 				0DCB1B7429DE60E7005444B7 /* IceCandidate.swift in Sources */,
 				C09CDA9629D5C7D2006C60BB /* FullKeyboardComponent.swift in Sources */,
