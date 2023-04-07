@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PrintKeycapComponent: View {
     var body: some View {
-        Text("print")
-            .font(.system(size: 40, weight: .bold))
+        Text(ContentComponent.PRINT)
+            .font(.custom(ContentComponent.B, size: 44))
             .frame(maxWidth: 31.14.su, maxHeight: 23.28.su)
             .background(Color(ColorAsset.LIGHT_GRAY_DELETE_KEYCAP))
             .cornerRadius(20)

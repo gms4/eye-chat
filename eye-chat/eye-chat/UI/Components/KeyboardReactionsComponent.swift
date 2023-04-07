@@ -9,7 +9,7 @@ import SwiftUI
 
 struct KeyboardReactionsComponent: View {
     var body: some View {
-        Grid() {
+        Grid {
             GridRow {
                 ReactionsComponent(style: .smileEmoji)
                 ReactionsComponent(style: .heartFaceEmoji)
@@ -26,6 +26,7 @@ struct KeyboardReactionsComponent: View {
                 ReactionsComponent(style: .thinkingEmoji)
             }
         }
+        .frame(minHeight: UIScreen.screenHeight - 171.86.su)
     }
 }
 

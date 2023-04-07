@@ -10,7 +10,7 @@ import SwiftUI
 
 struct VideoView: View {
     
-    @EnvironmentObject var coordinator: ViewCoordinator
+//    @EnvironmentObject var coordinator: ViewCoordinator
     @ObservedObject private var viewModel = VideoViewModel()
     
     @State var web = ConnectionSingleton.shared
@@ -42,7 +42,7 @@ struct VideoView: View {
                 }
                 
                 Button("Video"){
-                    coordinator.push(new: .video)
+//                    coordinator.push(new: .video)
                 }
             }
         }

@@ -13,33 +13,37 @@ struct CreateRoomView: View {
     @ObservedObject private var viewModel = CreateRoomViewModel()
     let style: EyetrackingStyle
     @State var newContact: String = ""
+    //screenHeight = 1366, screenWidth = 1024
        
     var body: some View {
         VStack (alignment: .center) {
-            Spacer(minLength: 150)
+            Spacer(minLength: 21.42.su)
             VStack (alignment: .leading, spacing: 27) {
-                    Text("Criar Sala")
-                        .font(.system(size: 44, weight: .bold))
-                    Text("Nome")
-                        .font(.system(size: 40))
+                Text(ContentComponent.CREATE_ROOM)
+                    .font(.custom(ContentComponent.B, size: 48))
+                Text(ContentComponent.USERNAME_TAG)
+                        .font(.custom(ContentComponent.M, size: 44))
                 TextField(
-                "Digite o nome do seu novo contato",
+                    ContentComponent.TEXTFIELD_PLACEHOLDER,
                 text: $newContact
                 )
+                .background(Color(ColorAsset.BLUE_TEXTFIELD))
+                .cornerRadius(10)
+                .foregroundColor(Color.black)
+                .font(.custom(ContentComponent.M, size: 48))
                 Spacer()
-                
             }
-            .frame(maxWidth: 950, maxHeight: 1400)
-//            .background(.green)
+            .frame(maxWidth: 135.7.su)
+            FullKeyboardComponent(chat: .outside)
+            Spacer(minLength: 20.su)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.red)
         .overlay(alignment: .topTrailing) {
-            Image("logo-screens")
+            Image(ImageAsset.LOGO_SCREENS)
                 .frame(maxWidth: 20.su, maxHeight: 17.14.su)
         }
         .overlay(alignment: .bottomLeading) {
-            Image(style == .activate ? ImageAsset.DEACTIVATE_EYETRACKING : ImageAsset.ACTIVATE_EYETRACKING)
+            EyetrackingComponent(style: .activate)
                 .frame(maxWidth: 110, maxHeight: 130)
             }
     }
