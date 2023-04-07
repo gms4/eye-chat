@@ -11,11 +11,6 @@ import UIKit
 import EyeTracking
 import SwiftUI
 
-class EyeTrackingViewModel: ObservableObject {
-    @Published var pointer: CGRect?
-    @Published var selected: Bool = false
-    @Published var update: Bool = false
-}
 
 class EyeTrackingViewController: UIViewController {
     
