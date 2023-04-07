@@ -36,7 +36,7 @@
 		0DCB1B7729DE60E7005444B7 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */; };
 		0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B6F29DE60E7005444B7 /* Message.swift */; };
 		0DCB1B7A29DE61C4005444B7 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */; };
-		0DCB1B7C29DE61FA005444B7 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7B29DE61FA005444B7 /* VideoController.swift */; };
+		0DCB1B7C29DE61FA005444B7 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7B29DE61FA005444B7 /* Connection.swift */; };
 		0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */; };
 		0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */; };
 		0DCB1B8429E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */; };
@@ -123,7 +123,7 @@
 		0DCB1B6E29DE60E7005444B7 /* WebRTCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		0DCB1B6F29DE60E7005444B7 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
-		0DCB1B7B29DE61FA005444B7 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		0DCB1B7B29DE61FA005444B7 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamViewController.swift; sourceTree = "<group>"; };
 		0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStream.swift; sourceTree = "<group>"; };
 		0DCB1B8329E05A5E005444B7 /* SignalingClient+WebSocketProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalingClient+WebSocketProviderDelegate.swift"; sourceTree = "<group>"; };
@@ -307,7 +307,7 @@
 				0D71CFF829D32A8400E91563 /* Enum */,
 				0D71CFF729D32A7500E91563 /* Modules */,
 				0D71CFF629D32A5C00E91563 /* Extensions */,
-				0DCB1B7B29DE61FA005444B7 /* VideoController.swift */,
+				0DCB1B7B29DE61FA005444B7 /* Connection.swift */,
 				0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */,
 				0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */,
 			);
@@ -737,7 +737,7 @@
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				0DCB1B8A29E066DA005444B7 /* WebRTCClient+TrackEnable.swift in Sources */,
-				0DCB1B7C29DE61FA005444B7 /* VideoController.swift in Sources */,
+				0DCB1B7C29DE61FA005444B7 /* Connection.swift in Sources */,
 				0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
