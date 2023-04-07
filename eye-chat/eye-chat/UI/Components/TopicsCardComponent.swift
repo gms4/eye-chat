@@ -41,7 +41,7 @@ struct FirstTopicsCardComponent: View {
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 35)
                         .background(
-                            RoundedCornersShape(corners: [.topLeft, .topRight], radius: 15)
+                            RoundedCornersShape(corners: [.topLeft, .topRight], radius: 20)
                                         .fill(Color("blue-keycap"))
                                 )
                         .foregroundColor(.white)
@@ -51,7 +51,7 @@ struct FirstTopicsCardComponent: View {
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: 310.22, maxHeight: 128)
                         .background(
-                            RoundedCornersShape(corners: [.bottomLeft, .bottomRight], radius: 15)
+                            RoundedCornersShape(corners: [.bottomLeft, .bottomRight], radius: 20)
                                         .fill(Color("light-gray"))
                                 )
                 }.frame(maxWidth: 310.22, maxHeight: 163)

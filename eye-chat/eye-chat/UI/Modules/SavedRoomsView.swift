@@ -17,11 +17,8 @@ struct SavedRoomsView: View{
    
     
     var body: some View {
-        
-        //MARK: coisas estranhas
-        
+    
         VStack(alignment: .leading){
-            
             
             Text(ContentComponent.SAVED_ROOMS)
                 .font(.custom(ContentComponent.B, size: 48))
