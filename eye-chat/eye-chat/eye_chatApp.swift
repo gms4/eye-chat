@@ -11,15 +11,29 @@ import SwiftUI
 struct eye_chatApp: App {
     
     let persistenceController = PersistenceController.shared
-//    let signaling = SignalingClient()
-//    let webRTCClient = WebRTCClient(iceServers: VideoConfig.EYE_CHAT_DEFAULT.servers)
+    @ObservedObject var coordinator = ViewCoordinator()
+    @State var web = ConnectionSingleton.shared
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if #available(iOS 16.0, *){
+                NavigationStack(path: $coordinator.path){
+                    HomeView()
+                        .navigationDestination(for: RouteScreen.self){ destination in
+                            switch destination {
+                            case .main:
+                                VideoStream(webRTCClient: web.connection.webRTCClient)
+                            case .create:
+                                VideoStream(webRTCClient: web.connection.webRTCClient)
+                            case .video:
+                                VideoStream(webRTCClient: web.connection.webRTCClient)
+                                
+                            }
+                        }
+                }
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//                .environmentObject(signaling)
-//                .environmentObject(webRTCClient)
+                .environmentObject(coordinator)
+            }
         }
     }
 }

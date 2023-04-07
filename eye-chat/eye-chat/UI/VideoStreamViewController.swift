@@ -10,7 +10,18 @@ import WebRTC
 
 class VideoStreamViewController: UIViewController {
 
-    private var localVideoView = UIView()
+    private var localVideoView: UIView = {
+        let width = UIScreen.screenWidth * 0.33
+        let height = UIScreen.screenHeight * 0.25
+        let frame = CGRect(x: 0,
+                           y: 0,
+                           width: width,
+                           height: height)
+        let view = UIView(frame: frame)
+        view.backgroundColor = .black
+        return view
+    }()
+    
     private let webRTCClient: WebRTCClient
 
     init(webRTCClient: WebRTCClient) {
@@ -26,6 +37,8 @@ class VideoStreamViewController: UIViewController {
    override func viewDidLoad() {
        super.viewDidLoad()
        
+       view.backgroundColor = .orange
+       
        let localRenderer = RTCMTLVideoView(frame: self.localVideoView.frame)
        let remoteRenderer = RTCMTLVideoView(frame: self.view.frame)
        localRenderer.videoContentMode = .scaleAspectFill
@@ -35,9 +48,12 @@ class VideoStreamViewController: UIViewController {
        self.webRTCClient.startCaptureLocalVideo(renderer: localRenderer)
        self.webRTCClient.renderRemoteVideo(to: remoteRenderer)
        
+       
        self.embedView(localRenderer, into: self.localVideoView)
+       remoteRenderer.addSubview(localVideoView)
+
        self.embedView(remoteRenderer, into: self.view)
-       self.view.sendSubviewToBack(remoteRenderer)
+
    }
        
    private func embedView(_ view: UIView, into containerView: UIView) {

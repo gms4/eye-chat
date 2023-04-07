@@ -14,16 +14,26 @@ enum EyetrackingStyle {
     case activate
     case deactivate
 }
+
+class ConnectionSingleton {
+    
+    static let shared = ConnectionSingleton()
+    let connection = Connection()
+    
+    private init(){}
+}
 struct HomeView: View {
     
     @ObservedObject private var viewModel = HomeViewModel()
-//    @EnvironmentObject var webRTCClient: WebRTCClient
-//    @EnvironmentObject var signaling: SignalingClient
+    @EnvironmentObject var coordinator: ViewCoordinator
+    
     //    let style: EyetrackingStyle
     
     let video: Connection
     
-    @State var isVideoOn = false
+//    @State var isVideoOn = false
+    
+    @State var web = ConnectionSingleton.shared
     
     init(){
         self.video = Connection()
@@ -32,33 +42,44 @@ struct HomeView: View {
     var body: some View {
         
         ZStack {
-            video
+            web.connection
         }.overlay {
             
             VStack (alignment: .center, spacing: 32) {
 
                 Button("Offer"){
-                    self.video.webRTCClient.offer{ sdp in
-                        self.video.signalingClient.send(sdp: sdp)
+//                    self.video.webRTCClient.offer{ sdp in
+//                        self.video.signalingClient.send(sdp: sdp)
+//                    }
+//                    ConnectionSingleton.shared.connection.webRTCClient.offer{ sdp in
+//
+//                    }
+                    
+                    web.connection.webRTCClient.offer{ sdp in
+                        web.connection.signalingClient.send(sdp: sdp)
                     }
+                    
                 }
                 
                 Button("Answer"){
-                    self.video.webRTCClient.answer{ localSdp in
-                        self.video.signalingClient.send(sdp: localSdp)
+                    web.connection.webRTCClient.answer{ localSdp in
+                        web.connection.signalingClient.send(sdp: localSdp)
+                        
                     }
+//                    self.video.webRTCClient.answer{ localSdp in
+//                        self.video.signalingClient.send(sdp: localSdp)
+//                    }
                 }
                 
                 Button("Send Message"){
                     guard let dataToSend = "rola que tal".data(using: .utf8) else { return }
-                    self.video.webRTCClient.sendData(dataToSend)
+//                    self.video.webRTCClient.sendData(dataToSend)
+                    web.connection.webRTCClient.sendData(dataToSend)
                 }
                 
                 Button("Video"){
-                    isVideoOn = true
+                    coordinator.push(new: .video)
                 }
-            }.sheet(isPresented: $isVideoOn){
-                VideoStream(webRTCClient: self.video.webRTCClient)
             }
         
             //            VStack (alignment: .leading, spacing: 5.14.su) {

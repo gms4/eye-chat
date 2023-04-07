@@ -10,12 +10,27 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+//    @EnvironmentObject var coordinator: ViewCoordinator
 
     var body: some View {
-        NavigationStack {
-//            screen
-            HomeView()
+        VStack {
+            
         }
+//        NavigationStack(path: coordinator.path){
+////            screen
+//            HomeView()
+//                .navigationDestination(for: RouteScreen.self){ route in
+//                    switch route {
+//                    case .main:
+//                        ContentView() // change this view
+//                    case .create:
+//                        ContentView() // change this view
+//                            .background(.black)
+//                    case .video:
+//                        VideoStream(webRTCClient: ConnectionSingleton.shared.connection.webRTCClient)
+//                    }
+//                }
+//        }
     }
     
     private var screen: some View {
@@ -27,6 +42,8 @@ struct ContentView: View {
                 case .create:
                     ContentView() // change this view
                         .background(.black)
+                case .video:
+                    VideoStream(webRTCClient: ConnectionSingleton.shared.connection.webRTCClient)
                 }
             }
     }

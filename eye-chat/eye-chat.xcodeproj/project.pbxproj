@@ -46,6 +46,7 @@
 		0DCB1B8D29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */; };
 		0DCB1B8F29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B8E29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift */; };
 		0DCB1B9129E067E5005444B7 /* WebRTCClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */; };
+		0DCB1B9629E07F00005444B7 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB1B9529E07F00005444B7 /* ViewCoordinator.swift */; };
 		1B187E09E3BC5EBCF2303BDE /* Pods_eye_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */; };
 		41B377CC5A150BEACE0FD117 /* Pods_eye_chat_eye_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */; };
 		48E91FC37F0AE9C9207B589A /* Pods_eye_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AEE7820E96B669ADD1BA45 /* Pods_eye_chat.framework */; };
@@ -133,6 +134,7 @@
 		0DCB1B8C29E0672E005444B7 /* WebRTCClient+RTCPeerConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+RTCPeerConnectionDelegate.swift"; sourceTree = "<group>"; };
 		0DCB1B8E29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebRTCClient+RTCDataChannelDelegate.swift"; sourceTree = "<group>"; };
 		0DCB1B9029E067E5005444B7 /* WebRTCClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClientDelegate.swift; sourceTree = "<group>"; };
+		0DCB1B9529E07F00005444B7 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		3503120924F3C0505FFCAC80 /* Pods_eye_chat_eye_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8369F51BC84B970BDD733 /* Pods_eye_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eye_chatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		0D4A533129DA25F500D775A9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */,
 				0DCB1B9429E06879005444B7 /* Socket */,
 				0DCB1B9329E0685D005444B7 /* Extensions */,
 				0DCB1B9229E0683C005444B7 /* SignalingClient */,
@@ -275,7 +278,6 @@
 		0D71CFDD29D3273900E91563 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				0DCB1B6C29DE60E7005444B7 /* VideoConfig.swift */,
 				0D71D00929D32C0700E91563 /* User.swift */,
 			);
 			path = Entities;
@@ -302,14 +304,14 @@
 		0D71CFF429D32A3900E91563 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0DCB1B7B29DE61FA005444B7 /* Connection.swift */,
 				0DCB1B7929DE61C4005444B7 /* ConnectionController.swift */,
+				0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */,
+				0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */,
 				0D71D01329D32D5D00E91563 /* Components */,
 				0D71CFF829D32A8400E91563 /* Enum */,
-				0D71CFF729D32A7500E91563 /* Modules */,
 				0D71CFF629D32A5C00E91563 /* Extensions */,
-				0DCB1B7B29DE61FA005444B7 /* Connection.swift */,
-				0DCB1B7D29DE7952005444B7 /* VideoStreamViewController.swift */,
-				0DCB1B7F29DE7A2D005444B7 /* VideoStream.swift */,
+				0D71CFF729D32A7500E91563 /* Modules */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -375,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				0D71D01729D3337500E91563 /* RouteScreen.swift */,
+				0DCB1B9529E07F00005444B7 /* ViewCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 				C046A47D29D624E80006B7D8 /* ButtonStyle.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
+				0DCB1B9629E07F00005444B7 /* ViewCoordinator.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */,
 				0D71CFB129D324C300E91563 /* ContentView.swift in Sources */,
