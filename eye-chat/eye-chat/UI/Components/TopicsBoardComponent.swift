@@ -9,23 +9,36 @@ import SwiftUI
 
 struct TopicsBoardComponent: View {
     var body: some View {
-        Grid() {
-            GridRow {
-                Grid {
-                    FirstTopicsCardComponent(style: .yes, columnName: "Respostas rápidas")
-                    TopicsCardComponent(style: .no)
-                    TopicsCardComponent(style: .maybe)
+        VStack (spacing: 35){
+            Grid() {
+                GridRow {
+                    Grid {
+                        FirstTopicsCardComponent(style: .yes, columnName: "Respostas rápidas")
+                        TopicsCardComponent(style: .no)
+                        TopicsCardComponent(style: .maybe)
+                    }
+                    Grid {
+                        FirstTopicsCardComponent(style: .family, columnName: "Tópicos")
+                        TopicsCardComponent(style: .entertainment)
+                        TopicsCardComponent(style: .health)
+                    }
+                    Grid {
+                        FirstTopicsCardComponent(style: .day, columnName: "Perguntas")
+                        TopicsCardComponent(style: .story)
+                        TopicsCardComponent(style: .sorry)
+                    }
                 }
-                Grid {
-                    FirstTopicsCardComponent(style: .family, columnName: "Tópicos")
-                    TopicsCardComponent(style: .entertainment)
-                    TopicsCardComponent(style: .health)
-                }
-                Grid {
-                    FirstTopicsCardComponent(style: .day, columnName: "Perguntas")
-                    TopicsCardComponent(style: .story)
-                    TopicsCardComponent(style: .sorry)
-                }
+            }
+            HStack (alignment: .center) {
+                Circle()
+                    .fill(Color(ColorAsset.LIGHT_ORANGE))
+                    .frame(width: 14, height: 14)
+                Circle()
+                    .fill(Color(ColorAsset.PET_ORANGE))
+                    .frame(width: 14, height: 14)
+                Circle()
+                    .fill(Color(ColorAsset.LIGHT_ORANGE))
+                    .frame(width: 14, height: 14)
             }
         }
     }

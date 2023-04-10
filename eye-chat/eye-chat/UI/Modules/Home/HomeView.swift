@@ -26,6 +26,7 @@ struct HomeView: View {
                 EyeButtonComponent(style: .createRoom)
             }
         }
+        .navigationBarBackButtonHidden(true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay(alignment: .topTrailing) {
             Image(ImageAsset.LOGO_SCREENS)

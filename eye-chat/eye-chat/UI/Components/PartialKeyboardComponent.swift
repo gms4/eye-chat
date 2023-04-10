@@ -19,133 +19,146 @@ struct PartialKeyboardComponent: View {
         )
     
     var body: some View {
-        Grid() {
-            switch style {
-            case .aeiou:
-                GridRow {
-                    Text(ContentComponent.AEIOU[0])
-                    Text(ContentComponent.AEIOU[1])
-                    Text(ContentComponent.AEIOU[2])
+        VStack (spacing: 35) {
+            Grid() {
+                switch style {
+                case .aeiou:
+                    GridRow {
+                        Text(ContentComponent.AEIOU[0])
+                        Text(ContentComponent.AEIOU[1])
+                        Text(ContentComponent.AEIOU[2])
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                    GridRow {
+                        Text(ContentComponent.AEIOU[3])
+                        Text(ContentComponent.AEIOU[4])
+                        ArrowComponent()
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                case .srndm:
+                    GridRow {
+                        Text(ContentComponent.SRNDM[0])
+                        Text(ContentComponent.SRNDM[1])
+                        Text(ContentComponent.SRNDM[2])
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                    GridRow {
+                        Text(ContentComponent.SRNDM[3])
+                        Text(ContentComponent.SRNDM[4])
+                        ArrowComponent()
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                case .tclpv:
+                    GridRow {
+                        Text(ContentComponent.TCLPV[0])
+                        Text(ContentComponent.TCLPV[1])
+                        Text(ContentComponent.TCLPV[2])
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                    GridRow {
+                        Text(ContentComponent.TCLPV[3])
+                        Text(ContentComponent.TCLPV[4])
+                        ArrowComponent()
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                case .ghqbf:
+                    GridRow {
+                        Text(ContentComponent.GHQBF[0])
+                        Text(ContentComponent.GHQBF[1])
+                        Text(ContentComponent.GHQBF[2])
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                    GridRow {
+                        Text(ContentComponent.GHQBF[3])
+                        Text(ContentComponent.GHQBF[4])
+                        ArrowComponent()
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                case .zjxkw:
+                    GridRow {
+                        Text(ContentComponent.ZJXKW[0])
+                        Text(ContentComponent.ZJXKW[1])
+                        Text(ContentComponent.ZJXKW[2])
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                    GridRow {
+                        Text(ContentComponent.ZJXKW[3])
+                        Text(ContentComponent.ZJXKW[4])
+                        ArrowComponent()
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                case .others:
+                    GridRow {
+                        Text(ContentComponent.OTHERS[0])
+                        Text(ContentComponent.OTHERS[1])
+                        Text(ContentComponent.OTHERS[2])
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
+                    GridRow {
+                        Text(ContentComponent.OTHERS[3])
+                        Text(ContentComponent.OTHERS[4])
+                        ArrowComponent()
+                    }
+                    .font(textProperties.font)
+                    .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
+                    .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
+                    .cornerRadius(20)
                 }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-                GridRow {
-                    Text(ContentComponent.AEIOU[3])
-                    Text(ContentComponent.AEIOU[4])
-                    ArrowComponent()
+                HStack {
+                    DeleteKeycapComponent()
+                    SpaceKeycapComponent()
+                    if chat == .inside {
+                        PrintKeycapComponent()
+                    } else {
+                        CreateRoomComponent()
+                    }
                 }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-            case .srndm:
-                GridRow {
-                    Text(ContentComponent.SRNDM[0])
-                    Text(ContentComponent.SRNDM[1])
-                    Text(ContentComponent.SRNDM[2])
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-                GridRow {
-                    Text(ContentComponent.SRNDM[3])
-                    Text(ContentComponent.SRNDM[4])
-                    ArrowComponent()
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-            case .tclpv:
-                GridRow {
-                    Text(ContentComponent.TCLPV[0])
-                    Text(ContentComponent.TCLPV[1])
-                    Text(ContentComponent.TCLPV[2])
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-                GridRow {
-                    Text(ContentComponent.TCLPV[3])
-                    Text(ContentComponent.TCLPV[4])
-                    ArrowComponent()
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-            case .ghqbf:
-                GridRow {
-                    Text(ContentComponent.GHQBF[0])
-                    Text(ContentComponent.GHQBF[1])
-                    Text(ContentComponent.GHQBF[2])
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-                GridRow {
-                    Text(ContentComponent.GHQBF[3])
-                    Text(ContentComponent.GHQBF[4])
-                    ArrowComponent()
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-            case .zjxkw:
-                GridRow {
-                    Text(ContentComponent.ZJXKW[0])
-                    Text(ContentComponent.ZJXKW[1])
-                    Text(ContentComponent.ZJXKW[2])
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-                GridRow {
-                    Text(ContentComponent.ZJXKW[3])
-                    Text(ContentComponent.ZJXKW[4])
-                    ArrowComponent()
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-            case .others:
-                GridRow {
-                    Text(ContentComponent.OTHERS[0])
-                    Text(ContentComponent.OTHERS[1])
-                    Text(ContentComponent.OTHERS[2])
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
-                GridRow {
-                    Text(ContentComponent.OTHERS[3])
-                    Text(ContentComponent.OTHERS[4])
-                    ArrowComponent()
-                }
-                .font(textProperties.font)
-                .frame(maxWidth: textProperties.width, maxHeight: textProperties.height)
-                .background(Color(ColorAsset.LIGHT_GRAY_LETTERS_KEYCAP))
-                .cornerRadius(20)
+                .frame(minHeight: UIScreen.screenHeight - 171.86.su)
             }
-            HStack {
-                DeleteKeycapComponent()
-                SpaceKeycapComponent()
-                if chat == .inside {
-                    PrintKeycapComponent()
-                } else {
-                    CreateRoomComponent()
-                }
+            HStack (alignment: .center) {
+                Circle()
+                    .fill(Color(ColorAsset.LIGHT_ORANGE))
+                    .frame(width: 14, height: 14)
+                Circle()
+                    .fill(Color(ColorAsset.LIGHT_ORANGE))
+                    .frame(width: 14, height: 14)
+                Circle()
+                    .fill(Color(ColorAsset.PET_ORANGE))
+                    .frame(width: 14, height: 14)
             }
-            .frame(minHeight: UIScreen.screenHeight - 171.86.su)
         }
     }
 }

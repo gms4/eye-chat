@@ -479,12 +479,10 @@
 				0DCB1B9929E0BC1E005444B7 /* Video */,
 				0D4A536429DB83FD00D775A9 /* HomeV2 */,
 				C0A804BE29DCBB53008B019B /* Chat Screen */,
-				C0A0182829DC99A5001097E7 /* FaceIDAuth */,
+				C0A0182829DC99A5001097E7 /* Face ID Authentication */,
 				C0B79AB529D74E26002B3210 /* Create Room */,
 				C09CDA8E29D5B9ED006C60BB /* Home */,
-				6E551D2129DFBBBD002033A5 /* SavedRoomsView.swift */,
-				6E551D2329DFBBC7002033A5 /* SavedRoomsViewModel.swift */,
-				6E551D1F29DFBBAB002033A5 /* SavedRooms.swift */,
+				C05E273829E497BF009D35F0 /* Saved Rooms */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -639,6 +637,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C05E273829E497BF009D35F0 /* Saved Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				6E551D2129DFBBBD002033A5 /* SavedRoomsView.swift */,
+				6E551D2329DFBBC7002033A5 /* SavedRoomsViewModel.swift */,
+				6E551D1F29DFBBAB002033A5 /* SavedRooms.swift */,
+			);
+			path = "Saved Rooms";
+			sourceTree = "<group>";
+		};
 		C09CDA8E29D5B9ED006C60BB /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,14 +666,14 @@
 			path = AuthComponents;
 			sourceTree = "<group>";
 		};
-		C0A0182829DC99A5001097E7 /* FaceIDAuth */ = {
+		C0A0182829DC99A5001097E7 /* Face ID Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				C0A0182929DC99D0001097E7 /* FaceIDAuthView.swift */,
 				C0A0182A29DC99D0001097E7 /* FaceIDAuthViewModel.swift */,
 				C0A0182B29DC99D0001097E7 /* FaceIDAuth.swift */,
 			);
-			path = FaceIDAuth;
+			path = "Face ID Authentication";
 			sourceTree = "<group>";
 		};
 		C0A804BE29DCBB53008B019B /* Chat Screen */ = {
