@@ -19,4 +19,6 @@ struct ColorAsset {
     static let REACTION_BAR_COLOR = "reaction-bar-color"
     static let LIGHT_ORANGE_CARD = "light-orange-card"
     static let LIGHT_YELLO_CARD = "light-yellow-card"
+    static let PET_ORANGE = "pet-orange"
+    static let LIGHT_ORANGE = "light-orange"
 }

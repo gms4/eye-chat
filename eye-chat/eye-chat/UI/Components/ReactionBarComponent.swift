@@ -14,8 +14,9 @@ struct ReactionBarComponent: View {
             Text("🤔")
                 .font(.system(size: 100))
         }
-        .frame(maxWidth: .infinity, maxHeight: style == .small ? 156.35 : 275)
-        .background(Color(ColorAsset.REACTION_BAR_COLOR))
+        .frame(maxWidth: .infinity, maxHeight: style == .small ? 164 : 275)
+        .scaledToFill()
+        .background(Color(ColorAsset.BLUE_TEXTFIELD))
     }
 }
 
