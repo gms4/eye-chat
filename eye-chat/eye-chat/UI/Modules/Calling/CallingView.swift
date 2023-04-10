@@ -1,25 +1,34 @@
 //
-//  HomeV2View.swift
+//  CallingView.swift
 //  eye-chat
 //
-//  Created by alexdamascena on 03/04/23.
+//  Created by alexdamascena on 10/04/23.
 //  
 //
 
 import SwiftUI
 
-struct HomeV2View: View {
+struct CallingView: View {
 
-    @ObservedObject private var viewModel = HomeV2ViewModel()
+    @ObservedObject private var viewModel = CallingViewModel()
+       
     @EnvironmentObject var coordinator: ViewCordinator
+    @State var web = ConnectionSingleton.shared
             
     public func didUserTapSavedRooms(){
-        coordinator.push(view: .savedRooms)
+//        coordinator.push(view: .savedRooms)
+        web.connection.webRTCClient.offer{ sdp in
+            web.connection.signalingClient.send(sdp: sdp)
+        }
     }
     
     public func didUserTapCreateRooms(){
-        coordinator.push(view: .main)
+        print("entrou aqui")
+        web.connection.webRTCClient.answer{ localSdp in
+            web.connection.signalingClient.send(sdp: localSdp)
+        }
     }
+    
     var body: some View {
         VStack {
             EyeTrackingTemplate(
@@ -46,8 +55,8 @@ struct HomeV2View: View {
     }
 }
 
-//struct HomeV2_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HomeV2View()
-//    }
-//}
+struct Calling_Previews: PreviewProvider {
+    static var previews: some View {
+        CallingView()
+    }
+}

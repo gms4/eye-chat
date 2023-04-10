@@ -11,4 +11,6 @@ enum RouteScreen: Hashable {
     case create
     case video
     case videoStream
+    case savedRooms
+    case calling
 }

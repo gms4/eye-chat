@@ -21,7 +21,6 @@ struct eye_chatApp: App {
         WindowGroup {
             if #available(iOS 16.0, *){
                 NavigationStack(path: $coordinator.path){
-//                    FaceIDAuthView()
                     HomeV2View()
                     .id(appState.gameID)
                     .navigationDestination(for: RouteScreen.self){ destination in
@@ -34,6 +33,10 @@ struct eye_chatApp: App {
                             VideoView()
                         case .videoStream:
                             VideoStream(webRTCClient: web.connection.webRTCClient)
+                        case .savedRooms:
+                            RoomsView()
+                        case .calling:
+                            CallingView()
                         }
                     }
                 }
