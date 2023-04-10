@@ -9,4 +9,6 @@
 enum RouteScreen: Hashable {
     case main
     case create
+    case video
+    case videoStream
 }

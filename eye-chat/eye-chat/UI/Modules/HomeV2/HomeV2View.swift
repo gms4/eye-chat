@@ -11,11 +11,10 @@ import SwiftUI
 struct HomeV2View: View {
 
     @ObservedObject private var viewModel = HomeV2ViewModel()
-       
     @EnvironmentObject var coordinator: ViewCordinator
         
     public func leftFirstSection(){
-        coordinator.push(view: .create)
+        coordinator.push(view: .video)
     }
     
     public func midFirstSection(){
@@ -23,7 +22,8 @@ struct HomeV2View: View {
     }
     
     public func rightFirstSection(){
-        coordinator.push(view: .create)
+        print("entrou aqui")
+        coordinator.push(view: .video)
     }
     
     public func leftSecondSection(){
@@ -43,17 +43,27 @@ struct HomeV2View: View {
     }
     
     var body: some View {
-        
         VStack {
-            Text("Inicie uma conversa com EyeChat!")
-                .font(.system(size: 40))
-                .fontWeight(.medium)
             EyeTrackingTemplate(
                 upTrigger: rightFirstSection,
                 downTrigger: leftFirstSection,
+                spacing: 36,
                 elements: [ EyeButtonComponent(style: .createRoom).anyView,
                             EyeButtonComponent(style: .savedRoom).anyView]
             )
+        }
+        .padding(.top, 45)
+        .overlay {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(ContentComponent.INITIATE_CHAT)
+                        .font(.custom(ContentComponent.M, size: 44))
+                    Spacer()
+                }
+          
+                Spacer()
+                
+            }.frame(width: UIScreen.screenWidth - 70, height: UIScreen.screenHeight * 0.9)
         }
     }
 }

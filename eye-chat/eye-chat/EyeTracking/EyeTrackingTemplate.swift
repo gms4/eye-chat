@@ -20,7 +20,10 @@ struct EyeTrackingTemplate: View {
     
     private let elements: [AnyView]
     
+    
     var attributes: AttributesTrigger
+    
+    var spacing: CGFloat?
     
     @inlinable public init(axisXFirstSectionTrigger: [Function]? = nil,
                            axisXSecondSectionTrigger: [Function]? = nil,
@@ -28,7 +31,9 @@ struct EyeTrackingTemplate: View {
                            upTrigger: Function? = nil,
                            downTrigger: Function? = nil,
                            goBack: Function? = nil,
+                           spacing: CGFloat? = nil,
                            elements: [AnyView]
+                 
     ){
         self.attributes = AttributesTrigger(axisXFirstSectionTrigger: axisXFirstSectionTrigger,
                                             axisXSecondSectionTrigger: axisXSecondSectionTrigger,
@@ -37,6 +42,7 @@ struct EyeTrackingTemplate: View {
                                             downTrigger: downTrigger,
                                             goBack: goBack)
         self.elements = elements
+        self.spacing = spacing
         self.content = elements.count == 9 ? .sectionsAndGrid : .onlySections
     }
     
@@ -55,6 +61,7 @@ struct EyeTrackingTemplate: View {
                     }
                 }
                 .onChange(of: eyeViewModel.selected){ _ in
+                    print("tá funcionando")
                     selector.select()
                 }
         }
@@ -63,8 +70,8 @@ struct EyeTrackingTemplate: View {
             self.selector.setAttributes(self.attributes)
         }
         .overlay {
-            VStack(alignment: .center){
-                
+            VStack(alignment: .center, spacing: self.spacing ?? 16 ){
+//                dasdkjakldjkaldjald
                 if content == .sectionsAndGrid {
                     HStack {
                         elements[0]
@@ -132,10 +139,10 @@ struct Teste: View {
 
 struct ThirdView: View {
     
-//    @EnvironmentObject var coordinator: ViewCordinator
+    @EnvironmentObject var coordinator: ViewCordinator
     
     public func goBack(){
-//        coordinator.pop()
+        coordinator.pop()
     }
     
     public func teste1(){

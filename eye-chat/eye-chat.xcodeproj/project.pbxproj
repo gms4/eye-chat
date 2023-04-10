@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D328FE329E48CC0001A78C9 /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D328FE029E48CC0001A78C9 /* RoomsView.swift */; };
+		0D328FE429E48CC0001A78C9 /* RoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D328FE129E48CC0001A78C9 /* RoomsViewModel.swift */; };
+		0D328FE529E48CC0001A78C9 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D328FE229E48CC0001A78C9 /* Rooms.swift */; };
 		0D4A534F29DB7C9B00D775A9 /* EyeTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 0D4A534E29DB7C9B00D775A9 /* EyeTracking */; };
 		0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */; };
 		0D4A535729DB7D9400D775A9 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */; };
@@ -141,6 +144,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D328FE029E48CC0001A78C9 /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
+		0D328FE129E48CC0001A78C9 /* RoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewModel.swift; sourceTree = "<group>"; };
+		0D328FE229E48CC0001A78C9 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
 		0D4A535329DB7D3500D775A9 /* UIScreen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Size.swift"; sourceTree = "<group>"; };
 		0D4A535629DB7D9400D775A9 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		0D4A536529DB841200D775A9 /* HomeV2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeV2View.swift; sourceTree = "<group>"; };
@@ -295,6 +301,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D328FDF29E48CAB001A78C9 /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				0D328FE029E48CC0001A78C9 /* RoomsView.swift */,
+				0D328FE129E48CC0001A78C9 /* RoomsViewModel.swift */,
+				0D328FE229E48CC0001A78C9 /* Rooms.swift */,
+			);
+			path = Rooms;
+			sourceTree = "<group>";
+		};
 		0D4A533129DA25F500D775A9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +492,7 @@
 		0D71CFF729D32A7500E91563 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0D328FDF29E48CAB001A78C9 /* Rooms */,
 				0DCB1B9929E0BC1E005444B7 /* Video */,
 				0D4A536429DB83FD00D775A9 /* HomeV2 */,
 				C0A804BE29DCBB53008B019B /* Chat Screen */,
@@ -974,6 +991,7 @@
 				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				0DCB1B7829DE60E7005444B7 /* Message.swift in Sources */,
+				0D328FE429E48CC0001A78C9 /* RoomsViewModel.swift in Sources */,
 				0DCB1B9129E067E5005444B7 /* WebRTCClientDelegate.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
@@ -1020,6 +1038,7 @@
 				0DCB1B7E29DE7952005444B7 /* VideoStreamViewController.swift in Sources */,
 				0DCB1B2029DE0F0B005444B7 /* EyeTrackingViewController.swift in Sources */,
 				C09CDAA629D608A0006C60BB /* PrintKeycapComponent.swift in Sources */,
+				0D328FE329E48CC0001A78C9 /* RoomsView.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
 				C0A804C429DCBB84008B019B /* ChatScreen.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
@@ -1029,6 +1048,7 @@
 				C0A0182729DC98E2001097E7 /* LoginView.swift in Sources */,
 				0D71D00A29D32C0700E91563 /* User.swift in Sources */,
 				0DCB1B2C29DE2B75005444B7 /* PointerSelector.swift in Sources */,
+				0D328FE529E48CC0001A78C9 /* Rooms.swift in Sources */,
 				0D4A535429DB7D3500D775A9 /* UIScreen+Size.swift in Sources */,
 				0DCB1B8229DFF8D2005444B7 /* EyeTrackingViewModel.swift in Sources */,
 				C09CDA9329D5BA05006C60BB /* HomeViewModel.swift in Sources */,
