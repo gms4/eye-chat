@@ -8,6 +8,11 @@
 import SwiftUI
 import CoreData
 
+struct StyleCard {
+    var spacing: CGFloat
+    var borderColor: Color
+}
+
 struct EyeTrackingTemplate: View {
     
     @ObservedObject var eyeViewModel = EyeTrackingViewModel()
@@ -22,13 +27,17 @@ struct EyeTrackingTemplate: View {
     
     var attributes: AttributesTrigger
     
+    var style: StyleCard
+    
     @inlinable public init(axisXFirstSectionTrigger: [Function]? = nil,
                            axisXSecondSectionTrigger: [Function]? = nil,
                            axisXThirdSectionTrigger: [Function]? = nil,
                            upTrigger: Function? = nil,
                            downTrigger: Function? = nil,
                            goBack: Function? = nil,
+                           style: StyleCard,
                            elements: [AnyView]
+                 
     ){
         self.attributes = AttributesTrigger(axisXFirstSectionTrigger: axisXFirstSectionTrigger,
                                             axisXSecondSectionTrigger: axisXSecondSectionTrigger,
@@ -37,6 +46,7 @@ struct EyeTrackingTemplate: View {
                                             downTrigger: downTrigger,
                                             goBack: goBack)
         self.elements = elements
+        self.style = style
         self.content = elements.count == 9 ? .sectionsAndGrid : .onlySections
     }
     
@@ -63,37 +73,36 @@ struct EyeTrackingTemplate: View {
             self.selector.setAttributes(self.attributes)
         }
         .overlay {
-            VStack(alignment: .center){
-                
+            VStack(alignment: .center, spacing: style.spacing ){
                 if content == .sectionsAndGrid {
                     HStack {
                         elements[0]
-                            .border(selector.axisXFirstSection[0] ?  .green : .black, width: 4)
+                            .border(selector.axisXFirstSection[0] ?  .green : style.borderColor, width: 4)
                         elements[1]
-                            .border(selector.axisXFirstSection[1] ?  .green : .black,  width: 4)
+                            .border(selector.axisXFirstSection[1] ?  .green : style.borderColor,  width: 4)
                         elements[2]
-                            .border(selector.axisXFirstSection[2] ?  .green : .black,  width: 4)
+                            .border(selector.axisXFirstSection[2] ?  .green : style.borderColor,  width: 4)
                     }
                     .border(selector.axisYSection?[0] ?? false && selector.showSection ? .red : .white, width: 4)
                     
                     HStack {
                         elements[3]
-                            .border(selector.axisXSecondSection[0] ? .green : .black, width: 4)
+                            .border(selector.axisXSecondSection[0] ? .green : style.borderColor, width: 4)
                         elements[4]
-                            .border(selector.axisXSecondSection[1] ? .green : .black, width: 4)
+                            .border(selector.axisXSecondSection[1] ? .green : style.borderColor, width: 4)
                         elements[5]
-                            .border(selector.axisXSecondSection[2] ? .green : .black, width: 4)
+                            .border(selector.axisXSecondSection[2] ? .green : style.borderColor, width: 4)
                     }
                     .border(selector.axisYSection?[1] ?? false && selector.showSection ? .red : .white, width: 4)
                     
                     
                     HStack {
                         elements[6]
-                            .border(selector.axisXThirdSection[0] ? .green : .black, width: 4)
+                            .border(selector.axisXThirdSection[0] ? .green : style.borderColor, width: 4)
                         elements[7]
-                            .border(selector.axisXThirdSection[1] ? .green : .black, width: 4)
+                            .border(selector.axisXThirdSection[1] ? .green : style.borderColor, width: 4)
                         elements[8]
-                            .border(selector.axisXThirdSection[2] ? .green : .black, width: 4)
+                            .border(selector.axisXThirdSection[2] ? .green : style.borderColor, width: 4)
                         
                     }.border(selector.axisYSection?[2] ?? false && selector.showSection ? .red : .white, width: 4)
                 } else {
@@ -129,13 +138,12 @@ struct Teste: View {
 }
 
 
-
 struct ThirdView: View {
     
-//    @EnvironmentObject var coordinator: ViewCordinator
+    @EnvironmentObject var coordinator: ViewCordinator
     
     public func goBack(){
-//        coordinator.pop()
+        coordinator.pop()
     }
     
     public func teste1(){
@@ -181,6 +189,7 @@ struct ThirdView: View {
             axisXSecondSectionTrigger: [teste4, teste5, teste6],
             axisXThirdSectionTrigger: [teste7, teste8, teste9],
             goBack: goBack,
+            style: StyleCard(spacing: 32, borderColor: .yellow),
             elements: [ Teste().anyView,
                         Teste().anyView,
                         Teste().anyView,

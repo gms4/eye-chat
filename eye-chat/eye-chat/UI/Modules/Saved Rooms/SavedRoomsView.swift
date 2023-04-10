@@ -30,7 +30,7 @@ struct SavedRoomsView: View{
                     LazyVGrid(columns: columns, spacing: 10){
                         ForEach(listOfContacts, id: \.self) { index in
                             let meuArrayIndex: Int = 1 + listOfContacts.firstIndex(of: index)!
-                            SavedRoomsCardComponent(cardTitle: index, cardColor: defineCardColorByIndex(var: meuArrayIndex))
+//                            SavedRoomsCardComponent(cardTitle: index, cardColor: defineCardColorByIndex(var: meuArrayIndex))
                         }
                     }
                 }

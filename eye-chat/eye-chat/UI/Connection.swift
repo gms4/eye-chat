@@ -47,7 +47,7 @@ struct Connection: UIViewControllerRepresentable {
         }
         
         func webRTCClient(_ client: WebRTCClient, didChangeConnectionState state: RTCIceConnectionState) {
-            
+            print("mudou estado \(state.description)")
         }
         
         func webRTCClient(_ client: WebRTCClient, didReceiveData data: Data) {

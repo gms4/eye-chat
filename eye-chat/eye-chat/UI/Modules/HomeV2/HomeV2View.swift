@@ -11,49 +11,37 @@ import SwiftUI
 struct HomeV2View: View {
 
     @ObservedObject private var viewModel = HomeV2ViewModel()
-       
     @EnvironmentObject var coordinator: ViewCordinator
-        
-    public func leftFirstSection(){
-        coordinator.push(view: .create)
+            
+    public func didUserTapSavedRooms(){
+        coordinator.push(view: .savedRooms)
     }
     
-    public func midFirstSection(){
-        coordinator.push(view: .create)
+    public func didUserTapCreateRooms(){
+        coordinator.push(view: .main)
     }
-    
-    public func rightFirstSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func leftSecondSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func midSecondSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func rightSecondSection(){
-        coordinator.push(view: .create)
-    }
-    
-    public func goBack(){
-        coordinator.pop()
-    }
-    
     var body: some View {
-        
         VStack {
-            Text("Inicie uma conversa com EyeChat!")
-                .font(.system(size: 40))
-                .fontWeight(.medium)
             EyeTrackingTemplate(
-                upTrigger: rightFirstSection,
-                downTrigger: leftFirstSection,
-                elements: [ EyeButtonComponent(style: .createRoom).anyView,
-                            EyeButtonComponent(style: .savedRoom).anyView]
+                upTrigger: didUserTapSavedRooms,
+                downTrigger: didUserTapCreateRooms,
+                style: StyleCard(spacing: 36, borderColor: .black),
+                elements: [ EyeButtonComponent(style: .savedRoom).anyView,
+                            EyeButtonComponent(style: .createRoom).anyView]
             )
+        }
+        .padding(.top, 45)
+        .overlay {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(ContentComponent.INITIATE_CHAT)
+                        .font(.custom(ContentComponent.M, size: 44))
+                    Spacer()
+                }
+          
+                Spacer()
+                
+            }.frame(width: UIScreen.screenWidth - 70, height: UIScreen.screenHeight * 0.9)
         }
     }
 }
