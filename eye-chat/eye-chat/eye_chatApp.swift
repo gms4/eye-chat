@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct eye_chatApp: App {
-    
+     
     let persistenceController = PersistenceController.shared
     @ObservedObject var coordinator = ViewCordinator()
     
@@ -35,8 +35,7 @@ struct eye_chatApp: App {
                             VideoStream(webRTCClient: web.connection.webRTCClient)
                         case .savedRooms:
                             RoomsView()
-                        case .calling:
-                            CallingView()
+                            
                         }
                     }
                 }
