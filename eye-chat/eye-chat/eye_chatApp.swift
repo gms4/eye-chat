@@ -9,17 +9,19 @@ import SwiftUI
 
 @main
 struct eye_chatApp: App {
-    
+     
     let persistenceController = PersistenceController.shared
-//    @ObservedObject var coordinator = ViewCordinator()
+    @ObservedObject var coordinator = ViewCordinator()
     
     @StateObject var appState = AppState.shared
+    
+    @State var web = ConnectionSingleton.shared
 
     var body: some Scene {
         WindowGroup {
             if #available(iOS 16.0, *){
-                NavigationStack(){
-                    FaceIDAuthView()
+                NavigationStack(path: $coordinator.path){
+                    HomeV2View()
                     .id(appState.gameID)
                     .navigationDestination(for: RouteScreen.self){ destination in
                         switch destination {
@@ -27,11 +29,18 @@ struct eye_chatApp: App {
                             ThirdView()
                         case .create:
                             ThirdView()
+                        case .video:
+                            VideoView()
+                        case .videoStream:
+                            VideoStream(webRTCClient: web.connection.webRTCClient)
+                        case .savedRooms:
+                            RoomsView()
+                            
                         }
                     }
                 }
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//                .environmentObject(coordinator)
+                .environmentObject(coordinator)
             }
         }
     }
