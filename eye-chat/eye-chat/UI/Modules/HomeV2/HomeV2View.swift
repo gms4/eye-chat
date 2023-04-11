@@ -12,6 +12,8 @@ struct HomeV2View: View {
 
     @ObservedObject private var viewModel = HomeV2ViewModel()
     @EnvironmentObject var coordinator: ViewCordinator
+    
+    @State var web = ConnectionSingleton.shared 
             
     public func didUserTapSavedRooms(){
         coordinator.push(view: .savedRooms)
@@ -20,8 +22,10 @@ struct HomeV2View: View {
     public func didUserTapCreateRooms(){
         coordinator.push(view: .main)
     }
+    
     var body: some View {
-        VStack {
+        ZStack {
+            web.connection
             EyeTrackingTemplate(
                 upTrigger: didUserTapSavedRooms,
                 downTrigger: didUserTapCreateRooms,

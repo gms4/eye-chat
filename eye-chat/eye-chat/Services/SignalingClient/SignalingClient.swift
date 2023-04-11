@@ -53,5 +53,10 @@ final class SignalingClient {
             debugPrint("Warning: Could not encode candidate: \(error)")
         }
     }
+    
+    func send(message: String){
+        guard let dataMessage = message.data(using: .utf8) else { return }
+        self.webSocket.send(data: dataMessage)
+    }
 }
 
