@@ -35,16 +35,18 @@ struct FullKeyboardComponent: View {
                 }
                 .frame(minHeight: UIScreen.screenHeight - 171.86.su)
             }
-            HStack (alignment: .center) {
-                Circle()
-                    .fill(Color(ColorAsset.LIGHT_ORANGE))
-                    .frame(width: 14, height: 14)
-                Circle()
-                    .fill(Color(ColorAsset.LIGHT_ORANGE))
-                    .frame(width: 14, height: 14)
-                Circle()
-                    .fill(Color(ColorAsset.PET_ORANGE))
-                    .frame(width: 14, height: 14)
+            if chat == .inside {
+                HStack (alignment: .center) {
+                    Circle()
+                        .fill(Color(ColorAsset.LIGHT_ORANGE))
+                        .frame(width: 14, height: 14)
+                    Circle()
+                        .fill(Color(ColorAsset.LIGHT_ORANGE))
+                        .frame(width: 14, height: 14)
+                    Circle()
+                        .fill(Color(ColorAsset.PET_ORANGE))
+                        .frame(width: 14, height: 14)
+                }
             }
         }
     }
