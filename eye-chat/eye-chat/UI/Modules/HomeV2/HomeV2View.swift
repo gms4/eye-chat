@@ -20,6 +20,7 @@ struct HomeV2View: View {
     public func didUserTapCreateRooms(){
         coordinator.push(view: .main)
     }
+    
     var body: some View {
         VStack {
             EyeTrackingTemplate(

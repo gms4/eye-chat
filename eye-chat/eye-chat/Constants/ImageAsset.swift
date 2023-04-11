@@ -26,5 +26,8 @@ struct ImageAsset {
     static let CALLING_POPUP = "calling-popup"
     static let SIGN_UP_SCREEN = "sign-up-screen"
     static let LOG_IN_WITH_FACEID = "login-with-faceid"
+    static let SAVED_SPACE = "saved-space"
+    static let OFFER = "offer"
+    static let RECEIVE = "receive"
     
 }

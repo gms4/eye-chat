@@ -39,9 +39,10 @@ struct SavedRoomsView: View{
                 }
             }
             .frame(maxWidth: 951)
-            
-        }.padding([.top], 180)
+        }
+        .padding([.top], 180)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Image(ImageAsset.SAVED_SPACE))
         .overlay(alignment: .topTrailing) {
             Image(ImageAsset.LOGO_SCREENS)
                 .frame(maxWidth: 20.su, maxHeight: 17.14.su)
@@ -50,7 +51,6 @@ struct SavedRoomsView: View{
             EyetrackingComponent(style: .activate)
                 .frame(maxWidth: 110, maxHeight: 130)
         }
-        
     }
 }
 

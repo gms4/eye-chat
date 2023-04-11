@@ -8,16 +8,31 @@
 import SwiftUI
 
 struct RoomCreatedPopupComponent: View {
+    
+    public func didUserTapOffer(){
+        coordinator.push(view: .savedRooms)
+    }
+    
+    public func didUserTapReceive(){
+        coordinator.push(view: .main)
+    }
+    
+    @EnvironmentObject var coordinator: ViewCordinator
+    
     var body: some View {
-        VStack {
-            Spacer(minLength: 83.su)
-            Text(ContentComponent.ROOM_CREATED)
-                .font(.custom(ContentComponent.B, size: 54))
-            Text("Ligando para SAULO...")
-                .font(.custom(ContentComponent.R, size: 44))
-            Image(ImageAsset.GET_IN)
-                .padding()
-            //vai ser um botão
+        VStack (spacing: 70) {
+            Spacer(minLength: 75.su)
+            Text("SAULO")
+                .font(.custom(ContentComponent.B, size: 60))
+            VStack {
+                EyeTrackingTemplate(
+                    upTrigger: didUserTapOffer,
+                    downTrigger: didUserTapReceive,
+                    style: StyleCard(spacing: 18, borderColor: .black),
+                    elements: [ OfferOrReceiveComponent(style: .offer).anyView,
+                                OfferOrReceiveComponent(style: .receive).anyView]
+                )
+            }
             Spacer()
             
         }

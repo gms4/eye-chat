@@ -16,10 +16,11 @@ struct ChatScreenView: View {
         VStack {
             CameraDisplayComponent(style: .small)
             ReactionBarComponent(style: .small)
-            Spacer()
+            Spacer(minLength: 50)
+
 //            PartialKeyboardComponent(style: .aeiou, chat: .inside)
-            FullKeyboardComponent(chat: .inside)
-//            TopicsBoardComponent()
+//            FullKeyboardComponent(chat: .inside)
+            TopicsBoardComponent()
 //            KeyboardReactionsComponent()
             Spacer()
             HStack {

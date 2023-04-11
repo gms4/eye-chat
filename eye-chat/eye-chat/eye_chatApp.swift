@@ -21,7 +21,7 @@ struct eye_chatApp: App {
         WindowGroup {
             if #available(iOS 16.0, *){
                 NavigationStack(path: $coordinator.path){
-                    HomeV2View()
+                    RoomCreatedPopupComponent()
                     .id(appState.gameID)
                     .navigationDestination(for: RouteScreen.self){ destination in
                         switch destination {
