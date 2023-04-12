@@ -29,7 +29,7 @@ class EyeTrackingViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        eyeTracking.showPointer()
+//        eyeTracking.showPointer()
     }
     
     override func viewDidDisappear(_ animated: Bool) {

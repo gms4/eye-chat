@@ -20,7 +20,7 @@ struct HomeV2View: View {
     }
     
     public func didUserTapCreateRooms(){
-        coordinator.push(view: .main)
+        coordinator.push(view: .savedRooms)
     }
     
     var body: some View {
