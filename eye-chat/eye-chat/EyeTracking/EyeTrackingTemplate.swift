@@ -104,18 +104,18 @@ struct EyeTrackingTemplate: View {
                         elements[8]
                             .border(selector.axisXThirdSection[2] ? .green : style.borderColor, width: 4)
                         
-                    }.border(selector.axisYSection?[2] ?? false && selector.showSection ? .red : .white, width: 4)
+                    }.border(selector.axisYSection?[2] ?? false && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 4)
                 } else {
                     
                     HStack {
                         elements[0]
                     }
-                    .border(!selector.upOrDown && selector.showSection ? .red : .white, width: 4)
+                    .border(!selector.upOrDown && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 5)
                     
                     HStack {
                         elements[1]
                     }
-                    .border(selector.upOrDown && selector.showSection ? .red : .white, width: 4)
+                    .border(selector.upOrDown && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 5)
                 }
             }
         }

@@ -56,33 +56,23 @@ struct VideoView: View {
     }
 
     var body: some View {
-        
-        ZStack {
-            
-            VideoStream(webRTCClient: web.connection.webRTCClient)
-                .frame(height: UIScreen.screenHeight * 0.45)
-                .padding(.bottom, UIScreen.screenHeight / 1.5)
-            
-            EyeTrackingTemplate(
-                axisXFirstSectionTrigger: [teste1, teste2, teste3],
-                axisXSecondSectionTrigger: [teste4, teste5, teste6],
-                axisXThirdSectionTrigger: [teste7, teste8, teste9],
-                goBack: goBack,
-                style: StyleCard(spacing: 32, borderColor: .yellow),
-                elements: [ Teste().anyView,
-                            Teste().anyView,
-                            Teste().anyView,
-                            Teste().anyView,
-                            Teste().anyView,
-                            Teste().anyView,
-                            Teste().anyView,
-                            Teste().anyView,
-                            Teste().anyView,
-                          ]
-            )
-
-        }
-        
+        EyeTrackingTemplate(
+            axisXFirstSectionTrigger: [teste1, teste2, teste3],
+            axisXSecondSectionTrigger: [teste4, teste5, teste6],
+            axisXThirdSectionTrigger: [teste7, teste8, teste9],
+            goBack: goBack,
+            style: StyleCard(spacing: 32, borderColor: .yellow),
+            elements: [ Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                        Teste().anyView,
+                      ]
+        )
     }
 }
 
