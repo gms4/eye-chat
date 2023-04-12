@@ -7,8 +7,11 @@
 //
 import SwiftUI
 
-
 struct TopicsCardComponent: View {
+    
+    var anyView: AnyView {
+        return AnyView(self)
+    }
     
     let style: TopicsCardStyle
     
