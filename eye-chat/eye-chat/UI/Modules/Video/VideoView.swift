@@ -14,6 +14,8 @@ struct VideoView: View {
     @ObservedObject private var viewModel = VideoViewModel()
     
     @State var web = ConnectionSingleton.shared
+    
+
        
     var body: some View {
         

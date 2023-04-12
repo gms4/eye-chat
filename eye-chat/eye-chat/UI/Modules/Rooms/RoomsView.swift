@@ -36,6 +36,7 @@ struct RoomsView: View {
     }
     
     init(){
+        web.connection.webRTCClient.speakerOff()
         OfferSingleton.shared.index += 1
 
         if(OfferSingleton.shared.index == 1){
