@@ -14,7 +14,7 @@ class VideoStreamViewController: UIViewController {
         let width = UIScreen.screenWidth * 0.33
         let height = UIScreen.screenHeight * 0.1
         let frame = CGRect(x: UIScreen.screenWidth - width - 32,
-                           y: 2 * height,
+                           y: 1.8 * height,
                            width: width,
                            height: height)
         let view = UIView(frame: frame)

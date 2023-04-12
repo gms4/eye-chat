@@ -23,7 +23,6 @@ struct Server: Codable {
 }
 
 
-
 struct RoomsView: View {
     
     @EnvironmentObject var coordinator: ViewCordinator
