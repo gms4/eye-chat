@@ -134,17 +134,21 @@ struct RoomsView: View {
                 axisXSecondSectionTrigger: [teste4, teste5, teste6],
                 axisXThirdSectionTrigger: [teste7, teste8, teste9],
                 goBack: goBack,
-                style: StyleCard(spacing: 0, borderColor: .yellow),
-                elements: [ SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-yellow-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-orange-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-yellow-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-orange-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-orange-card").anyView,
+                style: StyleCard(spacing: 0, borderColor: Color(ColorAsset.BLUE_COLOR)),
+                elements: [ SavedRoomsCardComponent(cardTitle: "Roberto", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Claúdia", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Gui", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Arqui", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Miguel", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Miguelito", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "El Cabron", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Erne", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Bru", cardColor: ColorAsset.BLUE_COLOR).anyView,
                           ]
+            )
+            .background(
+                Image("Sala Salva")
+                    .padding(.top, 260)
             )
             .padding(.bottom, UIScreen.screenHeight/2.5)
         }.overlay {

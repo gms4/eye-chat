@@ -40,6 +40,7 @@ struct HomeV2View: View {
                 HStack {
                     Text(ContentComponent.INITIATE_CHAT)
                         .font(.custom(ContentComponent.M, size: 44))
+                        .fontWeight(.semibold)
                     Spacer()
                 }
           
