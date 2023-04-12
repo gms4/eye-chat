@@ -32,7 +32,8 @@ struct eye_chatApp: App {
                         case .video:
                             VideoView()
                         case .videoStream:
-                            VideoStream(webRTCClient: web.connection.webRTCClient)
+//                            VideoStream(webRTCClient: web.connection.webRTCClient)
+                            VideoView()
                         case .savedRooms:
                             RoomsView()
                             
