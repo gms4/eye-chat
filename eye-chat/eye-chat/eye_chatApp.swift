@@ -35,7 +35,12 @@ struct eye_chatApp: App {
                             VideoStream(webRTCClient: web.connection.webRTCClient)
                         case .savedRooms:
                             RoomsView()
-                            
+                        case .topicsComponent:
+                            TopicsBoardComponent()
+                        case .emojiComponent:
+                            KeyboardReactionsComponent()
+                        case .fullKeyboard:
+                            ChatScreenView(cameraSizeStyle: .small, keycapStyle: .aeiou)
                         }
                     }
                 }

@@ -12,4 +12,7 @@ enum RouteScreen: Hashable {
     case video
     case videoStream
     case savedRooms
+    case topicsComponent
+    case emojiComponent
+    case fullKeyboard
 }

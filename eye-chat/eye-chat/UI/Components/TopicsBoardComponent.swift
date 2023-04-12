@@ -37,12 +37,6 @@ struct TopicsBoardComponent: View {
     
     public func goBack(){
         coordinator.pop()
-        
-        // o que eu quero?
-        // componente de forma específica
-        // o que eu tenho?
-        //
-        // o que eu posso fazer?
     }
     
     
@@ -77,6 +71,7 @@ struct TopicsBoardComponent: View {
     
     var body: some View {
         VStack (spacing: 0) {
+            Spacer(minLength: 280)
             HStack (spacing: 10) {
                 Text("Respostas rápidas")
                     .font(.custom(ContentComponent.SB, size: 24))
@@ -106,25 +101,6 @@ struct TopicsBoardComponent: View {
                     )
                     .foregroundColor(.white)
             }
-            //            Grid() {
-            //                GridRow {
-            //                    Grid {
-            //                        FirstTopicsCardComponent(style: .yes, columnName: "Respostas rápidas")
-            //                        TopicsCardComponent(style: .no)
-            //                        TopicsCardComponent(style: .maybe)
-            //                    }
-            //                    Grid {
-            //                        FirstTopicsCardComponent(style: .family, columnName: "Tópicos")
-            //                        TopicsCardComponent(style: .entertainment)
-            //                        TopicsCardComponent(style: .health)
-            //                    }
-            //                    Grid {
-            //                        FirstTopicsCardComponent(style: .day, columnName: "Perguntas")
-            //                        TopicsCardComponent(style: .story)
-            //                        TopicsCardComponent(style: .sorry)
-            //                    }
-            //                }
-            //            }
             EyeTrackingTemplate(
                 axisXFirstSectionTrigger: [grid0, grid1, grid2],
                 axisXSecondSectionTrigger: [grid3, grid4, grid5],
@@ -133,6 +109,7 @@ struct TopicsBoardComponent: View {
                 style: StyleCard(spacing: 10, borderColor: .yellow),
                 elements: elements
             )
+            Spacer()
             HStack (alignment: .center) {
                 Circle()
                     .fill(Color(ColorAsset.LIGHT_ORANGE))
@@ -144,6 +121,7 @@ struct TopicsBoardComponent: View {
                     .fill(Color(ColorAsset.LIGHT_ORANGE))
                     .frame(width: 14, height: 14)
             }
+            Spacer(minLength: 250)
         }
     }
 }

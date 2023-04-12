@@ -9,6 +9,10 @@ import SwiftUI
 
 struct ReactionsComponent: View {
     
+    var anyView: AnyView {
+        return AnyView(self)
+    }
+    
     let style: EmojiStyle
     
     var body: some View {

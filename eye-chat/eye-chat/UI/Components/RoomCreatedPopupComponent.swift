@@ -10,7 +10,7 @@ import SwiftUI
 struct RoomCreatedPopupComponent: View {
     
     public func didUserTapOffer(){
-        coordinator.push(view: .savedRooms)
+        coordinator.push(view: .emojiComponent)
     }
     
     public func didUserTapReceive(){
