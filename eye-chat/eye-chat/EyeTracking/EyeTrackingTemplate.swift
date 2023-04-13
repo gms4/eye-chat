@@ -77,45 +77,45 @@ struct EyeTrackingTemplate: View {
                 if content == .sectionsAndGrid {
                     HStack {
                         elements[0]
-                            .border(selector.axisXFirstSection[0] ?  .green : style.borderColor, width: 4)
+                            .border(selector.axisXFirstSection[0] ?  Color(ColorAsset.MAIN_ORANGE) : style.borderColor, width: 5)
                         elements[1]
-                            .border(selector.axisXFirstSection[1] ?  .green : style.borderColor,  width: 4)
+                            .border(selector.axisXFirstSection[1] ?  Color(ColorAsset.MAIN_ORANGE): style.borderColor,  width: 5)
                         elements[2]
-                            .border(selector.axisXFirstSection[2] ?  .green : style.borderColor,  width: 4)
+                            .border(selector.axisXFirstSection[2] ?  Color(ColorAsset.MAIN_ORANGE) : style.borderColor,  width: 5)
                     }
-                    .border(selector.axisYSection?[0] ?? false && selector.showSection ? .red : .white, width: 4)
+                    .border(selector.axisYSection?[0] ?? false && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 5)
                     
                     HStack {
                         elements[3]
-                            .border(selector.axisXSecondSection[0] ? .green : style.borderColor, width: 4)
+                            .border(selector.axisXSecondSection[0] ? Color(ColorAsset.MAIN_ORANGE): style.borderColor, width: 5)
                         elements[4]
-                            .border(selector.axisXSecondSection[1] ? .green : style.borderColor, width: 4)
+                            .border(selector.axisXSecondSection[1] ? Color(ColorAsset.MAIN_ORANGE) : style.borderColor, width: 5)
                         elements[5]
-                            .border(selector.axisXSecondSection[2] ? .green : style.borderColor, width: 4)
+                            .border(selector.axisXSecondSection[2] ? Color(ColorAsset.MAIN_ORANGE) : style.borderColor, width: 5)
                     }
-                    .border(selector.axisYSection?[1] ?? false && selector.showSection ? .red : .white, width: 4)
+                    .border(selector.axisYSection?[1] ?? false && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 5)
                     
                     
                     HStack {
                         elements[6]
-                            .border(selector.axisXThirdSection[0] ? .green : style.borderColor, width: 4)
+                            .border(selector.axisXThirdSection[0] ? Color(ColorAsset.MAIN_ORANGE) : style.borderColor, width: 5)
                         elements[7]
-                            .border(selector.axisXThirdSection[1] ? .green : style.borderColor, width: 4)
+                            .border(selector.axisXThirdSection[1] ? Color(ColorAsset.MAIN_ORANGE) : style.borderColor, width: 5)
                         elements[8]
-                            .border(selector.axisXThirdSection[2] ? .green : style.borderColor, width: 4)
+                            .border(selector.axisXThirdSection[2] ? Color(ColorAsset.MAIN_ORANGE) : style.borderColor, width: 5)
                         
-                    }.border(selector.axisYSection?[2] ?? false && selector.showSection ? .red : .white, width: 4)
+                    }.border(selector.axisYSection?[2] ?? false && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 5)
                 } else {
                     
                     HStack {
                         elements[0]
                     }
-                    .border(!selector.upOrDown && selector.showSection ? .red : .white, width: 4)
+                    .border(!selector.upOrDown && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 5)
                     
                     HStack {
                         elements[1]
                     }
-                    .border(selector.upOrDown && selector.showSection ? .red : .white, width: 4)
+                    .border(selector.upOrDown && selector.showSection ? Color(ColorAsset.MAIN_ORANGE) : .white, width: 5)
                 }
             }
         }

@@ -12,9 +12,9 @@ class VideoStreamViewController: UIViewController {
 
     private var localVideoView: UIView = {
         let width = UIScreen.screenWidth * 0.33
-        let height = UIScreen.screenHeight * 0.25
-        let frame = CGRect(x: UIScreen.screenWidth * 0.67 - 32,
-                           y: height * 2.4 - 32,
+        let height = UIScreen.screenHeight * 0.1
+        let frame = CGRect(x: UIScreen.screenWidth - width - 32,
+                           y: 1.8 * height,
                            width: width,
                            height: height)
         let view = UIView(frame: frame)
@@ -33,6 +33,10 @@ class VideoStreamViewController: UIViewController {
    required init?(coder aDecoder: NSCoder) {
        fatalError("init(coder:) has not been implemented")
    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
        
    override func viewDidLoad() {
        super.viewDidLoad()
@@ -52,26 +56,26 @@ class VideoStreamViewController: UIViewController {
        
        self.embedView(localRenderer, into: self.localVideoView)
        remoteRenderer.addSubview(localVideoView)
-       
        self.embedView(remoteRenderer, into: self.view)
-
+       
    }
-    
     
        
     private func embedView(_ view: UIView, into containerView: UIView) {
        containerView.addSubview(view)
        view.translatesAutoresizingMaskIntoConstraints = false
+        
        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",
                                                                    options: [],
                                                                    metrics: nil,
                                                                    views: ["view":view]))
-       
+
        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|",
                                                                    options: [],
                                                                    metrics: nil,
                                                                    views: ["view":view]))
        containerView.layoutIfNeeded()
     }
+
 }
 

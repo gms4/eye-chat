@@ -12,17 +12,20 @@ struct HomeV2View: View {
 
     @ObservedObject private var viewModel = HomeV2ViewModel()
     @EnvironmentObject var coordinator: ViewCordinator
+    
+    @State var web = ConnectionSingleton.shared 
             
     public func didUserTapSavedRooms(){
         coordinator.push(view: .savedRooms)
     }
     
     public func didUserTapCreateRooms(){
-        coordinator.push(view: .main)
+        coordinator.push(view: .savedRooms)
     }
     
     var body: some View {
-        VStack {
+        ZStack {
+            web.connection
             EyeTrackingTemplate(
                 upTrigger: didUserTapSavedRooms,
                 downTrigger: didUserTapCreateRooms,
@@ -37,6 +40,7 @@ struct HomeV2View: View {
                 HStack {
                     Text(ContentComponent.INITIATE_CHAT)
                         .font(.custom(ContentComponent.M, size: 44))
+                        .fontWeight(.semibold)
                     Spacer()
                 }
           

@@ -24,11 +24,20 @@ extension SignalingClient: WebSocketProviderDelegate {
     }
     
     func webSocket(_ webSocket: WebSocketProvider, didReceiveData data: Data) {
+        
         let message: Message
         do {
             message = try self.decoder.decode(Message.self, from: data)
         }
         catch {
+     
+            let teste = String(decoding: data, as: UTF8.self)
+            if(teste == "true"){
+//                DispatchQueue.main.async {
+//                    OfferSingleton.shared.offerSend = false
+//                }
+      
+            }
             debugPrint("Warning: Could not decode incoming message: \(error)")
             return
         }

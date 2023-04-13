@@ -7,6 +7,8 @@
 
 import Foundation
 
+fileprivate let serverURL = "10.48.48.63"
+
 fileprivate let signalingServer = URL(string: "ws://10.48.48.63:8080")!
 
 
@@ -20,8 +22,12 @@ struct VideoConfig {
     
     let signaling: URL
     let servers: [String]
+    let server: String
     
     static let EYE_CHAT_DEFAULT = VideoConfig(signaling: signalingServer,
-                                              servers: defaultIceServers)
+                                              servers: defaultIceServers,
+                                              server: serverURL
+    )
+    
     
 }

@@ -21,7 +21,7 @@ struct eye_chatApp: App {
         WindowGroup {
             if #available(iOS 16.0, *){
                 NavigationStack(path: $coordinator.path){
-                    RoomCreatedPopupComponent()
+                    HomeV2View()
                     .id(appState.gameID)
                     .navigationDestination(for: RouteScreen.self){ destination in
                         switch destination {
@@ -32,7 +32,8 @@ struct eye_chatApp: App {
                         case .video:
                             VideoView()
                         case .videoStream:
-                            VideoStream(webRTCClient: web.connection.webRTCClient)
+//                            VideoStream(webRTCClient: web.connection.webRTCClient)
+                            VideoView()
                         case .savedRooms:
                             RoomsView()
                             

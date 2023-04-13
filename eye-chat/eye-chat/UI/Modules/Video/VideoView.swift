@@ -14,37 +14,56 @@ struct VideoView: View {
     @ObservedObject private var viewModel = VideoViewModel()
     
     @State var web = ConnectionSingleton.shared
-       
+    
+    public func goBack(){
+        coordinator.pop()
+    }
+    
+    public func teste1(){
+        print("testinho 1 ")
+    }
+    
+    public func teste2(){
+        print("testinho 2 ")
+    }
+    
+    public func teste3(){
+        print("testinho 3")
+    }
+    
+    public func teste4(){
+        print("testinho 4")
+    }
+    
+    public func teste5(){
+        print("testinho 5")
+    }
+    
+    public func teste6(){
+        print("testinho 6")
+    }
+    
+    public func teste7(){
+        print("testinho 7")
+    }
+    
+    public func teste8(){
+        print("testinho 8")
+    }
+    
+    public func teste9(){
+        print("testinho 9")
+    }
+
     var body: some View {
-        
-        ZStack {
-            web.connection
-        }.overlay {
-            
-            VStack (alignment: .center, spacing: 32) {
-                
-                Button("Offer"){
-                    web.connection.webRTCClient.offer{ sdp in
-                        web.connection.signalingClient.send(sdp: sdp)
-                    }
-                    
-                }
-                
-                Button("Answer"){
-                    web.connection.webRTCClient.answer{ localSdp in
-                        web.connection.signalingClient.send(sdp: localSdp)
-                    }
-                }
-                
-                Button("Send Message"){
-                    guard let dataToSend = "ta funcionando".data(using: .utf8) else { return }
-                    web.connection.webRTCClient.sendData(dataToSend)
-                }
-                
-                Button("Video"){
-                    coordinator.push(view: .videoStream)
-                }
-            }
+        VStack {
+            VideoStream(webRTCClient: web.connection.webRTCClient)
+                .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight * 0.45)
+                .padding(.bottom, UIScreen.screenHeight/2)
+        }
+        .overlay{
+            KeyboardReactionsComponent()
+                .padding(.top, UIScreen.screenHeight/2.5)
         }
     }
 }

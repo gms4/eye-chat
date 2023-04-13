@@ -16,10 +16,12 @@
 			dependencies = (
 			);
 			name = "WebRTC-lib";
+			productName = "WebRTC-lib";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0D530D8029E4E2AB00E1F51B /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 0D530D7F29E4E2AB00E1F51B /* SocketIO */; };
 		22C9B1CA29DF345D723653FD627CD2A4 /* Pods-eye-chatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B13DCD79E6851317BB689A2CF27474F /* Pods-eye-chatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EE1DB3B64C34EEDE514678C6DA13C39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3972CCE62EF3197F4314BE0878643F8B /* Pods-eye-chat-eye-chatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A29133F9678957DD5473F51309FFA26 /* Pods-eye-chat-eye-chatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,7 +64,7 @@
 		0A31D8E834B71DF6D2A900650A0473AC /* Pods-eye-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eye-chat.debug.xcconfig"; sourceTree = "<group>"; };
 		0B13DCD79E6851317BB689A2CF27474F /* Pods-eye-chatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-eye-chatTests-umbrella.h"; sourceTree = "<group>"; };
 		0C5B657424F8140553E526676B69FAD3 /* Pods-eye-chatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-eye-chatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		17F555D97A170C879E814D8CAFF9E154 /* WebRTC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = WebRTC.xcframework; sourceTree = "<group>"; };
+		17F555D97A170C879E814D8CAFF9E154 /* WebRTC.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = WebRTC.xcframework; sourceTree = "<group>"; };
 		2506C21AE9C53AB94B8FAFCC957807D8 /* Pods-eye-chat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-eye-chat-umbrella.h"; sourceTree = "<group>"; };
 		2A29133F9678957DD5473F51309FFA26 /* Pods-eye-chat-eye-chatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-eye-chat-eye-chatUITests-umbrella.h"; sourceTree = "<group>"; };
 		2D1CBAA3DFA17AD606F01A585A5DE261 /* WebRTC-lib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WebRTC-lib.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +80,7 @@
 		8BA22D27A27EC08ECC42BF2309D53356 /* Pods-eye-chat-eye-chatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-eye-chat-eye-chatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93C17992A5F87B3D1024E78B4B63676B /* Pods-eye-chat-eye-chatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eye-chat-eye-chatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		972470F48EAC36B403C98C09EE07AB1C /* Pods-eye-chat-eye-chatUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-eye-chat-eye-chatUITests"; path = Pods_eye_chat_eye_chatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E449790DF32E9E3DF23BFB90DB5BEBF /* WebRTC-lib-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "WebRTC-lib-xcframeworks.sh"; sourceTree = "<group>"; };
 		A4263B8B18D2EEC803F470AD9E3A7E01 /* Pods-eye-chat-eye-chatUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-eye-chat-eye-chatUITests-frameworks.sh"; sourceTree = "<group>"; };
 		AC2DAD40E29C052FC0B985A2CBC2DCCA /* WebRTC-lib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WebRTC-lib.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EE1DB3B64C34EEDE514678C6DA13C39 /* Foundation.framework in Frameworks */,
+				0D530D8029E4E2AB00E1F51B /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +199,6 @@
 				818F3A0E66B293EF538C3D3DDAC644CF /* Frameworks */,
 				7E35133C46E0B6584D35BC03C2588570 /* Support Files */,
 			);
-			name = "WebRTC-lib";
 			path = "WebRTC-lib";
 			sourceTree = "<group>";
 		};
@@ -300,6 +302,9 @@
 				A9EC4A89BA7C6770C5A9105BF4491677 /* PBXTargetDependency */,
 			);
 			name = "Pods-eye-chat";
+			packageProductDependencies = (
+				0D530D7F29E4E2AB00E1F51B /* SocketIO */,
+			);
 			productName = Pods_eye_chat;
 			productReference = 898B322DB891AA27EDE36E6721862EA7 /* Pods-eye-chat */;
 			productType = "com.apple.product-type.framework";
@@ -360,6 +365,9 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			packageReferences = (
+				0D530D7E29E4E2AB00E1F51B /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = 0DCB1AD71C4635FCFDF06D79855AA585 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -902,6 +910,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D530D7E29E4E2AB00E1F51B /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D530D7F29E4E2AB00E1F51B /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D530D7E29E4E2AB00E1F51B /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

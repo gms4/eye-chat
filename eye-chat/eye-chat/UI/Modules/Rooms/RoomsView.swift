@@ -7,91 +7,147 @@
 //
 
 import SwiftUI
+import SocketIO
+
+class OfferSingleton {
+    
+    static let shared = OfferSingleton()
+    var index = 0;
+    
+    private init(){}
+}
+
+struct Server: Codable {
+    let offer: Bool
+    
+}
+
 
 struct RoomsView: View {
     
     @EnvironmentObject var coordinator: ViewCordinator
     
-    @State var web = ConnectionSingleton.shared
+    var web = ConnectionSingleton.shared
+    
     
     public func goBack(){
         coordinator.pop()
     }
     
-    
     init(){
-        
+        web.connection.webRTCClient.speakerOff()
+        OfferSingleton.shared.index += 1
+
+        if(OfferSingleton.shared.index == 1){
+            createRequest()
+        }
     }
+    
+    
+    public func createRequest(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+            Task {
+                let offer = await makeOfferRequest()
+
+                if offer {
+                    print("ENTROU NO OFFER")
+                    web.connection.webRTCClient.offer{ (sdp) in
+                        web.connection.signalingClient.send(sdp: sdp)
+                    }
+                } else {
+                    print("ENTROU NO ANSWER")
+                    web.connection.webRTCClient.answer{ (localSdp) in
+                        web.connection.signalingClient.send(sdp: localSdp)
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    public func makeOfferRequest() async -> Bool {
+        let url = URL(string: "http://\(VideoConfig.EYE_CHAT_DEFAULT.server):8081")!
+        
+        let session = URLSession.shared
+        let decoder = JSONDecoder()
+        do {
+            let (data, _) = try await session.data(from: url)
+            let response = try decoder.decode(Server.self, from: data)
+            return response.offer
+        } catch {
+            return false
+        }
+    }
+   
+    
     public func teste1(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
     }
     
     public func teste2(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
     }
     
     public func teste3(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
 
     }
     
     public func teste4(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
     }
     
     public func teste5(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
     }
     
     public func teste6(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
 
     }
     
     public func teste7(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
     }
     
     public func teste8(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
     }
     
     public func teste9(){
-        joinRoom()
+        coordinator.push(view: .videoStream)
 
     }
         
     public func joinRoom(){
         
-        web.connection.webRTCClient.offer{ sdp in
-            web.connection.signalingClient.send(sdp: sdp)
-        }
-        
-        web.connection.webRTCClient.answer{ localSdp in
-            web.connection.signalingClient.send(sdp: localSdp)
-        }
+        web.connection.signalingClient.send(message: "offer clicked")
+
     }
     
     
     var body: some View {
         ZStack {
-            web.connection
             EyeTrackingTemplate(
                 axisXFirstSectionTrigger: [teste1, teste2, teste3],
                 axisXSecondSectionTrigger: [teste4, teste5, teste6],
                 axisXThirdSectionTrigger: [teste7, teste8, teste9],
                 goBack: goBack,
-                style: StyleCard(spacing: 0, borderColor: .yellow),
-                elements: [ SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-yellow-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-orange-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-yellow-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-orange-card").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "blue-textfield").anyView,
-                            SavedRoomsCardComponent(cardTitle: "teste", cardColor: "light-orange-card").anyView,
+                style: StyleCard(spacing: 0, borderColor: Color(ColorAsset.BLUE_COLOR)),
+                elements: [ SavedRoomsCardComponent(cardTitle: "Roberto", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Claúdia", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Gui", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Arqui", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Miguel", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Miguelito", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "El Cabron", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Erne", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Bru", cardColor: ColorAsset.BLUE_COLOR).anyView,
                           ]
+            )
+            .background(
+                Image("Sala Salva")
+                    .padding(.top, 260)
             )
             .padding(.bottom, UIScreen.screenHeight/2.5)
         }.overlay {

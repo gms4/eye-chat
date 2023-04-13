@@ -13,6 +13,7 @@ struct VideoStream: UIViewControllerRepresentable {
     let webRTCClient: WebRTCClient
     
     func makeUIViewController(context: Context) -> VideoStreamViewController {
+        webRTCClient.speakerOn()
         let video = VideoStreamViewController(webRTCClient: webRTCClient)
         return video
     }
