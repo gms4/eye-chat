@@ -14,7 +14,7 @@ enum TopicsCardStyle: String, CaseIterable, Hashable {
     case family = "Família"
     case entertainment = "Entretenimento"
     case health = "Saúde"
-    case story = "Me conta uma \n história?"
-    case day = "Como foi o \n seu dia?"
-    case sorry = "Você me desculpa?"
+    case how_you_doing = "Como você está?"
+    case story = "Me conta uma \n história nossa?"
+    case plans = "Quais os seus planos futuros?"
 }

@@ -13,7 +13,6 @@ struct CreateRoomView: View {
     @ObservedObject private var viewModel = CreateRoomViewModel()
     let style: EyetrackingStyle
     @State var newContact: String = ""
-    //screenHeight = 1366, screenWidth = 1024
        
     var body: some View {
         VStack (alignment: .center) {

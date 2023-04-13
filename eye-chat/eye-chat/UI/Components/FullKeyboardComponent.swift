@@ -12,27 +12,42 @@ struct FullKeyboardComponent: View {
     let chat: ChatStyle
     
     var body: some View {
-        Grid() {
-            GridRow {
-                KeycapsComponent(style: .aeiou)
-                KeycapsComponent(style: .srndm)
-                KeycapsComponent(style: .tclpv)
+        VStack (spacing: 35) {
+            Grid() {
+                GridRow {
+                    KeycapsComponent(style: .aeiou)
+                    KeycapsComponent(style: .srndm)
+                    KeycapsComponent(style: .tclpv)
+                }
+                GridRow {
+                    KeycapsComponent(style: .ghqbf)
+                    KeycapsComponent(style: .zjxkw)
+                    KeycapsComponent(style: .others)
+                }
+                HStack {
+                    DeleteKeycapComponent()
+                    SpaceKeycapComponent()
+                    if chat == .inside {
+                        PrintKeycapComponent()
+                    } else {
+                        CreateRoomComponent()
+                    }
+                }
+                .frame(minHeight: UIScreen.screenHeight - 171.86.su)
             }
-            GridRow {
-                KeycapsComponent(style: .ghqbf)
-                KeycapsComponent(style: .zjxkw)
-                KeycapsComponent(style: .others)
-            }
-            HStack {
-                DeleteKeycapComponent()
-                SpaceKeycapComponent()
-                if chat == .inside {
-                    PrintKeycapComponent()
-                } else {
-                    CreateRoomComponent()
+            if chat == .inside {
+                HStack (alignment: .center) {
+                    Circle()
+                        .fill(Color(ColorAsset.LIGHT_ORANGE))
+                        .frame(width: 14, height: 14)
+                    Circle()
+                        .fill(Color(ColorAsset.LIGHT_ORANGE))
+                        .frame(width: 14, height: 14)
+                    Circle()
+                        .fill(Color(ColorAsset.PET_ORANGE))
+                        .frame(width: 14, height: 14)
                 }
             }
-            .frame(minHeight: UIScreen.screenHeight - 171.86.su)
         }
     }
 }

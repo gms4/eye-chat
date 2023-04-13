@@ -73,8 +73,6 @@
 		6E01934729D6101600C16658 /* TopicsCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01934629D6101600C16658 /* TopicsCardComponent.swift */; };
 		6E01934929D61D6F00C16658 /* TopicsBoardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01934829D61D6F00C16658 /* TopicsBoardComponent.swift */; };
 		6E35CB0E29DCB2800076FD04 /* TopicsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E35CB0D29DCB2800076FD04 /* TopicsStyle.swift */; };
-		6E551D2229DFBBBD002033A5 /* SavedRoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E551D2129DFBBBD002033A5 /* SavedRoomsView.swift */; };
-		6E551D2429DFBBC7002033A5 /* SavedRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E551D2329DFBBC7002033A5 /* SavedRoomsViewModel.swift */; };
 		6E551D2629DFBC27002033A5 /* SavedRoomsCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E551D2529DFBC27002033A5 /* SavedRoomsCardComponent.swift */; };
 		C03920BF29D8673D00F34B48 /* EyetrackingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03920BE29D8673D00F34B48 /* EyetrackingComponent.swift */; };
 		C03920C129D867A000F34B48 /* EyetrackingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03920C029D867A000F34B48 /* EyetrackingStyle.swift */; };
@@ -117,6 +115,11 @@
 		C0A804C329DCBB84008B019B /* ChatScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A804C029DCBB84008B019B /* ChatScreenViewModel.swift */; };
 		C0A804C429DCBB84008B019B /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A804C129DCBB84008B019B /* ChatScreen.swift */; };
 		C0A804C629DCBD50008B019B /* ReactionBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A804C529DCBD50008B019B /* ReactionBarComponent.swift */; };
+		C0B2F68529E4C43000532A8F /* SavedRoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B2F68229E4C43000532A8F /* SavedRoomsView.swift */; };
+		C0B2F68629E4C43000532A8F /* SavedRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B2F68329E4C43000532A8F /* SavedRooms.swift */; };
+		C0B2F68729E4C43000532A8F /* SavedRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B2F68429E4C43000532A8F /* SavedRoomsViewModel.swift */; };
+		C0B2F68929E5DDEB00532A8F /* OfferOrReceiveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B2F68829E5DDEB00532A8F /* OfferOrReceiveComponent.swift */; };
+		C0B2F68B29E5DE0F00532A8F /* OfferOrReceiveStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B2F68A29E5DE0F00532A8F /* OfferOrReceiveStyle.swift */; };
 		C0B79AB929D74E4C002B3210 /* CreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */; };
 		C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */; };
 		C0B79ABB29D74E4C002B3210 /* CreateRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B79AB829D74E4C002B3210 /* CreateRoom.swift */; };
@@ -210,8 +213,6 @@
 		6E01934629D6101600C16658 /* TopicsCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsCardComponent.swift; sourceTree = "<group>"; };
 		6E01934829D61D6F00C16658 /* TopicsBoardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsBoardComponent.swift; sourceTree = "<group>"; };
 		6E35CB0D29DCB2800076FD04 /* TopicsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsStyle.swift; sourceTree = "<group>"; };
-		6E551D2129DFBBBD002033A5 /* SavedRoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoomsView.swift; sourceTree = "<group>"; };
-		6E551D2329DFBBC7002033A5 /* SavedRoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoomsViewModel.swift; sourceTree = "<group>"; };
 		6E551D2529DFBC27002033A5 /* SavedRoomsCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRoomsCardComponent.swift; sourceTree = "<group>"; };
 		7BED4F0CF09E7749C96F40C3 /* Pods-eye-chat-eye-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chat-eye-chatUITests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chat-eye-chatUITests/Pods-eye-chat-eye-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8915FFB6CFCDAA623C836477 /* Pods-eye-chatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eye-chatTests.debug.xcconfig"; path = "Target Support Files/Pods-eye-chatTests/Pods-eye-chatTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +262,11 @@
 		C0A804C029DCBB84008B019B /* ChatScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewModel.swift; sourceTree = "<group>"; };
 		C0A804C129DCBB84008B019B /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		C0A804C529DCBD50008B019B /* ReactionBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionBarComponent.swift; sourceTree = "<group>"; };
+		C0B2F68229E4C43000532A8F /* SavedRoomsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRoomsView.swift; sourceTree = "<group>"; };
+		C0B2F68329E4C43000532A8F /* SavedRooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRooms.swift; sourceTree = "<group>"; };
+		C0B2F68429E4C43000532A8F /* SavedRoomsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRoomsViewModel.swift; sourceTree = "<group>"; };
+		C0B2F68829E5DDEB00532A8F /* OfferOrReceiveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferOrReceiveComponent.swift; sourceTree = "<group>"; };
+		C0B2F68A29E5DE0F00532A8F /* OfferOrReceiveStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferOrReceiveStyle.swift; sourceTree = "<group>"; };
 		C0B79AB629D74E4C002B3210 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
 		C0B79AB729D74E4C002B3210 /* CreateRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewModel.swift; sourceTree = "<group>"; };
 		C0B79AB829D74E4C002B3210 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
@@ -494,11 +500,10 @@
 				0DCB1B9929E0BC1E005444B7 /* Video */,
 				0D4A536429DB83FD00D775A9 /* HomeV2 */,
 				C0A804BE29DCBB53008B019B /* Chat Screen */,
-				C0A0182829DC99A5001097E7 /* FaceIDAuth */,
+				C0A0182829DC99A5001097E7 /* Face ID Authentication */,
 				C0B79AB529D74E26002B3210 /* Create Room */,
 				C09CDA8E29D5B9ED006C60BB /* Home */,
-				6E551D2129DFBBBD002033A5 /* SavedRoomsView.swift */,
-				6E551D2329DFBBC7002033A5 /* SavedRoomsViewModel.swift */,
+				C05E273829E497BF009D35F0 /* Saved Rooms */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -515,6 +520,7 @@
 				C03920C029D867A000F34B48 /* EyetrackingStyle.swift */,
 				C0F5532A29DB62C800DB4F7B /* ActionStyle.swift */,
 				C0A0181D29DB6431001097E7 /* CameraStyle.swift */,
+				C0B2F68A29E5DE0F00532A8F /* OfferOrReceiveStyle.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 				C0A0181F29DB66B2001097E7 /* ButtonComponent.swift */,
 				C0A804C529DCBD50008B019B /* ReactionBarComponent.swift */,
 				6E551D2529DFBC27002033A5 /* SavedRoomsCardComponent.swift */,
+				C0B2F68829E5DDEB00532A8F /* OfferOrReceiveComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -653,6 +660,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C05E273829E497BF009D35F0 /* Saved Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				C0B2F68229E4C43000532A8F /* SavedRoomsView.swift */,
+				C0B2F68329E4C43000532A8F /* SavedRooms.swift */,
+				C0B2F68429E4C43000532A8F /* SavedRoomsViewModel.swift */,
+			);
+			path = "Saved Rooms";
+			sourceTree = "<group>";
+		};
 		C09CDA8E29D5B9ED006C60BB /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -672,14 +689,14 @@
 			path = AuthComponents;
 			sourceTree = "<group>";
 		};
-		C0A0182829DC99A5001097E7 /* FaceIDAuth */ = {
+		C0A0182829DC99A5001097E7 /* Face ID Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				C0A0182929DC99D0001097E7 /* FaceIDAuthView.swift */,
 				C0A0182A29DC99D0001097E7 /* FaceIDAuthViewModel.swift */,
 				C0A0182B29DC99D0001097E7 /* FaceIDAuth.swift */,
 			);
-			path = FaceIDAuth;
+			path = "Face ID Authentication";
 			sourceTree = "<group>";
 		};
 		C0A804BE29DCBB53008B019B /* Chat Screen */ = {
@@ -957,6 +974,7 @@
 				C09CDA8029D476AD006C60BB /* CameraDisplayComponent.swift in Sources */,
 				0D71CFEB29D3291400E91563 /* ImageAsset.swift in Sources */,
 				0DCB1B8F29E0679B005444B7 /* WebRTCClient+RTCDataChannelDelegate.swift in Sources */,
+				C0B2F68529E4C43000532A8F /* SavedRoomsView.swift in Sources */,
 				C09CDAA029D5FD8A006C60BB /* PartialKeyboardComponent.swift in Sources */,
 				0DCB1B8029DE7A2D005444B7 /* VideoStream.swift in Sources */,
 				0D71CFF229D329EA00E91563 /* AuthManager.swift in Sources */,
@@ -974,6 +992,7 @@
 				C0A804C329DCBB84008B019B /* ChatScreenViewModel.swift in Sources */,
 				C09CDA9E29D5CF11006C60BB /* CreateRoomComponent.swift in Sources */,
 				0DCB1B3229DE2BFE005444B7 /* Content.swift in Sources */,
+				C0B2F68629E4C43000532A8F /* SavedRooms.swift in Sources */,
 				C09CDA8629D4C4C5006C60BB /* KeyboardReactionsComponent.swift in Sources */,
 				C0A0182C29DC99D0001097E7 /* FaceIDAuthView.swift in Sources */,
 				C0B79AB929D74E4C002B3210 /* CreateRoomView.swift in Sources */,
@@ -984,6 +1003,7 @@
 				0D71CFB829D324C400E91563 /* Persistence.swift in Sources */,
 				0DCB1B7629DE60E7005444B7 /* WebSocketProvider.swift in Sources */,
 				C046A47D29D624E80006B7D8 /* HomeButtonStyle.swift in Sources */,
+				C0B2F68929E5DDEB00532A8F /* OfferOrReceiveComponent.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
@@ -1001,13 +1021,13 @@
 				6E551D2629DFBC27002033A5 /* SavedRoomsCardComponent.swift in Sources */,
 				C09CDA7E29D36BFB006C60BB /* EyeButtonComponent.swift in Sources */,
 				0D71D00C29D32C4500E91563 /* EmojiStyle.swift in Sources */,
-				6E551D2229DFBBBD002033A5 /* SavedRoomsView.swift in Sources */,
 				0D71CFED29D3294E00E91563 /* ColorAsset.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				0D4A536929DB841200D775A9 /* HomeV2ViewModel.swift in Sources */,
 				0D71D01129D32CF700E91563 /* Double+Su.swift in Sources */,
 				0DCB1B3029DE2BD5005444B7 /* AttributesTrigger.swift in Sources */,
 				0D4A536A29DB841200D775A9 /* HomeV2.swift in Sources */,
+				C0B2F68B29E5DE0F00532A8F /* OfferOrReceiveStyle.swift in Sources */,
 				C0A0182029DB66B2001097E7 /* ButtonComponent.swift in Sources */,
 				C09CDAA229D6064C006C60BB /* ArrowComponent.swift in Sources */,
 				C0A804C629DCBD50008B019B /* ReactionBarComponent.swift in Sources */,
@@ -1027,7 +1047,6 @@
 				0D71D01829D3337500E91563 /* RouteScreen.swift in Sources */,
 				0D71D00F29D32CD900E91563 /* Int+Su.swift in Sources */,
 				C03920BF29D8673D00F34B48 /* EyetrackingComponent.swift in Sources */,
-				6E551D2429DFBBC7002033A5 /* SavedRoomsViewModel.swift in Sources */,
 				C0F5532D29DB638800DB4F7B /* CameraComponent.swift in Sources */,
 				C09CDA8229D4AE00006C60BB /* ReactionsComponent.swift in Sources */,
 				0DCB1B8A29E066DA005444B7 /* WebRTCClient+TrackEnable.swift in Sources */,
@@ -1038,6 +1057,7 @@
 				0D328FE329E48CC0001A78C9 /* RoomsView.swift in Sources */,
 				C0B79ABA29D74E4C002B3210 /* CreateRoomViewModel.swift in Sources */,
 				C0A804C429DCBB84008B019B /* ChatScreen.swift in Sources */,
+				C0B2F68729E4C43000532A8F /* SavedRoomsViewModel.swift in Sources */,
 				C046A47929D624870006B7D8 /* KeycapStyle.swift in Sources */,
 				0DCB1B7A29DE61C4005444B7 /* ConnectionController.swift in Sources */,
 				0DCB1B7329DE60E7005444B7 /* NativeWebSocket.swift in Sources */,

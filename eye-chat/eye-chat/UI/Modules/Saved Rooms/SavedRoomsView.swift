@@ -8,35 +8,25 @@ import SwiftUI
 
 struct SavedRoomsView: View{
     
-    @ObservedObject private var viewModel = SavedRoomsViewModel()
-    
     let listOfContacts: [String] = SavedRoomsViewModel().example
     let style: EyetrackingStyle
-    
-    
-   
     
     var body: some View {
         
         //MARK: coisas estranhas
         
         VStack(alignment: .leading){
-            
-            
             Text(ContentComponent.SAVED_ROOMS)
                 .font(.custom(ContentComponent.B, size: 48))
                 .multilineTextAlignment(.leading)
                 .frame(alignment: .leading)
-
-            
-            VStack (alignment: .center){
+            VStack (alignment: .center) {
                 if listOfContacts.count > 0{
                     let columns = [
                         GridItem(spacing: 10),
                         GridItem(spacing: 10),
                         GridItem(spacing: 10)
                     ]
-                    
                     LazyVGrid(columns: columns, spacing: 10){
                         ForEach(listOfContacts, id: \.self) { index in
                             let meuArrayIndex: Int = 1 + listOfContacts.firstIndex(of: index)!
@@ -44,17 +34,15 @@ struct SavedRoomsView: View{
                         }
                     }
                 }
-                else{
+                else {
                     
                 }
-            }.frame(maxWidth: 951)
-            
-        }.padding([.top], 180)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .overlay(alignment: .bottomTrailing) {
-            ButtonComponent(style: .enter)
-                .frame(maxWidth: 300, maxHeight: 130)
+            }
+            .frame(maxWidth: 951)
         }
+        .padding([.top], 180)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Image(ImageAsset.SAVED_SPACE))
         .overlay(alignment: .topTrailing) {
             Image(ImageAsset.LOGO_SCREENS)
                 .frame(maxWidth: 20.su, maxHeight: 17.14.su)
@@ -63,7 +51,6 @@ struct SavedRoomsView: View{
             EyetrackingComponent(style: .activate)
                 .frame(maxWidth: 110, maxHeight: 130)
         }
-        
     }
 }
 
