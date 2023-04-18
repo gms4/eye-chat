@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct SpaceKeycapComponent: View {
+    
+    var anyView: AnyView {
+        return AnyView(self)
+    }
+    
     var body: some View {
         Text("")
             .frame(maxWidth: 70.285.su, maxHeight: 23.28.su)

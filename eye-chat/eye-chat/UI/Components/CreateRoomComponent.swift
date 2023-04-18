@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct CreateRoomComponent: View {
+    
+    var anyView: AnyView {
+        return AnyView(self)
+    }
+    
     var body: some View {
         Text(ContentComponent.CREATE)
             .font(.custom(ContentComponent.B, size: 40))

@@ -36,7 +36,12 @@ struct eye_chatApp: App {
                             VideoView()
                         case .savedRooms:
                             RoomsView()
-                            
+                        case .topicsComponent:
+                            TopicsBoardComponent()
+                        case .emojiComponent:
+                            KeyboardReactionsComponent()
+                        case .fullKeyboard:
+                            ChatScreenView(cameraSizeStyle: .small, keycapStyle: .aeiou)
                         }
                     }
                 }

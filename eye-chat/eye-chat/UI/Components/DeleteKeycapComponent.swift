@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct DeleteKeycapComponent: View {
+    
+    var anyView: AnyView {
+        return AnyView(self)
+    }
+    
     var body: some View {
         Image(systemName: ContentComponent.DELETE)
             .font(.system(size: 45))
