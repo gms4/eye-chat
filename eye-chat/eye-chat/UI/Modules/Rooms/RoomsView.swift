@@ -28,7 +28,7 @@ struct RoomsView: View {
     @EnvironmentObject var coordinator: ViewCordinator
     
     var web = ConnectionSingleton.shared
-    
+        
     
     public func goBack(){
         coordinator.pop()
@@ -81,41 +81,42 @@ struct RoomsView: View {
    
     
     public func teste1(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
+        
     }
     
     public func teste2(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
     }
     
     public func teste3(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
 
     }
     
     public func teste4(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
     }
     
     public func teste5(){
-        coordinator.push(view: .videoStream)
-    }
-    
-    public func teste6(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
 
     }
     
+    public func teste6(){
+//        coordinator.push(view: .videoStream)
+    }
+    
     public func teste7(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
     }
     
     public func teste8(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
     }
     
     public func teste9(){
-        coordinator.push(view: .videoStream)
+//        coordinator.push(view: .videoStream)
 
     }
         
@@ -140,14 +141,18 @@ struct RoomsView: View {
                             SavedRoomsCardComponent(cardTitle: "Arqui", cardColor: ColorAsset.BLUE_COLOR).anyView,
                             SavedRoomsCardComponent(cardTitle: "Miguel", cardColor: ColorAsset.BLUE_COLOR).anyView,
                             SavedRoomsCardComponent(cardTitle: "Miguelito", cardColor: ColorAsset.BLUE_COLOR).anyView,
-                            SavedRoomsCardComponent(cardTitle: "El Cabron", cardColor: ColorAsset.BLUE_COLOR).anyView,
+                            SavedRoomsCardComponent(cardTitle: "Jorge", cardColor: ColorAsset.BLUE_COLOR).anyView,
                             SavedRoomsCardComponent(cardTitle: "Erne", cardColor: ColorAsset.BLUE_COLOR).anyView,
                             SavedRoomsCardComponent(cardTitle: "Bru", cardColor: ColorAsset.BLUE_COLOR).anyView,
                           ]
             )
             .background(
-                Image("Sala Salva")
-                    .padding(.top, 260)
+                
+                VStack {
+                    Image("Sala Salva")
+                        .padding(.top, 260)
+                }
+     
             )
             .padding(.bottom, UIScreen.screenHeight/2.5)
         }.overlay {
@@ -161,7 +166,6 @@ struct RoomsView: View {
                 }
           
                 Spacer()
-                
             }.frame(width: UIScreen.screenWidth - 70, height: UIScreen.screenHeight * 0.84)
         }
     }
